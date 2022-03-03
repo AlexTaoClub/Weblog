@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>片段和trick | AlexTao 的 博客</title>
+    <meta name="description" content="In doing we learn.">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/Weblog/assets/css/styles.bc17a3fe.css" as="style"><link rel="preload" href="/Weblog/assets/js/app.bc17a3fe.js" as="script"><link rel="preload" href="/Weblog/assets/js/15.c3d91b4b.js" as="script"><link rel="prefetch" href="/Weblog/assets/css/16.styles.2339a627.css"><link rel="prefetch" href="/Weblog/assets/css/5.styles.c1152841.css"><link rel="prefetch" href="/Weblog/assets/css/7.styles.1f4a6057.css"><link rel="prefetch" href="/Weblog/assets/css/8.styles.5b6e1357.css"><link rel="prefetch" href="/Weblog/assets/js/0.a8dcd889.js"><link rel="prefetch" href="/Weblog/assets/js/10.bbae2931.js"><link rel="prefetch" href="/Weblog/assets/js/100.b8573d34.js"><link rel="prefetch" href="/Weblog/assets/js/101.abec8cfc.js"><link rel="prefetch" href="/Weblog/assets/js/102.79aa7798.js"><link rel="prefetch" href="/Weblog/assets/js/11.249c3d32.js"><link rel="prefetch" href="/Weblog/assets/js/12.6c4f9a9d.js"><link rel="prefetch" href="/Weblog/assets/js/13.9c3a7225.js"><link rel="prefetch" href="/Weblog/assets/js/14.8788763f.js"><link rel="prefetch" href="/Weblog/assets/js/16.2339a627.js"><link rel="prefetch" href="/Weblog/assets/js/17.f68b5694.js"><link rel="prefetch" href="/Weblog/assets/js/18.1dc877c8.js"><link rel="prefetch" href="/Weblog/assets/js/19.8d3a8eb9.js"><link rel="prefetch" href="/Weblog/assets/js/2.adb0855b.js"><link rel="prefetch" href="/Weblog/assets/js/20.5b430c8f.js"><link rel="prefetch" href="/Weblog/assets/js/21.7570ba60.js"><link rel="prefetch" href="/Weblog/assets/js/22.c34e9396.js"><link rel="prefetch" href="/Weblog/assets/js/23.d89c70ce.js"><link rel="prefetch" href="/Weblog/assets/js/24.cc87bb5d.js"><link rel="prefetch" href="/Weblog/assets/js/25.024b7a56.js"><link rel="prefetch" href="/Weblog/assets/js/26.0d0e2118.js"><link rel="prefetch" href="/Weblog/assets/js/27.fd65c2c2.js"><link rel="prefetch" href="/Weblog/assets/js/28.e7e81b37.js"><link rel="prefetch" href="/Weblog/assets/js/29.d69a29c6.js"><link rel="prefetch" href="/Weblog/assets/js/3.9c9ae281.js"><link rel="prefetch" href="/Weblog/assets/js/30.e02a9f2a.js"><link rel="prefetch" href="/Weblog/assets/js/31.4d5d63f6.js"><link rel="prefetch" href="/Weblog/assets/js/32.2652c4b5.js"><link rel="prefetch" href="/Weblog/assets/js/33.f81118fb.js"><link rel="prefetch" href="/Weblog/assets/js/34.6539d2a9.js"><link rel="prefetch" href="/Weblog/assets/js/35.479b4b73.js"><link rel="prefetch" href="/Weblog/assets/js/36.24e9784f.js"><link rel="prefetch" href="/Weblog/assets/js/37.13a7e720.js"><link rel="prefetch" href="/Weblog/assets/js/38.57e7625b.js"><link rel="prefetch" href="/Weblog/assets/js/39.40ddc61b.js"><link rel="prefetch" href="/Weblog/assets/js/4.cb1adf5e.js"><link rel="prefetch" href="/Weblog/assets/js/40.4abade23.js"><link rel="prefetch" href="/Weblog/assets/js/41.03a22716.js"><link rel="prefetch" href="/Weblog/assets/js/42.4bf6acac.js"><link rel="prefetch" href="/Weblog/assets/js/43.7d75114c.js"><link rel="prefetch" href="/Weblog/assets/js/44.a74a0979.js"><link rel="prefetch" href="/Weblog/assets/js/45.224f0ae1.js"><link rel="prefetch" href="/Weblog/assets/js/46.716c0ee0.js"><link rel="prefetch" href="/Weblog/assets/js/47.a44c77ff.js"><link rel="prefetch" href="/Weblog/assets/js/48.c92bc6c3.js"><link rel="prefetch" href="/Weblog/assets/js/49.78d85a96.js"><link rel="prefetch" href="/Weblog/assets/js/5.c1152841.js"><link rel="prefetch" href="/Weblog/assets/js/50.65d4cc82.js"><link rel="prefetch" href="/Weblog/assets/js/51.dfe21a00.js"><link rel="prefetch" href="/Weblog/assets/js/52.a55d1d66.js"><link rel="prefetch" href="/Weblog/assets/js/53.24e5ba30.js"><link rel="prefetch" href="/Weblog/assets/js/54.3d44c9e1.js"><link rel="prefetch" href="/Weblog/assets/js/55.5509d3c1.js"><link rel="prefetch" href="/Weblog/assets/js/56.389f0044.js"><link rel="prefetch" href="/Weblog/assets/js/57.a6410cdf.js"><link rel="prefetch" href="/Weblog/assets/js/58.99de433a.js"><link rel="prefetch" href="/Weblog/assets/js/59.f362327e.js"><link rel="prefetch" href="/Weblog/assets/js/6.829d0e7e.js"><link rel="prefetch" href="/Weblog/assets/js/60.d8a731fd.js"><link rel="prefetch" href="/Weblog/assets/js/61.c32405a4.js"><link rel="prefetch" href="/Weblog/assets/js/62.2cf15697.js"><link rel="prefetch" href="/Weblog/assets/js/63.97976992.js"><link rel="prefetch" href="/Weblog/assets/js/64.df2f0acc.js"><link rel="prefetch" href="/Weblog/assets/js/65.0365fc24.js"><link rel="prefetch" href="/Weblog/assets/js/66.89f67105.js"><link rel="prefetch" href="/Weblog/assets/js/67.4d546178.js"><link rel="prefetch" href="/Weblog/assets/js/68.b3742591.js"><link rel="prefetch" href="/Weblog/assets/js/69.e2c032ec.js"><link rel="prefetch" href="/Weblog/assets/js/7.1f4a6057.js"><link rel="prefetch" href="/Weblog/assets/js/70.f262dfb0.js"><link rel="prefetch" href="/Weblog/assets/js/71.24d5a255.js"><link rel="prefetch" href="/Weblog/assets/js/72.c2fad7bd.js"><link rel="prefetch" href="/Weblog/assets/js/73.e3de86c7.js"><link rel="prefetch" href="/Weblog/assets/js/74.af039d36.js"><link rel="prefetch" href="/Weblog/assets/js/75.b5d26a4d.js"><link rel="prefetch" href="/Weblog/assets/js/76.5253b8d4.js"><link rel="prefetch" href="/Weblog/assets/js/77.13049fae.js"><link rel="prefetch" href="/Weblog/assets/js/78.732e7950.js"><link rel="prefetch" href="/Weblog/assets/js/79.91a95405.js"><link rel="prefetch" href="/Weblog/assets/js/8.5b6e1357.js"><link rel="prefetch" href="/Weblog/assets/js/80.60b08cac.js"><link rel="prefetch" href="/Weblog/assets/js/81.09852d19.js"><link rel="prefetch" href="/Weblog/assets/js/82.49b521d3.js"><link rel="prefetch" href="/Weblog/assets/js/83.681a706a.js"><link rel="prefetch" href="/Weblog/assets/js/84.ca93e702.js"><link rel="prefetch" href="/Weblog/assets/js/85.9813d878.js"><link rel="prefetch" href="/Weblog/assets/js/86.632f014f.js"><link rel="prefetch" href="/Weblog/assets/js/87.7737cd73.js"><link rel="prefetch" href="/Weblog/assets/js/88.1ec9c00d.js"><link rel="prefetch" href="/Weblog/assets/js/89.bbeb975f.js"><link rel="prefetch" href="/Weblog/assets/js/9.c685ce8f.js"><link rel="prefetch" href="/Weblog/assets/js/90.eda536dd.js"><link rel="prefetch" href="/Weblog/assets/js/91.391681fc.js"><link rel="prefetch" href="/Weblog/assets/js/92.dca04870.js"><link rel="prefetch" href="/Weblog/assets/js/93.01d44a2a.js"><link rel="prefetch" href="/Weblog/assets/js/94.f941a99a.js"><link rel="prefetch" href="/Weblog/assets/js/95.232bf755.js"><link rel="prefetch" href="/Weblog/assets/js/96.d381c6e0.js"><link rel="prefetch" href="/Weblog/assets/js/97.2a0ba8ba.js"><link rel="prefetch" href="/Weblog/assets/js/98.001e708c.js"><link rel="prefetch" href="/Weblog/assets/js/99.0ff7167d.js">
+    <link rel="stylesheet" href="/Weblog/assets/css/styles.bc17a3fe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Weblog/" class="home-link router-link-active"><!----><span class="site-name">
+      AlexTao 的 博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link router-link-active">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link router-link-active">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>Javascript</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Weblog/javascript/" aria-current="page" class="sidebar-link">高效javascript</a></li><li><a href="/Weblog/javascript/33个概念.html" class="sidebar-link">JavaScript开发者应懂的33个概念</a></li><li><a href="/Weblog/javascript/js备忘录.html" class="sidebar-link">JS备忘录</a></li><li><a href="/Weblog/javascript/js概念.html" class="sidebar-link">JS 概念</a></li><li><a href="/Weblog/javascript/片段和trick.html" class="active sidebar-link">片段和trick</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#浮点数取整" class="sidebar-link">浮点数取整</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#生成6位数字验证码" class="sidebar-link">生成6位数字验证码</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#_16进制颜色代码生成" class="sidebar-link">16进制颜色代码生成</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#驼峰命名转下划线" class="sidebar-link">驼峰命名转下划线</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#url查询参数转json格式" class="sidebar-link">url查询参数转json格式</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#获取url参数" class="sidebar-link">获取URL参数</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#n维数组展开成一维数组" class="sidebar-link">n维数组展开成一维数组</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#日期格式化" class="sidebar-link">日期格式化</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#统计文字个数" class="sidebar-link">统计文字个数</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#特殊字符转义" class="sidebar-link">特殊字符转义</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#动态插入js" class="sidebar-link">动态插入js</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#格式化数量" class="sidebar-link">格式化数量</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#身份证验证" class="sidebar-link">身份证验证</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#测试质数" class="sidebar-link">测试质数</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#统计字符串中相同字符出现的次数" class="sidebar-link">统计字符串中相同字符出现的次数</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#使用void-0来解决undefined被污染问题" class="sidebar-link">使用void 0来解决undefined被污染问题</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#单行写一个评级组件" class="sidebar-link">单行写一个评级组件</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#javascript-错误处理的方式的正确姿势" class="sidebar-link">JavaScript 错误处理的方式的正确姿势</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#匿名函数自执行写法" class="sidebar-link">匿名函数自执行写法</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#两个整数交换数值" class="sidebar-link">两个整数交换数值</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#数字字符转数字" class="sidebar-link">数字字符转数字</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#最短的代码实现数组去重" class="sidebar-link">最短的代码实现数组去重</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#用最短的代码实现一个长度为m-6-且值都n-8-的数组" class="sidebar-link">用最短的代码实现一个长度为m(6)且值都n(8)的数组</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#将argruments对象转换成数组" class="sidebar-link">将argruments对象转换成数组</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#获取日期时间缀" class="sidebar-link">获取日期时间缀</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#使用-x-indexof-y-来简化x-indexof-y-1" class="sidebar-link">使用~x.indexOf('y')来简化x.indexOf('y') &gt; -1</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#parseint-or-number" class="sidebar-link">parseInt() or Number()</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#拼接操作，-x-or-string-x-？" class="sidebar-link">+拼接操作，+x or String(x)？</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#判断对象的实例" class="sidebar-link">判断对象的实例</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#数据安全类型检查" class="sidebar-link">数据安全类型检查</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#让数字的字面值看起来像对象" class="sidebar-link">让数字的字面值看起来像对象</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#对象可计算属性名-仅在es6中" class="sidebar-link">对象可计算属性名(仅在ES6中)</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#数字四舍五入" class="sidebar-link">数字四舍五入</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#在浏览器中根据url下载文件" class="sidebar-link">在浏览器中根据url下载文件</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#快速生成uuid" class="sidebar-link">快速生成UUID</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#javascript浮点数精度问题" class="sidebar-link">JavaScript浮点数精度问题</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#格式化表单数据" class="sidebar-link">格式化表单数据</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#创建指定长度非空数组" class="sidebar-link">创建指定长度非空数组</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#debounce方法" class="sidebar-link">debounce方法</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/片段和trick.html#判断客户端" class="sidebar-link">判断客户端</a></li></ul></li><li><a href="/Weblog/javascript/常用正则.html" class="sidebar-link">常用正则表达式</a></li><li><a href="/Weblog/javascript/处理异步的方法.html" class="sidebar-link">处理异步的方法</a></li><li><a href="/Weblog/javascript/字符串.html" class="sidebar-link">字符串</a></li><li><a href="/Weblog/javascript/数组.html" class="sidebar-link">数组</a></li><li><a href="/Weblog/javascript/typeof instanceof.html" class="sidebar-link">typeof  &amp;&amp; instanceof</a></li><li><a href="/Weblog/javascript/浅谈 JSON.html" class="sidebar-link">浅谈 JSON</a></li><li><a href="/Weblog/javascript/详解闭包.html" class="sidebar-link">详解闭包</a></li><li><a href="/Weblog/javascript/执行上下文.html" class="sidebar-link">执行上下文</a></li><li><a href="/Weblog/javascript/this.html" class="sidebar-link">this</a></li><li><a href="/Weblog/javascript/深浅拷贝.html" class="sidebar-link">深浅拷贝</a></li><li><a href="/Weblog/javascript/面向对象.html" class="sidebar-link">面向对象</a></li><li><a href="/Weblog/javascript/继承方式.html" class="sidebar-link">继承方式</a></li><li><a href="/Weblog/javascript/节流防抖.html" class="sidebar-link">节流防抖</a></li><li><a href="/Weblog/javascript/Promise.html" class="sidebar-link">Promise</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="片段和trick">片段和trick</h1><p><a href="../images/JS.pdf">JS.pdf</a></p><p><img src="/Weblog/assets/img/d365afdb5a8b6ddda9c55042b9ff83fd_th.abc26923.jpg" alt></p><h2 id="浮点数取整">浮点数取整</h2><div class="language- extra-class"><pre class="language-text"><code>const x = 123.4545;
+x &gt;&gt; 0; // 123
+~~x; // 123
+x | 0; // 123
+Math.floor(x); // 123
+</code></pre></div><blockquote><p>注意：前三种方法只适用于32个位整数，对于负数的处理上和<code>Math.floor</code>是不同的。</p><div class="language- extra-class"><pre class="language-text"><code>Math.floor(-12.53); // -13
+-12.53 | 0; // -12
+</code></pre></div></blockquote><h2 id="生成6位数字验证码">生成6位数字验证码</h2><div class="language- extra-class"><pre class="language-text"><code>// 方法一
+('000000' + Math.floor(Math.random() *  999999)).slice(-6);
+
+// 方法二
+Math.random().toString().slice(-6);
+
+// 方法三
+Math.random().toFixed(6).slice(-6);
+
+// 方法四
+'' + Math.floor(Math.random() * 999999);
+</code></pre></div><h2 id="_16进制颜色代码生成">16进制颜色代码生成</h2><div class="language- extra-class"><pre class="language-text"><code>(function() {
+  return '#'+('00000'+
+    (Math.random()*0x1000000&lt;&lt;0).toString(16)).slice(-6);
+})();
+</code></pre></div><h2 id="驼峰命名转下划线">驼峰命名转下划线</h2><div class="language- extra-class"><pre class="language-text"><code>'componentMapModelRegistry'.match(/^[a-z][a-z0-9]+|[A-Z][a-z0-9]*/g).join('_').toLowerCase(); // component_map_model_registry
+</code></pre></div><h2 id="url查询参数转json格式">url查询参数转json格式</h2><div class="language- extra-class"><pre class="language-text"><code>// ES6
+const query = (search = '') =&gt; ((querystring = '') =&gt; (q =&gt; (querystring.split('&amp;').forEach(item =&gt; (kv =&gt; kv[0] &amp;&amp; (q[kv[0]] = kv[1]))(item.split('='))), q))({}))(search.split('?')[1]);
+
+// 对应ES5实现
+var query = function(search) {
+  if (search === void 0) { search = ''; }
+  return (function(querystring) {
+    if (querystring === void 0) { querystring = ''; }
+    return (function(q) {
+      return (querystring.split('&amp;').forEach(function(item) {
+        return (function(kv) {
+          return kv[0] &amp;&amp; (q[kv[0]] = kv[1]);
+        })(item.split('='));
+      }), q);
+    })({});
+  })(search.split('?')[1]);
+};
+
+query('?key1=value1&amp;key2=value2'); // es6.html:14 {key1: &quot;value1&quot;, key2: &quot;value2&quot;}
+</code></pre></div><h2 id="获取url参数">获取URL参数</h2><div class="language- extra-class"><pre class="language-text"><code>function getQueryString(key){
+  var reg = new RegExp(&quot;(^|&amp;)&quot;+ key +&quot;=([^&amp;]*)(&amp;|$)&quot;);
+  var r = window.location.search.substr(1).match(reg);
+  if(r!=null){
+      return  unescape(r[2]);
+  }
+  return null;
+}
+</code></pre></div><h2 id="n维数组展开成一维数组">n维数组展开成一维数组</h2><div class="language- extra-class"><pre class="language-text"><code>var foo = [1, [2, 3], ['4', 5, ['6',7,[8]]], [9], 10];
+
+// 方法一
+// 限制：数组项不能出现`,`，同时数组项全部变成了字符数字
+foo.toString().split(','); // [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;]
+
+// 方法二
+// 转换后数组项全部变成数字了
+eval('[' + foo + ']'); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// 方法三，使用ES6展开操作符
+// 写法太过麻烦，太过死板
+[1, ...[2, 3], ...['4', 5, ...['6',7,...[8]]], ...[9], 10]; // [1, 2, 3, &quot;4&quot;, 5, &quot;6&quot;, 7, 8, 9, 10]
+
+// 方法四
+JSON.parse(`[${JSON.stringify(foo).replace(/\[|]/g, '')}]`); // [1, 2, 3, &quot;4&quot;, 5, &quot;6&quot;, 7, 8, 9, 10]
+
+// 方法五
+const flatten = (ary) =&gt; ary.reduce((a, b) =&gt; a.concat(Array.isArray(b) ? flatten(b) : b), []);
+flatten(foo); // [1, 2, 3, &quot;4&quot;, 5, &quot;6&quot;, 7, 8, 9, 10]
+
+// 方法六
+function flatten(a) {
+  return Array.isArray(a) ? [].concat(...a.map(flatten)) : a;
+}
+flatten(foo); // [1, 2, 3, &quot;4&quot;, 5, &quot;6&quot;, 7, 8, 9, 10]
+</code></pre></div><blockquote><p>注：更多方法请参考<a href="https://stackoverflow.com/questions/27266550/how-to-flatten-nested-array-in-javascript" target="_blank" rel="noopener noreferrer">《How to flatten nested array in JavaScript?》<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote><h2 id="日期格式化">日期格式化</h2><div class="language- extra-class"><pre class="language-text"><code>// 方法一
+function format1(x, y) {
+  var z = {
+    y: x.getFullYear(),
+    M: x.getMonth() + 1,
+    d: x.getDate(),
+    h: x.getHours(),
+    m: x.getMinutes(),
+    s: x.getSeconds()
+  };
+  return y.replace(/(y+|M+|d+|h+|m+|s+)/g, function(v) {
+    return ((v.length &gt; 1 ? &quot;0&quot; : &quot;&quot;) + eval('z.' + v.slice(-1))).slice(-(v.length &gt; 2 ? v.length : 2))
+  });
+}
+
+format1(new Date(), 'yy-M-d h:m:s'); // 17-10-14 22:14:41
+
+// 方法二
+Date.prototype.format = function (fmt) { 
+  var o = {
+    &quot;M+&quot;: this.getMonth() + 1, //月份 
+    &quot;d+&quot;: this.getDate(), //日 
+    &quot;h+&quot;: this.getHours(), //小时 
+    &quot;m+&quot;: this.getMinutes(), //分 
+    &quot;s+&quot;: this.getSeconds(), //秒 
+    &quot;q+&quot;: Math.floor((this.getMonth() + 3) / 3), //季度 
+    &quot;S&quot;: this.getMilliseconds() //毫秒 
+  };
+  if (/(y+)/.test(fmt)){
+    fmt = fmt.replace(RegExp.$1, (this.getFullYear() + &quot;&quot;).substr(4 - RegExp.$1.length));
+  } 
+  for (var k in o){
+    if (new RegExp(&quot;(&quot; + k + &quot;)&quot;).test(fmt)){
+      fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : ((&quot;00&quot; + o[k]).substr((&quot;&quot; + o[k]).length)));
+    }
+  }     
+  return fmt;
+}
+
+new Date().format('yy-M-d h:m:s'); // 17-10-14 22:18:17
+</code></pre></div><h2 id="统计文字个数">统计文字个数</h2><div class="language- extra-class"><pre class="language-text"><code>function wordCount(data) {
+  var pattern = /[a-zA-Z0-9_\u0392-\u03c9]+|[\u4E00-\u9FFF\u3400-\u4dbf\uf900-\ufaff\u3040-\u309f\uac00-\ud7af]+/g;
+  var m = data.match(pattern);
+  var count = 0;
+  if( m === null ) return count;
+  for (var i = 0; i &lt; m.length; i++) {
+    if (m[i].charCodeAt(0) &gt;= 0x4E00) {
+      count += m[i].length;
+    } else {
+      count += 1;
+    }
+  }
+  return count;
+}
+
+var text = '贷款买房，也意味着你能给自己的资产加杠杆，能够撬动更多的钱，来孳生更多的财务性收入。';
+wordCount(text); // 38
+</code></pre></div><h2 id="特殊字符转义">特殊字符转义</h2><div class="language- extra-class"><pre class="language-text"><code>function htmlspecialchars (str) {
+  var str = str.toString().replace(/&amp;/g, &quot;&amp;amp;&quot;).replace(/&lt;/g, &quot;&amp;lt;&quot;).replace(/&gt;/g, &quot;&amp;gt;&quot;).replace(/&quot;/g, '&amp;quot;');
+  return str;
+}
+
+htmlspecialchars('&amp;jfkds&lt;&gt;'); // &quot;&amp;amp;jfkds&amp;lt;&amp;gt;&quot;
+</code></pre></div><h2 id="动态插入js">动态插入js</h2><div class="language- extra-class"><pre class="language-text"><code>function injectScript(src) {
+    var s, t;
+    s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = src;
+    t = document.getElementsByTagName('script')[0];
+    t.parentNode.insertBefore(s, t);
+}
+</code></pre></div><h2 id="格式化数量">格式化数量</h2><div class="language- extra-class"><pre class="language-text"><code>// 方法一
+function formatNum (num, n) {
+  if (typeof num == &quot;number&quot;) {
+    num = String(num.toFixed(n || 0));
+    var re = /(-?\d+)(\d{3})/;
+    while (re.test(num)) num = num.replace(re, &quot;$1,$2&quot;);
+    return num;
+  }
+  return num;
+}
+
+formatNum(2313123, 3); // &quot;2,313,123.000&quot;
+
+// 方法二
+'2313123'.replace(/\B(?=(\d{3})+(?!\d))/g, ','); // &quot;2,313,123&quot;
+
+// 方法三
+function formatNum(str) {
+  return str.split('').reverse().reduce((prev, next, index) =&gt; {
+    return ((index % 3) ? next : (next + ',')) + prev
+  });
+}
+
+formatNum('2313323'); // &quot;2,313,323&quot;
+</code></pre></div><h2 id="身份证验证">身份证验证</h2><div class="language- extra-class"><pre class="language-text"><code>function chechCHNCardId(sNo) {
+  if (!this.regExpTest(sNo, /^[0-9]{17}[X0-9]$/)) {
+    return false;
+  }
+  sNo = sNo.toString();
+
+  var a, b, c;
+  a = parseInt(sNo.substr(0, 1)) * 7 + parseInt(sNo.substr(1, 1)) * 9 + parseInt(sNo.substr(2, 1)) * 10;
+  a = a + parseInt(sNo.substr(3, 1)) * 5 + parseInt(sNo.substr(4, 1)) * 8 + parseInt(sNo.substr(5, 1)) * 4;
+  a = a + parseInt(sNo.substr(6, 1)) * 2 + parseInt(sNo.substr(7, 1)) * 1 + parseInt(sNo.substr(8, 1)) * 6;
+  a = a + parseInt(sNo.substr(9, 1)) * 3 + parseInt(sNo.substr(10, 1)) * 7 + parseInt(sNo.substr(11, 1)) * 9;
+  a = a + parseInt(sNo.substr(12, 1)) * 10 + parseInt(sNo.substr(13, 1)) * 5 + parseInt(sNo.substr(14, 1)) * 8;
+  a = a + parseInt(sNo.substr(15, 1)) * 4 + parseInt(sNo.substr(16, 1)) * 2;
+  b = a % 11;
+
+  if (b == 2) {
+    c = sNo.substr(17, 1).toUpperCase();
+  } else {
+    c = parseInt(sNo.substr(17, 1));
+  }
+
+  switch (b) {
+    case 0:
+      if (c != 1) {
+        return false;
+      }
+      break;
+    case 1:
+      if (c != 0) {
+        return false;
+      }
+      break;
+    case 2:
+      if (c != &quot;X&quot;) {
+        return false;
+      }
+      break;
+    case 3:
+      if (c != 9) {
+        return false;
+      }
+      break;
+    case 4:
+      if (c != 8) {
+        return false;
+      }
+      break;
+    case 5:
+      if (c != 7) {
+        return false;
+      }
+      break;
+    case 6:
+      if (c != 6) {
+        return false;
+      }
+      break;
+    case 7:
+      if (c != 5) {
+        return false;
+      }
+      break;
+    case 8:
+      if (c != 4) {
+        return false;
+      }
+      break;
+    case 9:
+      if (c != 3) {
+        return false;
+      }
+      break;
+    case 10:
+      if (c != 2) {
+        return false;
+      };
+  }
+  return true;
+}
+</code></pre></div><h2 id="测试质数">测试质数</h2><div class="language- extra-class"><pre class="language-text"><code>function isPrime(n) {
+  return !(/^.?$|^(..+?)\1+$/).test('1'.repeat(n))
+}
+</code></pre></div><h2 id="统计字符串中相同字符出现的次数">统计字符串中相同字符出现的次数</h2><div class="language- extra-class"><pre class="language-text"><code>var arr = 'abcdaabc';
+
+var info = arr
+    .split('')
+    .reduce((p, k) =&gt; (p[k]++ || (p[k] = 1), p), {});
+
+console.log(info); //{ a: 3, b: 2, c: 2, d: 1 }
+</code></pre></div><h2 id="使用void-0来解决undefined被污染问题">使用<code>void 0</code>来解决<code>undefined</code>被污染问题</h2><div class="language- extra-class"><pre class="language-text"><code>undefined = 1;
+!!undefined; // true
+!!void(0); // false
+</code></pre></div><h2 id="单行写一个评级组件">单行写一个评级组件</h2><div class="language- extra-class"><pre class="language-text"><code>&quot;★★★★★☆☆☆☆☆&quot;.slice(5 - rate, 10 - rate);
+</code></pre></div><h2 id="javascript-错误处理的方式的正确姿势">JavaScript 错误处理的方式的正确姿势</h2><div class="language- extra-class"><pre class="language-text"><code>try {
+    something
+} catch (e) {
+    window.location.href =
+        &quot;http://stackoverflow.com/search?q=[js]+&quot; +
+        e.message;
+}
+</code></pre></div><h2 id="匿名函数自执行写法">匿名函数自执行写法</h2><div class="language- extra-class"><pre class="language-text"><code>( function() {}() );
+( function() {} )();
+[ function() {}() ];
+
+~ function() {}();
+! function() {}();
++ function() {}();
+- function() {}();
+
+delete function() {}();
+typeof function() {}();
+void function() {}();
+new function() {}();
+new function() {};
+
+var f = function() {}();
+
+1, function() {}();
+1 ^ function() {}();
+1 &gt; function() {}();
+</code></pre></div><h2 id="两个整数交换数值">两个整数交换数值</h2><div class="language- extra-class"><pre class="language-text"><code>var a = 20, b = 30;
+a ^= b;
+b ^= a;
+a ^= b;
+
+a; // 30
+b; // 20
+</code></pre></div><h2 id="数字字符转数字">数字字符转数字</h2><div class="language- extra-class"><pre class="language-text"><code>var a = '1';
++a; // 1
+</code></pre></div><h2 id="最短的代码实现数组去重">最短的代码实现数组去重</h2><div class="language- extra-class"><pre class="language-text"><code>[...new Set([1, &quot;1&quot;, 2, 1, 1, 3])]; // [1, &quot;1&quot;, 2, 3]
+</code></pre></div><h2 id="用最短的代码实现一个长度为m-6-且值都n-8-的数组">用最短的代码实现一个长度为m(6)且值都n(8)的数组</h2><div class="language- extra-class"><pre class="language-text"><code>Array(6).fill(8); // [8, 8, 8, 8, 8, 8]
+</code></pre></div><h2 id="将argruments对象转换成数组">将argruments对象转换成数组</h2><div class="language- extra-class"><pre class="language-text"><code>var argArray = Array.prototype.slice.call(arguments);
+
+// ES6：
+var argArray = Array.from(arguments)
+
+// or
+var argArray = [...arguments];
+</code></pre></div><h2 id="获取日期时间缀">获取日期时间缀</h2><div class="language- extra-class"><pre class="language-text"><code>// 获取指定时间的时间缀
+new Date().getTime();
+(new Date()).getTime();
+(new Date).getTime();
+// 获取当前的时间缀
+Date.now();
+// 日期显示转换为数字
++new Date();
+</code></pre></div><h2 id="使用-x-indexof-y-来简化x-indexof-y-1">使用<code>~x.indexOf('y')</code>来简化<code>x.indexOf('y') &gt; -1</code></h2><div class="language- extra-class"><pre class="language-text"><code>var str = 'hello world';
+if (str.indexOf('lo') &gt; -1) {
+  // ...
+}
+
+if (~str.indexOf('lo')) {
+  // ...
+}
+</code></pre></div><h2 id="parseint-or-number"><code>parseInt()</code> or <code>Number()</code></h2><p>两者的差别之处在于<strong>解析</strong>和<strong>转换</strong>两者之间的理解。</p><p>解析<strong>允许</strong>字符串中含有非数字字符，解析按从左到右的顺序，如果遇到非数字字符就停止。而转换<strong>不允许</strong>出现非数字字符，否者会失败并返回NaN。</p><div class="language- extra-class"><pre class="language-text"><code>var a = '520';
+var b = '520px';
+
+Number(a); // 520
+parseInt(a); // 520
+
+Number(b); // NaN
+parseInt(b); // 520
+</code></pre></div><p><code>parseInt</code>方法第二个参数用于指定转换的基数，ES5默认为10进制。</p><div class="language- extra-class"><pre class="language-text"><code>parseInt('10', 2); // 2
+parseInt('10', 8); // 8
+parseInt('10', 10); // 10
+parseInt('10', 16);  // 16
+</code></pre></div><p>对于网上<code>parseInt(0.0000008)</code>的结果为什么为8，原因在于0.0000008转换成字符为&quot;8e-7&quot;，然后根据<code>parseInt</code>的解析规则自然得到&quot;8&quot;这个结果。</p><h2 id="拼接操作，-x-or-string-x-？"><code>+</code>拼接操作，<code>+x</code> or <code>String(x)</code>？</h2><p>+运算符可用于数字加法，同时也可以用于字符串拼接。如果+的其中一个操作符是字符串(或者通过 隐式强制转换可以得到字符串)，则执行字符串拼接；否者执行数字加法。</p><p>需要注意的时对于数组而言，不能通过<code>valueOf()</code>方法得到简单基本类型值，于是转而调用<code>toString()</code>方法。</p><div class="language- extra-class"><pre class="language-text"><code>[1,2] + [3, 4]; // &quot;1,23,4&quot;
+</code></pre></div><p>对于对象同样会先调用<code>valueOf()</code>方法，然后通过<code>toString()</code>方法返回对象的字符串表示。</p><div class="language- extra-class"><pre class="language-text"><code>var a = {};
+a + 123; // &quot;[object Object]123&quot;
+</code></pre></div><p>对于<code>a + &quot;&quot;</code>隐式转换和<code>String(a)</code>显示转换有一个细微的差别：<code>a + ''</code>会对a调用<code>valueOf()</code>方法，而<code>String()</code>直接调用<code>toString()</code>方法。大多数情况下我们不会考虑这个问题，除非真遇到。</p><div class="language- extra-class"><pre class="language-text"><code>var a  = {
+  valueOf: function() { return 42; },
+  toString: function() { return 4; }
+}
+
+a + ''; // 42
+String(a); // 4
+</code></pre></div><h2 id="判断对象的实例">判断对象的实例</h2><div class="language- extra-class"><pre class="language-text"><code>// 方法一: ES3
+function Person(name, age) {
+  if (!(this instanceof Person)) {
+    return new Person(name, age);
+  }
+  this.name = name;
+  this.age = age;
+}
+
+// 方法二: ES5
+function Person(name, age) {
+  var self = this instanceof Person ? this : Object.create(Person.prototype);
+  self.name = name;
+  self.age = age;
+
+  return self;
+}
+
+// 方法三：ES6
+function Person(name, age) {
+  if (!new.target) {
+    throw 'Peron must called with new';
+  }
+  this.name = name;
+  this.age = age;
+}
+</code></pre></div><h2 id="数据安全类型检查">数据安全类型检查</h2><div class="language- extra-class"><pre class="language-text"><code>// 对象
+function isObject(value) {
+  return Object.prototype.toString.call(value).slice(8, -1) === 'Object'';
+}
+
+// 数组
+function isArray(value) {
+  return Object.prototype.toString.call(value).slice(8, -1) === 'Array';
+}
+
+// 函数
+function isFunction(value) {
+  return Object.prototype.toString.call(value).slice(8, -1) === 'Function';
+}
+</code></pre></div><h2 id="让数字的字面值看起来像对象">让数字的字面值看起来像对象</h2><div class="language- extra-class"><pre class="language-text"><code>2.toString(); // Uncaught SyntaxError: Invalid or unexpected token
+
+2..toString(); // 第二个点号可以正常解析
+2 .toString(); // 注意点号前面的空格
+(2).toString(); // 2先被计算
+</code></pre></div><h2 id="对象可计算属性名-仅在es6中">对象可计算属性名(仅在ES6中)</h2><div class="language- extra-class"><pre class="language-text"><code>var suffix = ' name';
+var person = {
+  ['first' + suffix]: 'Nicholas',
+  ['last' + suffix]: 'Zakas'
+}
+
+person['first name']; // &quot;Nicholas&quot;
+person['last name']; // &quot;Zakas&quot;
+</code></pre></div><h2 id="数字四舍五入">数字四舍五入</h2><div class="language- extra-class"><pre class="language-text"><code>// v: 值，p: 精度
+function (v, p) {
+  p = Math.pow(10, p &gt;&gt;&gt; 31 ? 0 : p | 0)
+  v *= p;
+  return (v + 0.5 + (v &gt;&gt; 31) | 0) / p
+}
+
+round(123.45353, 2); // 123.45
+</code></pre></div><h2 id="在浏览器中根据url下载文件">在浏览器中根据url下载文件</h2><div class="language- extra-class"><pre class="language-text"><code>function download(url) {
+  var isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') &gt; -1;
+  var isSafari = navigator.userAgent.toLowerCase().indexOf('safari') &gt; -1;
+
+  if (isChrome || isSafari) {
+    var link = document.createElement('a');
+    link.href = url;
+
+    if (link.download !== undefined) {
+      var fileName = url.substring(url.lastIndexOf('/') + 1, url.length);
+      link.download = fileName;
+    }
+
+    if (document.createEvent) {
+      var e = document.createEvent('MouseEvents');
+      e.initEvent('click', true, true);
+      link.dispatchEvent(e);
+      return true;
+    }
+  }
+
+  if (url.indexOf('?') === -1) {
+    url += '?download';
+  }
+
+  window.open(url, '_self');
+  return true;
+}
+</code></pre></div><h2 id="快速生成uuid">快速生成UUID</h2><div class="language- extra-class"><pre class="language-text"><code>function uuid() {
+  var d = new Date().getTime();
+  var uuid = 'xxxxxxxxxxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = (d + Math.random() * 16) % 16 | 0;
+    d = Math.floor(d / 16);
+    return (c == 'x' ? r : (r &amp; 0x3 | 0x8)).toString(16);
+  });
+  return uuid;
+};
+
+uuid(); // &quot;33f7f26656cb-499b-b73e-89a921a59ba6&quot;
+</code></pre></div><h2 id="javascript浮点数精度问题">JavaScript浮点数精度问题</h2><div class="language- extra-class"><pre class="language-text"><code>function isEqual(n1, n2, epsilon) {
+  epsilon = epsilon == undefined ? 10 : epsilon; // 默认精度为10
+  return n1.toFixed(epsilon) === n2.toFixed(epsilon);
+}
+
+0.1 + 0.2; // 0.30000000000000004
+isEqual(0.1 + 0.2, 0.3); // true
+
+0.7 + 0.1 + 99.1 + 0.1; // 99.99999999999999
+isEqual(0.7 + 0.1 + 99.1 + 0.1, 100); // true
+</code></pre></div><h2 id="格式化表单数据">格式化表单数据</h2><div class="language- extra-class"><pre class="language-text"><code>function formatParam(obj) {
+  var query = '', name, value, fullSubName, subName, subValue, innerObj, i;
+
+  for(name in obj) {
+    value = obj[name];
+
+    if(value instanceof Array) {
+      for(i=0; i&lt;value.length; ++i) {
+        subValue = value[i];
+        fullSubName = name + '[' + i + ']';
+        innerObj = {};
+        innerObj[fullSubName] = subValue;
+        query += formatParam(innerObj) + '&amp;';
+      }
+    }
+    else if(value instanceof Object) {
+      for(subName in value) {
+        subValue = value[subName];
+        fullSubName = name + '[' + subName + ']';
+        innerObj = {};
+        innerObj[fullSubName] = subValue;
+        query += formatParam(innerObj) + '&amp;';
+      }
+    }
+    else if(value !== undefined &amp;&amp; value !== null)
+      query += encodeURIComponent(name) + '=' + encodeURIComponent(value) + '&amp;';
+  }
+  return query.length ? query.substr(0, query.length - 1) : query;
+}
+
+var param = {
+  name: 'jenemy',
+  likes: [0, 1, 3],
+  memberCard: [
+    { title: '1', id: 1 },
+    { title: '2', id: 2 }
+  ]
+}
+
+formatParam(param); // &quot;name=12&amp;likes%5B0%5D=0&amp;likes%5B1%5D=1&amp;likes%5B2%5D=3&amp;memberCard%5B0%5D%5Btitle%5D=1&amp;memberCard%5B0%5D%5Bid%5D=1&amp;memberCard%5B1%5D%5Btitle%5D=2&amp;memberCard%5B1%5D%5Bid%5D=2&quot;
+</code></pre></div><h2 id="创建指定长度非空数组">创建指定长度非空数组</h2><p>在JavaScript中可以通过<code>new Array(3)</code>的形式创建一个长度为3的空数组。在老的Chrome中其值为[undefined x 3]，在最新的Chrome中为[empty x 3]，即空单元数组。在老Chrome中，相当于显示使用<code>[undefined, undefined, undefined]</code>的方式创建长度为3的数组。</p><p>但是，两者在调用<code>map()</code>方法的结果是明显不同的</p><div class="language- extra-class"><pre class="language-text"><code>var a = new Array(3);
+var b = [undefined, undefined, undefined];
+
+a.map((v, i) =&gt; i); // [empty × 3]
+b.map((v, i) =&gt; i); // [0, 1, 2]
+</code></pre></div><p>多数情况我们期望创建的是包含<code>undefined</code>值的指定长度的空数组，可以通过下面这种方法来达到目的：</p><div class="language- extra-class"><pre class="language-text"><code>var a = Array.apply(null, { length: 3 });
+
+a; // [undefined, undefined, undefined]
+a.map((v, i) =&gt; i); // [0, 1, 2]
+</code></pre></div><p>总之，尽量不要创建和使用空单元数组。</p><h2 id="debounce方法">debounce方法</h2><p><code>debounce()</code>方法用来延迟执行函数。</p><div class="language- extra-class"><pre class="language-text"><code>var debounce = function (func, threshold, execAsap) {
+  var timeout;
+
+  return function debounced() {
+    var obj = this, args = arguments;
+    function delayed() {
+      if (!execAsap)
+        func.apply(obj, args);
+      timeout = null;
+    };
+
+    if (timeout)
+      clearTimeout(timeout);
+    else if (execAsap)
+      func.apply(obj, args);
+
+    timeout = setTimeout(delayed, threshold || 100);
+  };
+}
+</code></pre></div><h2 id="判断客户端">判断客户端</h2><div class="language- extra-class"><pre class="language-text"><code>var browser = {
+    v: (function() {
+        var u = navigator.userAgent,
+            app = navigator.appVersion,
+            p = navigator.platform;
+        return {
+            trident: u.indexOf('Trident') &gt; -1, //IE内核
+            presto: u.indexOf('Presto') &gt; -1, //opera内核
+            webKit: u.indexOf('AppleWebKit') &gt; -1, //苹果、谷歌内核
+            gecko: u.indexOf('Gecko') &gt; -1 &amp;&amp; u.indexOf('KHTML') == -1, //火狐内核
+            mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+            ios: !!u.match(/i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+            android: u.indexOf('Android') &gt; -1 || u.indexOf('Linux') &gt; -1, //android终端或uc浏览器
+            iPhone: u.indexOf('iPhone') &gt; -1, //是否为iPhone或者QQHD浏览器
+            iPad: u.indexOf('iPad') &gt; -1, //是否iPad
+            weixin: u.indexOf('MicroMessenger') &gt; -1, //是否微信
+            webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+            UCB: u.match(/UCBrowser/i) == &quot;UCBrowser&quot;,
+            QQB: u.match(/MQQBrowser/i) == &quot;MQQBrowser&quot;,
+            win: p.indexOf('Win') &gt; -1, //判断是否是WIN操作系统
+            mac: p.indexOf('Mac') &gt; -1 //判断是否是Mac操作系统
+        };
+    })()
+}
+</code></pre></div><p>Now, let's try it 👉</p></div><div class="page-edit"><!----><!----></div><!----></div></div></div>
+    <script src="/Weblog/assets/js/app.bc17a3fe.js" defer></script><script src="/Weblog/assets/js/15.c3d91b4b.js" defer></script>
+  </body>
+</html>

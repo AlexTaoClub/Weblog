@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>搭建 Java Web 项目运行环境 | AlexTao 的 博客</title>
+    <meta name="description" content="In doing we learn.">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/Weblog/assets/css/styles.bc17a3fe.css" as="style"><link rel="preload" href="/Weblog/assets/js/app.bc17a3fe.js" as="script"><link rel="preload" href="/Weblog/assets/js/31.4d5d63f6.js" as="script"><link rel="prefetch" href="/Weblog/assets/css/16.styles.2339a627.css"><link rel="prefetch" href="/Weblog/assets/css/5.styles.c1152841.css"><link rel="prefetch" href="/Weblog/assets/css/7.styles.1f4a6057.css"><link rel="prefetch" href="/Weblog/assets/css/8.styles.5b6e1357.css"><link rel="prefetch" href="/Weblog/assets/js/0.a8dcd889.js"><link rel="prefetch" href="/Weblog/assets/js/10.bbae2931.js"><link rel="prefetch" href="/Weblog/assets/js/100.b8573d34.js"><link rel="prefetch" href="/Weblog/assets/js/101.abec8cfc.js"><link rel="prefetch" href="/Weblog/assets/js/102.79aa7798.js"><link rel="prefetch" href="/Weblog/assets/js/11.249c3d32.js"><link rel="prefetch" href="/Weblog/assets/js/12.6c4f9a9d.js"><link rel="prefetch" href="/Weblog/assets/js/13.9c3a7225.js"><link rel="prefetch" href="/Weblog/assets/js/14.8788763f.js"><link rel="prefetch" href="/Weblog/assets/js/15.c3d91b4b.js"><link rel="prefetch" href="/Weblog/assets/js/16.2339a627.js"><link rel="prefetch" href="/Weblog/assets/js/17.f68b5694.js"><link rel="prefetch" href="/Weblog/assets/js/18.1dc877c8.js"><link rel="prefetch" href="/Weblog/assets/js/19.8d3a8eb9.js"><link rel="prefetch" href="/Weblog/assets/js/2.adb0855b.js"><link rel="prefetch" href="/Weblog/assets/js/20.5b430c8f.js"><link rel="prefetch" href="/Weblog/assets/js/21.7570ba60.js"><link rel="prefetch" href="/Weblog/assets/js/22.c34e9396.js"><link rel="prefetch" href="/Weblog/assets/js/23.d89c70ce.js"><link rel="prefetch" href="/Weblog/assets/js/24.cc87bb5d.js"><link rel="prefetch" href="/Weblog/assets/js/25.024b7a56.js"><link rel="prefetch" href="/Weblog/assets/js/26.0d0e2118.js"><link rel="prefetch" href="/Weblog/assets/js/27.fd65c2c2.js"><link rel="prefetch" href="/Weblog/assets/js/28.e7e81b37.js"><link rel="prefetch" href="/Weblog/assets/js/29.d69a29c6.js"><link rel="prefetch" href="/Weblog/assets/js/3.9c9ae281.js"><link rel="prefetch" href="/Weblog/assets/js/30.e02a9f2a.js"><link rel="prefetch" href="/Weblog/assets/js/32.2652c4b5.js"><link rel="prefetch" href="/Weblog/assets/js/33.f81118fb.js"><link rel="prefetch" href="/Weblog/assets/js/34.6539d2a9.js"><link rel="prefetch" href="/Weblog/assets/js/35.479b4b73.js"><link rel="prefetch" href="/Weblog/assets/js/36.24e9784f.js"><link rel="prefetch" href="/Weblog/assets/js/37.13a7e720.js"><link rel="prefetch" href="/Weblog/assets/js/38.57e7625b.js"><link rel="prefetch" href="/Weblog/assets/js/39.40ddc61b.js"><link rel="prefetch" href="/Weblog/assets/js/4.cb1adf5e.js"><link rel="prefetch" href="/Weblog/assets/js/40.4abade23.js"><link rel="prefetch" href="/Weblog/assets/js/41.03a22716.js"><link rel="prefetch" href="/Weblog/assets/js/42.4bf6acac.js"><link rel="prefetch" href="/Weblog/assets/js/43.7d75114c.js"><link rel="prefetch" href="/Weblog/assets/js/44.a74a0979.js"><link rel="prefetch" href="/Weblog/assets/js/45.224f0ae1.js"><link rel="prefetch" href="/Weblog/assets/js/46.716c0ee0.js"><link rel="prefetch" href="/Weblog/assets/js/47.a44c77ff.js"><link rel="prefetch" href="/Weblog/assets/js/48.c92bc6c3.js"><link rel="prefetch" href="/Weblog/assets/js/49.78d85a96.js"><link rel="prefetch" href="/Weblog/assets/js/5.c1152841.js"><link rel="prefetch" href="/Weblog/assets/js/50.65d4cc82.js"><link rel="prefetch" href="/Weblog/assets/js/51.dfe21a00.js"><link rel="prefetch" href="/Weblog/assets/js/52.a55d1d66.js"><link rel="prefetch" href="/Weblog/assets/js/53.24e5ba30.js"><link rel="prefetch" href="/Weblog/assets/js/54.3d44c9e1.js"><link rel="prefetch" href="/Weblog/assets/js/55.5509d3c1.js"><link rel="prefetch" href="/Weblog/assets/js/56.389f0044.js"><link rel="prefetch" href="/Weblog/assets/js/57.a6410cdf.js"><link rel="prefetch" href="/Weblog/assets/js/58.99de433a.js"><link rel="prefetch" href="/Weblog/assets/js/59.f362327e.js"><link rel="prefetch" href="/Weblog/assets/js/6.829d0e7e.js"><link rel="prefetch" href="/Weblog/assets/js/60.d8a731fd.js"><link rel="prefetch" href="/Weblog/assets/js/61.c32405a4.js"><link rel="prefetch" href="/Weblog/assets/js/62.2cf15697.js"><link rel="prefetch" href="/Weblog/assets/js/63.97976992.js"><link rel="prefetch" href="/Weblog/assets/js/64.df2f0acc.js"><link rel="prefetch" href="/Weblog/assets/js/65.0365fc24.js"><link rel="prefetch" href="/Weblog/assets/js/66.89f67105.js"><link rel="prefetch" href="/Weblog/assets/js/67.4d546178.js"><link rel="prefetch" href="/Weblog/assets/js/68.b3742591.js"><link rel="prefetch" href="/Weblog/assets/js/69.e2c032ec.js"><link rel="prefetch" href="/Weblog/assets/js/7.1f4a6057.js"><link rel="prefetch" href="/Weblog/assets/js/70.f262dfb0.js"><link rel="prefetch" href="/Weblog/assets/js/71.24d5a255.js"><link rel="prefetch" href="/Weblog/assets/js/72.c2fad7bd.js"><link rel="prefetch" href="/Weblog/assets/js/73.e3de86c7.js"><link rel="prefetch" href="/Weblog/assets/js/74.af039d36.js"><link rel="prefetch" href="/Weblog/assets/js/75.b5d26a4d.js"><link rel="prefetch" href="/Weblog/assets/js/76.5253b8d4.js"><link rel="prefetch" href="/Weblog/assets/js/77.13049fae.js"><link rel="prefetch" href="/Weblog/assets/js/78.732e7950.js"><link rel="prefetch" href="/Weblog/assets/js/79.91a95405.js"><link rel="prefetch" href="/Weblog/assets/js/8.5b6e1357.js"><link rel="prefetch" href="/Weblog/assets/js/80.60b08cac.js"><link rel="prefetch" href="/Weblog/assets/js/81.09852d19.js"><link rel="prefetch" href="/Weblog/assets/js/82.49b521d3.js"><link rel="prefetch" href="/Weblog/assets/js/83.681a706a.js"><link rel="prefetch" href="/Weblog/assets/js/84.ca93e702.js"><link rel="prefetch" href="/Weblog/assets/js/85.9813d878.js"><link rel="prefetch" href="/Weblog/assets/js/86.632f014f.js"><link rel="prefetch" href="/Weblog/assets/js/87.7737cd73.js"><link rel="prefetch" href="/Weblog/assets/js/88.1ec9c00d.js"><link rel="prefetch" href="/Weblog/assets/js/89.bbeb975f.js"><link rel="prefetch" href="/Weblog/assets/js/9.c685ce8f.js"><link rel="prefetch" href="/Weblog/assets/js/90.eda536dd.js"><link rel="prefetch" href="/Weblog/assets/js/91.391681fc.js"><link rel="prefetch" href="/Weblog/assets/js/92.dca04870.js"><link rel="prefetch" href="/Weblog/assets/js/93.01d44a2a.js"><link rel="prefetch" href="/Weblog/assets/js/94.f941a99a.js"><link rel="prefetch" href="/Weblog/assets/js/95.232bf755.js"><link rel="prefetch" href="/Weblog/assets/js/96.d381c6e0.js"><link rel="prefetch" href="/Weblog/assets/js/97.2a0ba8ba.js"><link rel="prefetch" href="/Weblog/assets/js/98.001e708c.js"><link rel="prefetch" href="/Weblog/assets/js/99.0ff7167d.js">
+    <link rel="stylesheet" href="/Weblog/assets/css/styles.bc17a3fe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Weblog/" class="home-link router-link-active"><!----><span class="site-name">
+      AlexTao 的 博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link router-link-active">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link router-link-active">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>currency</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Weblog/currency/" aria-current="page" class="sidebar-link">计算机</a></li><li><a href="/Weblog/currency/前端开发规范.html" class="sidebar-link">编码规范</a></li><li><a href="/Weblog/currency/DevOps.html" class="sidebar-link">DevOps</a></li><li><a href="/Weblog/currency/项目自动化部署.html" class="sidebar-link">项目自动化部署</a></li><li><a href="/Weblog/currency/前端安全.html" class="sidebar-link">前端安全</a></li><li><a href="/Weblog/currency/前端算法.html" class="sidebar-link">前端算法</a></li><li><a href="/Weblog/currency/函数实现.html" class="sidebar-link">函数实现</a></li><li><a href="/Weblog/currency/通用函数.html" class="sidebar-link">通用函数</a></li><li><a href="/Weblog/currency/例题总结.html" class="sidebar-link">例题分析 </a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="搭建-java-web-项目运行环境">搭建 Java Web 项目运行环境</h1><p>Java Web 泛指以 Java 程序为基础向外提供 Web 服务的技术及相关工具，狭义上来说，我们也可以说 Java Web 是由 Servlet 程序提供的 Web 服务。 对我们而言，Tomcat 无疑是最常见的 Servlet 容器，所以在这个小节里，我们来搭建一个以 Tomcat 为核心的 Web 应用运行环境。 在这个环境中，我们还要组合进 MySQL 作为数据存储，Redis 作为 KV 存储。</p><h2 id="定义项目结构">定义项目结构</h2><p>与之前我们提及的一样，要搭建这样的由多个程序所协作组成的开发环境，使用 Docker Compose 是最佳的选择。</p><p>建立 Docker Compose 项目之前，我们先来规划一下项目的目录结构。 在开发过程中，我们倾向于将与项目有关的内容集合到同一个文件夹下，这样的做有几点好处：</p><ul><li>项目内容清晰明确，复制、迁移和与他人共享的过程中，不会发生遗漏的情况；</li><li>在定义 Docker Compose 项目时可以使用相对路径，让共享、迁移后整个项目可以不需要额外操作就能运行。</li></ul><p>在这些的基础上，我给出一个建议性的目录结构，供大家参考。</p><div class="language- extra-class"><pre class="language-text"><code>└─ project
+   ├─ app
+   ├─ compose
+   │  └─ docker-compose.yml
+   ├─ mysql
+   │  └─ my.cnf
+   ├─ redis
+   │  └─ redis.conf
+   └─ tomcat
+      ├─ server.xml
+      └─ web.xml
+
+</code></pre></div><p>设计这样一个目录结构的主要目的是将不同程序的配置进行区分，这与我们之后会通过多个程序所关联的镜像及容器来组合这套环境的脉络是相契合的。</p><p>在这个目录结构中，区分了 5 个顶层目录：</p><ul><li><strong>app</strong> ：用于存放程序工程，即代码、编译结果以及相关的库、工具等；</li><li><strong>compose</strong> ：用于定义 Docker Compose 项目；</li><li><strong>mysql</strong> ：与 MySQL 相关配置等内容；</li><li><strong>redis</strong> ：与 Redis 相关配置等内容；</li><li><strong>tomcat</strong> ：与 Tomcat 相关配置等内容。</li></ul><h2 id="准备程序配置">准备程序配置</h2><p>为了更方便在开发过程中对 MySQL、Redis、Tomcat 程序本身，所以我们会将它们的核心配置放置到项目里，再通过挂载的方式映射到容器中。 这样一来，我们就可以直接在我们宿主操作系统里直接修改这些配置，无须再进入到容器中了。</p><p>基于此，我们在完成目录的设计之后，首要解决的问题就是准备好这些程序中会经常变动的配置，并把它们放置在程序对应的目录之中。</p><p>我们常用下列几种方式来获得程序的配置文件：</p><ul><li>借助配置文档直接编写</li><li>下载程序源代码中的配置样例</li><li>通过容器中的默认配置获得</li></ul><p>下面我们来展示一下这几种获取配置的方式。</p><h3 id="借助配置文档直接编写">借助配置文档直接编写</h3><p>这里我们利用 MySQL 文档中配置文件的介绍部分，来编写一个 MySQL 的配置文件。</p><p>我们先找到 MySQL 文档中关于配置文件的参考，也就是下面这个地址：</p><p><a href="https://dev.mysql.com/doc/refman/5.7/en/server-options.html" target="_blank" rel="noopener noreferrer">https://dev.mysql.com/doc/refman/5.7/en/server-options.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p><p>我们根据这些内容，选取跟我们程序运行有影响的几项需要修改的参数，编写成 MySQL 的配置文件。</p><div class="language- extra-class"><pre class="language-text"><code># ./mysql/my.cnf
+
+[mysqld_safe]
+pid-file = /var/run/mysqld/mysqld.pid
+socket   = /var/run/mysqld/mysqld.sock
+nice     = 0
+
+[mysqld]
+skip-host-cache
+skip-name-resolve
+explicit_defaults_for_timestamp
+
+bind-address = 0.0.0.0
+port         = 3306
+
+user      = mysql
+pid-file  = /var/run/mysqld/mysqld.pid
+socket    = /var/run/mysqld/mysqld.sock
+log-error = /var/log/mysql/error.log
+basedir   = /usr
+datadir   = /var/lib/mysql
+tmpdir    = /tmp
+sql_mode  = NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
+
+lc-messages-dir = /usr/share/mysql
+
+symbolic-links = 0
+
+</code></pre></div><p>使用软件的文档来编写配置文件，其优势在于在编写的过程实际上也是我们熟悉软件的过程，通过配置加文档形式的阅读，你一定会从中收获很多。 当然，这种方法也有很大的劣势，即需要仔细阅读文档，劳神劳力，对于常规开发中的使用来说，成效比很低。</p><h3 id="下载程序源代码中的配置样例">下载程序源代码中的配置样例</h3><p>除了通过配置文档来了解软件的配置外，大部分软件，特别是开源软件都会直接给出一份示例配置文件作为参考。 我们可以直接拿到这份配置，达到我们的目的。</p><p>这里我们以 Redis 为例，在 Redis 源代码中，就包含了一份默认的配置文件，我们可以直接拿来使用：</p><p><a href="https://github.com/antirez/redis/blob/3.2/redis.conf" target="_blank" rel="noopener noreferrer">https://github.com/antirez/redis/blob/3.2/redis.conf<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p><p>在拿到这是默认的配置后，我们还可以根据需要对其中的部分配置进行修改，以更好的满足我们的需求。</p><p>这里我们以修改 Redis 的密码为例。 打开配置文件，找到定义 Redis 授权授权的地方，将密码修改为我们需要的内容。</p><div class="language- extra-class"><pre class="language-text"><code># ./redis/redis.conf
+##...
+################################## SECURITY ###################################
+
+# Require clients to issue AUTH &lt;PASSWORD&gt; before processing any other
+# commands.  This might be useful in environments in which you do not trust
+# others with access to the host running redis-server.
+#
+# This should stay commented out for backward compatibility and because most
+# people do not need auth (e.g. they run their own servers).
+#
+# Warning: since Redis is pretty fast an outside user can try up to
+# 150k passwords per second against a good box. This means that you should
+# use a very strong password otherwise it will be very easy to break.
+#
+requirepass my-secret-pw
+##...
+
+</code></pre></div><p>相对于通过配置文档获得配置，从配置示例里获得配置要来得更为简单容易。 但其也有一定的限制，既要对于的程序能够提供这样的示例配置，又要我们能够顺利找到这些配置文件。</p><h3 id="通过容器中的默认配置获得">通过容器中的默认配置获得</h3><p>除了从官方手册或者配置示例中获得配置文件外，我们还有一种远在天边近在眼前的获取配置文件的方法。 大多数 Docker 镜像为了实现自身能够直接启动为容器并马上提供服务，会把默认配置直接打包到镜像中，以便让程序能够直接读取。 所以说，我们可以直接从镜像里拿到这份配置，拷贝到宿主机里备用。</p><p>那么我们就以最后一个尚未出场的 Tomcat 为例，说说如何从 Tomcat 镜像里拿到配置文件。</p><p>要拿到 Tomcat 中的配置文件，我们需要先创建一个临时的 Tomcat 容器。</p><div class="language- extra-class"><pre class="language-text"><code># docker run --rm -d --name temp-tomcat tomcat:8.5 
+
+</code></pre></div><p>这里我们将容器命名为 temp-tomcat 以便我们之后的操作。</p><p>对于 Tomcat 来说，在开发过程中我们可能会经常改动的配置主要是 server.xml 和 web.xml 这两个文件，所以接下来我们就把这两个文件从容器中复制到宿主机里。</p><p>这里我们会用到 <code>docker cp</code> 这个命令，<code>docker cp</code> 能够在容器与宿主机的文件系统间拷贝文件和目录。</p><div class="language- extra-class"><pre class="language-text"><code># docker cp temp-tomcat:/usr/local/tomcat/conf/server.xml ./server.xml
+# docker cp temp-tomcat:/usr/local/tomcat/conf/web.xml ./web.xml
+
+</code></pre></div><p>在这个命令的使用中，几个参数的含义如下：</p><ul><li><strong>temp-tomcat</strong> : 操作的容器。这里我们使用刚才创建的临时容器的容器名来指定。</li><li><strong>/usr/local/tomcat/conf/server.xml</strong> : 需要拷贝的路径。也就是容器中配置文件的路径，这个路径可以通过 <code>docker exec</code> 等命令进到容器里寻觅一下就能获得。</li><li><strong>./server.xml</strong> : 是目标路径。即选择将文件拷贝到宿主机的什么位置上。</li></ul><p>熟悉 Linux 中 cp 命令的朋友会非常容易看懂这个命令，这两者传参的方式是基本一致的。 主要的区别在于 <code>docker cp</code> 命令由于是在容器与宿主机间进行拷贝，所以来源目录或者目标目录中需要指定一下容器。</p><p>上述的命令是从容器中向宿主机里拷贝文件，我们还可以从宿主机中向容器里拷贝文件，只需要调换一下参数的位置即可。</p><div class="language- extra-class"><pre class="language-text"><code># docker cp ./server.xml temp-tomcat:/usr/local/tomcat/conf/server.xml
+
+</code></pre></div><p>回过头来看我们的配置，在执行了上述的命令之后，两个配置文件已经出现在我们系统的目录中了。</p><p>另外，别忘了在完成上面的操作后清理我们创建的临时容器。</p><div class="language- extra-class"><pre class="language-text"><code># docker stop temp-tomcat
+
+</code></pre></div><p>由于我们在创建临时容器的时候增加了 <code>--rm</code> 选项，所以我们在这里只需要使用 <code>docker stop</code> 停止容器，就可以在停止容器的同时直接删除容器，实现直接清理的目的。</p><h2 id="编写-docker-compose-定义文件">编写 Docker Compose 定义文件</h2><p>准备好了程序的配置，我们就可以来编写我们的 Docker Compose 项目定义文件了。</p><p>这里是我编写好的一份 Docker Compose 项目定义文件。</p><div class="language- extra-class"><pre class="language-text"><code>version: &quot;3&quot;
+
+services:
+
+  redis:
+    image: redis:3.2
+    volumes:
+      - ../redis/redis.conf:/etc/redis/redis.conf:ro
+      - ../redis/data:/data
+    command:
+      - redis-server
+      - /etc/redis/redis.conf
+    ports:
+     - 6379:6379
+
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - ../mysql/my.cnf:/etc/mysql/my.cnf:ro
+      - ../mysql/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+    ports:
+      - 3306:3306
+
+  tomcat:
+    image: tomcat:8.5
+    volumes:
+      - ../app:/usr/local/tomcat/webapps/ROOT
+    ports:
+      - 80:8080
+
+</code></pre></div><p>在这个项目里，我将 Redis 和 MySQL 的数据存储目录，也就是 Redis 容器中的 /data 目录和 MySQL 容器中的 /var/lib/mysql 目录通过挂载的方式绑定到了宿主机上的目录中。 这么做的目的是为了让 Redis 和 MySQL 的数据能够持久化存储，避免我们在创建和移除容器时造成数据的流失。</p><p>同时，这种将数据挂载出来的方法，可以直接方便我们打包数据并传送给其他开发者，方便开发过程中进行联调。</p><p>在 Tomcat 这个服务中，我们将程序直接挂载到 webapps/ROOT 目录下，这样我们就能够借助 Tomcat 访问我们的应用了。 如果大家有多个项目，也可以进行适当调整，将它们挂载到 webapps 下面的子目录中，实现同时访问多个应用的目的。</p><p>另外，这里我还把 Tomcat 默认的 8080 端口映射到了宿主机的 80 端口上，这样便于我们直接通过地址访问网站，不需要经常人工补充端口号了。</p><h2 id="启动项目">启动项目</h2><p>一切就绪，我们就可以直接通过 Docker Compose 的命令来启动开发环境了。</p><div class="language- extra-class"><pre class="language-text"><code># docker-compose -p javaweb -f ./compose/docker-compose.yml up -d
+
+</code></pre></div><h2 id="留言互动">留言互动</h2><p>在这节中，我们展示了通过 Docker 搭建一个 Java Web 开发环境的过程，下面就是大家自己动手进行实践的时候了。</p><p>本小节中的示例，已经更新到了：</p><p><a href="https://github.com/youmingdot/docker-book-for-developer-samples" target="_blank" rel="noopener noreferrer">https://github.com/youmingdot/docker-book-for-developer-samples<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p><p>大家可以在实践过程中的用其作为参考。</p><p>欢迎大家通过留言的方式说出你的实践之路。我会选出有代表性的优质留言，推荐给大家。</p><p>同时，如果大家在实践过程中遇到困难，或者有自己的实践心得要与大家分享，可以加入到这本小册的官方微信群中，参与对相关问题的讨论。</p></div><div class="page-edit"><!----><!----></div><!----></div></div></div>
+    <script src="/Weblog/assets/js/app.bc17a3fe.js" defer></script><script src="/Weblog/assets/js/31.4d5d63f6.js" defer></script>
+  </body>
+</html>

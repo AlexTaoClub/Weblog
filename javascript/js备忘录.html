@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS备忘录 | AlexTao 的 博客</title>
+    <meta name="description" content="In doing we learn.">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/Weblog/assets/css/styles.bc17a3fe.css" as="style"><link rel="preload" href="/Weblog/assets/js/app.bc17a3fe.js" as="script"><link rel="preload" href="/Weblog/assets/js/71.24d5a255.js" as="script"><link rel="prefetch" href="/Weblog/assets/css/16.styles.2339a627.css"><link rel="prefetch" href="/Weblog/assets/css/5.styles.c1152841.css"><link rel="prefetch" href="/Weblog/assets/css/7.styles.1f4a6057.css"><link rel="prefetch" href="/Weblog/assets/css/8.styles.5b6e1357.css"><link rel="prefetch" href="/Weblog/assets/js/0.a8dcd889.js"><link rel="prefetch" href="/Weblog/assets/js/10.bbae2931.js"><link rel="prefetch" href="/Weblog/assets/js/100.b8573d34.js"><link rel="prefetch" href="/Weblog/assets/js/101.abec8cfc.js"><link rel="prefetch" href="/Weblog/assets/js/102.79aa7798.js"><link rel="prefetch" href="/Weblog/assets/js/11.249c3d32.js"><link rel="prefetch" href="/Weblog/assets/js/12.6c4f9a9d.js"><link rel="prefetch" href="/Weblog/assets/js/13.9c3a7225.js"><link rel="prefetch" href="/Weblog/assets/js/14.8788763f.js"><link rel="prefetch" href="/Weblog/assets/js/15.c3d91b4b.js"><link rel="prefetch" href="/Weblog/assets/js/16.2339a627.js"><link rel="prefetch" href="/Weblog/assets/js/17.f68b5694.js"><link rel="prefetch" href="/Weblog/assets/js/18.1dc877c8.js"><link rel="prefetch" href="/Weblog/assets/js/19.8d3a8eb9.js"><link rel="prefetch" href="/Weblog/assets/js/2.adb0855b.js"><link rel="prefetch" href="/Weblog/assets/js/20.5b430c8f.js"><link rel="prefetch" href="/Weblog/assets/js/21.7570ba60.js"><link rel="prefetch" href="/Weblog/assets/js/22.c34e9396.js"><link rel="prefetch" href="/Weblog/assets/js/23.d89c70ce.js"><link rel="prefetch" href="/Weblog/assets/js/24.cc87bb5d.js"><link rel="prefetch" href="/Weblog/assets/js/25.024b7a56.js"><link rel="prefetch" href="/Weblog/assets/js/26.0d0e2118.js"><link rel="prefetch" href="/Weblog/assets/js/27.fd65c2c2.js"><link rel="prefetch" href="/Weblog/assets/js/28.e7e81b37.js"><link rel="prefetch" href="/Weblog/assets/js/29.d69a29c6.js"><link rel="prefetch" href="/Weblog/assets/js/3.9c9ae281.js"><link rel="prefetch" href="/Weblog/assets/js/30.e02a9f2a.js"><link rel="prefetch" href="/Weblog/assets/js/31.4d5d63f6.js"><link rel="prefetch" href="/Weblog/assets/js/32.2652c4b5.js"><link rel="prefetch" href="/Weblog/assets/js/33.f81118fb.js"><link rel="prefetch" href="/Weblog/assets/js/34.6539d2a9.js"><link rel="prefetch" href="/Weblog/assets/js/35.479b4b73.js"><link rel="prefetch" href="/Weblog/assets/js/36.24e9784f.js"><link rel="prefetch" href="/Weblog/assets/js/37.13a7e720.js"><link rel="prefetch" href="/Weblog/assets/js/38.57e7625b.js"><link rel="prefetch" href="/Weblog/assets/js/39.40ddc61b.js"><link rel="prefetch" href="/Weblog/assets/js/4.cb1adf5e.js"><link rel="prefetch" href="/Weblog/assets/js/40.4abade23.js"><link rel="prefetch" href="/Weblog/assets/js/41.03a22716.js"><link rel="prefetch" href="/Weblog/assets/js/42.4bf6acac.js"><link rel="prefetch" href="/Weblog/assets/js/43.7d75114c.js"><link rel="prefetch" href="/Weblog/assets/js/44.a74a0979.js"><link rel="prefetch" href="/Weblog/assets/js/45.224f0ae1.js"><link rel="prefetch" href="/Weblog/assets/js/46.716c0ee0.js"><link rel="prefetch" href="/Weblog/assets/js/47.a44c77ff.js"><link rel="prefetch" href="/Weblog/assets/js/48.c92bc6c3.js"><link rel="prefetch" href="/Weblog/assets/js/49.78d85a96.js"><link rel="prefetch" href="/Weblog/assets/js/5.c1152841.js"><link rel="prefetch" href="/Weblog/assets/js/50.65d4cc82.js"><link rel="prefetch" href="/Weblog/assets/js/51.dfe21a00.js"><link rel="prefetch" href="/Weblog/assets/js/52.a55d1d66.js"><link rel="prefetch" href="/Weblog/assets/js/53.24e5ba30.js"><link rel="prefetch" href="/Weblog/assets/js/54.3d44c9e1.js"><link rel="prefetch" href="/Weblog/assets/js/55.5509d3c1.js"><link rel="prefetch" href="/Weblog/assets/js/56.389f0044.js"><link rel="prefetch" href="/Weblog/assets/js/57.a6410cdf.js"><link rel="prefetch" href="/Weblog/assets/js/58.99de433a.js"><link rel="prefetch" href="/Weblog/assets/js/59.f362327e.js"><link rel="prefetch" href="/Weblog/assets/js/6.829d0e7e.js"><link rel="prefetch" href="/Weblog/assets/js/60.d8a731fd.js"><link rel="prefetch" href="/Weblog/assets/js/61.c32405a4.js"><link rel="prefetch" href="/Weblog/assets/js/62.2cf15697.js"><link rel="prefetch" href="/Weblog/assets/js/63.97976992.js"><link rel="prefetch" href="/Weblog/assets/js/64.df2f0acc.js"><link rel="prefetch" href="/Weblog/assets/js/65.0365fc24.js"><link rel="prefetch" href="/Weblog/assets/js/66.89f67105.js"><link rel="prefetch" href="/Weblog/assets/js/67.4d546178.js"><link rel="prefetch" href="/Weblog/assets/js/68.b3742591.js"><link rel="prefetch" href="/Weblog/assets/js/69.e2c032ec.js"><link rel="prefetch" href="/Weblog/assets/js/7.1f4a6057.js"><link rel="prefetch" href="/Weblog/assets/js/70.f262dfb0.js"><link rel="prefetch" href="/Weblog/assets/js/72.c2fad7bd.js"><link rel="prefetch" href="/Weblog/assets/js/73.e3de86c7.js"><link rel="prefetch" href="/Weblog/assets/js/74.af039d36.js"><link rel="prefetch" href="/Weblog/assets/js/75.b5d26a4d.js"><link rel="prefetch" href="/Weblog/assets/js/76.5253b8d4.js"><link rel="prefetch" href="/Weblog/assets/js/77.13049fae.js"><link rel="prefetch" href="/Weblog/assets/js/78.732e7950.js"><link rel="prefetch" href="/Weblog/assets/js/79.91a95405.js"><link rel="prefetch" href="/Weblog/assets/js/8.5b6e1357.js"><link rel="prefetch" href="/Weblog/assets/js/80.60b08cac.js"><link rel="prefetch" href="/Weblog/assets/js/81.09852d19.js"><link rel="prefetch" href="/Weblog/assets/js/82.49b521d3.js"><link rel="prefetch" href="/Weblog/assets/js/83.681a706a.js"><link rel="prefetch" href="/Weblog/assets/js/84.ca93e702.js"><link rel="prefetch" href="/Weblog/assets/js/85.9813d878.js"><link rel="prefetch" href="/Weblog/assets/js/86.632f014f.js"><link rel="prefetch" href="/Weblog/assets/js/87.7737cd73.js"><link rel="prefetch" href="/Weblog/assets/js/88.1ec9c00d.js"><link rel="prefetch" href="/Weblog/assets/js/89.bbeb975f.js"><link rel="prefetch" href="/Weblog/assets/js/9.c685ce8f.js"><link rel="prefetch" href="/Weblog/assets/js/90.eda536dd.js"><link rel="prefetch" href="/Weblog/assets/js/91.391681fc.js"><link rel="prefetch" href="/Weblog/assets/js/92.dca04870.js"><link rel="prefetch" href="/Weblog/assets/js/93.01d44a2a.js"><link rel="prefetch" href="/Weblog/assets/js/94.f941a99a.js"><link rel="prefetch" href="/Weblog/assets/js/95.232bf755.js"><link rel="prefetch" href="/Weblog/assets/js/96.d381c6e0.js"><link rel="prefetch" href="/Weblog/assets/js/97.2a0ba8ba.js"><link rel="prefetch" href="/Weblog/assets/js/98.001e708c.js"><link rel="prefetch" href="/Weblog/assets/js/99.0ff7167d.js">
+    <link rel="stylesheet" href="/Weblog/assets/css/styles.bc17a3fe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Weblog/" class="home-link router-link-active"><!----><span class="site-name">
+      AlexTao 的 博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link router-link-active">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link router-link-active">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>Javascript</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Weblog/javascript/" aria-current="page" class="sidebar-link">高效javascript</a></li><li><a href="/Weblog/javascript/33个概念.html" class="sidebar-link">JavaScript开发者应懂的33个概念</a></li><li><a href="/Weblog/javascript/js备忘录.html" class="active sidebar-link">JS备忘录</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#touch事件" class="sidebar-link">touch事件</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#检测手机旋转" class="sidebar-link">检测手机旋转</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#url参数解释" class="sidebar-link">url参数解释</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#滚动条滚动到最底部检测" class="sidebar-link">滚动条滚动到最底部检测</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#js生成随机字符串的最佳实践" class="sidebar-link">JS生成随机字符串的最佳实践</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#websocket-api的用法" class="sidebar-link">WebSocket API的用法</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#抛物线-css3" class="sidebar-link">抛物线-css3</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#抛物线-小程序" class="sidebar-link">抛物线-小程序</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#动态添加-script" class="sidebar-link">动态添加 script</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#生成随机数" class="sidebar-link">生成随机数</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#日期" class="sidebar-link">日期</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#当前时间" class="sidebar-link">当前时间</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#脚本自动美化字体" class="sidebar-link">脚本自动美化字体</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#倒计时代码（精确到毫秒）" class="sidebar-link">倒计时代码（精确到毫秒）</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#摇一摇" class="sidebar-link">摇一摇</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#逐字输出" class="sidebar-link">逐字输出</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#随机不重复数组" class="sidebar-link">随机不重复数组</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#滚动，-加载新内容" class="sidebar-link">滚动， 加载新内容</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#检测-滚动条距顶端的距离" class="sidebar-link">检测--滚动条距顶端的距离</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#canvas-解决图片跨域" class="sidebar-link">canvas 解决图片跨域</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#lrz压缩上传" class="sidebar-link">lrz压缩上传</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#文字数量不一样，对齐方式" class="sidebar-link">文字数量不一样，对齐方式</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#history-go-和history-back-的用法与区别" class="sidebar-link">history.go()和history.back()的用法与区别</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#检查图像是否加载" class="sidebar-link">检查图像是否加载</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#自动修复破坏的图像" class="sidebar-link">自动修复破坏的图像</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#鼠标滚轮监听" class="sidebar-link">鼠标滚轮监听</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/js备忘录.html#阻止ios页面橡皮弹回效果" class="sidebar-link">阻止ios页面橡皮弹回效果</a></li></ul></li><li><a href="/Weblog/javascript/js概念.html" class="sidebar-link">JS 概念</a></li><li><a href="/Weblog/javascript/片段和trick.html" class="sidebar-link">片段和trick</a></li><li><a href="/Weblog/javascript/常用正则.html" class="sidebar-link">常用正则表达式</a></li><li><a href="/Weblog/javascript/处理异步的方法.html" class="sidebar-link">处理异步的方法</a></li><li><a href="/Weblog/javascript/字符串.html" class="sidebar-link">字符串</a></li><li><a href="/Weblog/javascript/数组.html" class="sidebar-link">数组</a></li><li><a href="/Weblog/javascript/typeof instanceof.html" class="sidebar-link">typeof  &amp;&amp; instanceof</a></li><li><a href="/Weblog/javascript/浅谈 JSON.html" class="sidebar-link">浅谈 JSON</a></li><li><a href="/Weblog/javascript/详解闭包.html" class="sidebar-link">详解闭包</a></li><li><a href="/Weblog/javascript/执行上下文.html" class="sidebar-link">执行上下文</a></li><li><a href="/Weblog/javascript/this.html" class="sidebar-link">this</a></li><li><a href="/Weblog/javascript/深浅拷贝.html" class="sidebar-link">深浅拷贝</a></li><li><a href="/Weblog/javascript/面向对象.html" class="sidebar-link">面向对象</a></li><li><a href="/Weblog/javascript/继承方式.html" class="sidebar-link">继承方式</a></li><li><a href="/Weblog/javascript/节流防抖.html" class="sidebar-link">节流防抖</a></li><li><a href="/Weblog/javascript/Promise.html" class="sidebar-link">Promise</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="js备忘录">JS备忘录</h1><h2 id="touch事件">touch事件</h2><p><strong>事件响应顺序:</strong> ontouchstart &gt; ontouchmove &gt; ontouchend &gt; onclick<br>
+​		touchstart ——当手指触碰屏幕时候发生<br>
+​		touchmove ——当手指在屏幕上滑动时连续触发。<br>
+​		通常在滑屏页面，会调用 event 的 preventDefault() 可以阻止默认情况的发生：阻止页面滚动
+​		touchend ——当手指离开屏幕时触发<br>
+​		touchcancel ——系统停止跟踪触摸时候会触发。例如在触摸过程中突然页面 alert() ，此时会触发该事件，这个事件比较少用。<br>
+​		<strong>TouchEvent说明</strong>：</p><pre><code>touches：屏幕上所有手指的信息
+targetTouches：手指在目标区域的手指信息
+changedTouches：最近一次触发该事件的手指信息
+touchend时，touches与targetTouches信息会被删除，changedTouches保存的最后一次的信息，用于计算手指信息
+参数信息(changedTouches[0])
+clientX、clientY在显示区的坐标
+target：当前元素
+</code></pre><h2 id="检测手机旋转">检测手机旋转</h2><div class="language- extra-class"><pre class="language-text"><code>// 屏幕旋转的事件和样式
+function orientInit(){
+	    var orientChk = document.documentElement.clientWidth &gt;document.documentElement.clientHeight?'landscape':'portrait';
+	    if(orientChk =='lapdscape'){
+	        //横屏下需要执行代码
+	    }else{
+	        //竖屏下需要执行代码
+	    }
+	}
+	orientInit();
+window.addEventListener('onorientationchange' in window?'orientationchange':'resize', function(){
+	  setTimeout(orientInit, 100);
+},false)
+</code></pre></div><h2 id="url参数解释">url参数解释</h2><pre><code>设置或获取整个 URL 为字符串。&lt;br&gt;
+window.location.href&lt;br&gt;
+例：http://localhost:8086/topic/index?topicId=361&lt;br&gt;
+alert(window.location.href); 则输出：http://localhost:8086/topic/index?topicId=361&lt;br&gt;
+
+设置或获取与 URL 关联的端口号码。&lt;br&gt;
+window.location.port&lt;br&gt;
+例：http://localhost:8086/topic/index?topicId=361&lt;br&gt;
+alert(window.location.port); 则输出：8086&lt;br&gt;
+
+设置或获取 URL 的协议部分。&lt;br&gt;
+window.location.protocol&lt;br&gt;
+例：http://localhost:8086/topic/index?topicId=361&lt;br&gt;
+alert(window.location.protocol); 则输出：http:&lt;br&gt;
+
+设置或获取 href 属性中在井号“#”后面的分段。&lt;br&gt;
+window.location.hash&lt;br&gt;
+
+设置或获取 location 或 URL 的 hostname 和 port 号码。&lt;br&gt;
+window.location.host&lt;br&gt;
+例：http://localhost:8086/topic/index?topicId=361&lt;br&gt;
+alert(window.location.host); 则输出：http:localhost:8086&lt;br&gt;
+
+设置或获取 href 属性中跟在问号后面的部分。&lt;br&gt;
+window.location.search&lt;br&gt;
+例：http://localhost:8086/topic/index?topicId=361&lt;br&gt;
+alert(window.location.search); 则输出：?topicId=361&lt;br&gt;
+window.location&lt;br&gt;
+
+属性--------------描述&lt;br&gt;
+hash--------------设置或获取 href 属性中在井号“#”后面的分段。&lt;br&gt;
+host--------------设置或获取 location 或 URL 的 hostname 和 port 号码。&lt;br&gt;
+hostname----------设置或获取 location 或 URL 的主机名称部分。&lt;br&gt;
+href--------------设置或获取整个 URL 为字符串。&lt;br&gt;
+pathname----------设置或获取对象指定的文件名或路径。&lt;br&gt;
+port--------------设置或获取与 URL 关联的端口号码。&lt;br&gt;
+protocol----------设置或获取 URL 的协议部分。&lt;br&gt;
+search------------设置或获取 href 属性中跟在问号后面的部分&lt;br&gt;
+</code></pre><h2 id="滚动条滚动到最底部检测">滚动条滚动到最底部检测</h2><div class="language- extra-class"><pre class="language-text"><code>$(window).scroll(function() {　　
+    var scrollTop = $(this).scrollTop();　　
+    var docHeight = $(document).height();　　
+    var windowHeight = $(this).height();
+    var scrollHeight=document.body.scrollHeight;
+    // console.log($(this),windowHeight,scrollTop);
+    // console.log(&quot;scrollTop:&quot;+scrollTop);
+    // console.log(&quot;scrollbottom:&quot;+(docHeight-scrollTop-windowHeight));
+    if(scrollTop + windowHeight == docHeight) {　　　　
+    	alert(&quot;已经到最底部了！&quot;);　　
+    }
+});
+</code></pre></div><h2 id="js生成随机字符串的最佳实践">JS生成随机字符串的最佳实践</h2><div class="language- extra-class"><pre class="language-text"><code>var random_str = function() {
+        var len = 32;
+        var chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+        var max = chars.length;
+        var str = '';
+        for (var i = 0; i &lt; max; i++) {
+        str += chars.charAt(Math.floor(Math.random() * max));
+    }
+    console.log(str)
+    return str;
+};
+random_str();
+</code></pre></div><h2 id="websocket-api的用法">WebSocket API的用法</h2><div class="language- extra-class"><pre class="language-text"><code>// 创建一个Socket实例
+var ws = new WebSocket(&quot;ws://localhost:8080&quot;);
+// 打开Socket
+ws.onopen = function(){
+	console.log(&quot;open&quot;);
+	// 发送一个初始化消息
+	ws.send(&quot;open&quot;);
+};
+ws.onmessage = function(evt){
+	console.log(evt.data)
+};
+ws.onclose = function(evt){
+	console.log(&quot;WebSocketClosed!&quot;);
+};
+ws.onerror = function(evt){
+	console.log(&quot;WebSocketError!&quot;);
+};
+// 1.ws.send(“hello”);用于叫消息发送到服务端
+// 2.ws.onopen = function() { console.log(“open”)};当websocket创建成功时，即会触发onopen事件
+// 3.ws.onmessage = function(evt) { console.log(evt.data) };当客户端收到服务端发来的消息时，会触发onmessage事件，参数evt.data中包含server传输过来的数据
+// 4.ws.onclose = function(evt) { console.log(“WebSocketClosed!”); };当客户端收到服务端发送的关闭连接的请求时，触发onclose事件
+// 5.ws.onerror = function(evt) { console.log(“WebSocketError!”); };如果出现连接，处理，接收，发送数据失败的时候就会触发onerror事件
+(function() {
+	var bp = document.createElement('script');
+	bp.src = '//push.zhanzhang.baidu.com/push.js';
+	var s = document.getElementsByTagName(&quot;script&quot;)[0];
+	s.parentNode.insertBefore(bp, s);
+})();
+</code></pre></div><h2 id="抛物线-css3">抛物线-css3</h2><div class="language- extra-class"><pre class="language-text"><code>var $ball = document.getElementById('ball');
+    document.body.onclick=function(evt) {
+    console.log(evt.pageX, evt.pageY)
+    $ball.style.top = evt.pageY +'px';
+    $ball.style.left = evt.pageX +'px';
+    $ball.style.transition ='left 0s, top 0s';
+    setTimeout(() =&gt; {
+        $ball.style.top = window.innerHeight +'px';
+        $ball.style.left ='0px';
+        $ball.style.transition ='left .4s linear, top .4s ease-in';
+    },20)
+}
+</code></pre></div><h2 id="抛物线-小程序">抛物线-小程序</h2><div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    cartAnimation(x, y) { // x y 为手指点击的坐标，即球的起始坐标
+        let self = this,
+            cartY = app.globalData.winHeight -50,
+            // 结束位置（购物车图片）纵坐标
+            cartX =50,
+            // 结束位置（购物车图片）的横坐标
+            animationX = flyX(cartX, x),
+            // 创建球的横向动画
+            animationY = flyY(cartY, y)
+            // 创建球的纵向动画
+
+        this.setData({
+            leftNum: x,
+            topNum: y,
+            showBall: true
+        })
+        setTimeoutES6(100).then(() =&gt; {// 100 ms 延时，确保球已经到位并显示
+            self.setData({
+                animationDataX: animationX.export(),
+                animationDataY: animationY.export(),
+            })
+            return setTimeoutES6(400) // 400 ms 是球的抛物线动画时长
+        }).then(() =&gt; {  // 400 ms 延时后隐藏球
+            this.setData({
+                showBall: false,
+                animationX: flyX(0, 0, 0).export(),
+                // 还原小球位置，即 translate 恢复默认值
+                animationY: flyY(0, 0, 0).export(),
+            })
+        })
+    }
+
+    function flyX(cartX, oriX, duration) {// 水平动画
+        let animation = wx.createAnimation({
+            duration: duration || 400,
+            timingFunction: 'linear',
+        })
+        animation.translateX(cartX - oriX).step()
+        return animation
+    }
+
+    function flyY(cartY, oriY, duration) {// 垂直动画
+        let animation = wx.createAnimation({
+            duration: duration || 400,
+            timingFunction: 'ease-in',
+        })
+        animation.translateY(cartY - oriY).step()
+        return animation
+    }
+&lt;/script&gt;
+</code></pre></div><h2 id="动态添加-script">动态添加 script</h2><div class="language- extra-class"><pre class="language-text"><code>function addScriptTag(src) {  
+    var script = document.createElement('script');  
+    script.setAttribute(&quot;type&quot;,&quot;text/javascript&quot;);  
+    script.src = src;  
+    document.body.appendChild(script);  
+} 
+window.onload = function () {  
+    addScriptTag('http://example.com/ip?callback=foo');  
+}
+function foo(data) {  
+    console.log('Your public IP address is: ' + data.ip);  
+};
+</code></pre></div><h2 id="生成随机数">生成随机数</h2><div class="language- extra-class"><pre class="language-text"><code>function randombetween(min, max){
+    console.log(&quot;随机数&quot;,min + (Math.random() * (max-min +1)));
+    return min + (Math.random() * (max-min +1));
+}
+randombetween(2,8);
+</code></pre></div><h2 id="日期">日期</h2><div class="language- extra-class"><pre class="language-text"><code>(function getNowFormatDate() {
+    var date = new Date();
+    var seperator1 = &quot;-&quot;;
+    var seperator2 = &quot;:&quot;;
+    var month = date.getMonth() + 1;
+    var strDate = date.getDate();
+    if (month &gt;= 1 &amp;&amp; month &lt;= 9) {
+    	month = &quot;0&quot; + month;
+    }
+    if (strDate &gt;= 0 &amp;&amp; strDate &lt;= 9) {
+    	strDate = &quot;0&quot; + strDate;
+    }
+    var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+    + &quot; &quot; + date.getHours() + seperator2 + date.getMinutes()
+    + seperator2 + date.getSeconds();
+    var time=month+&quot;月&quot;+strDate+&quot;日&quot;;
+    console.log(currentdate)
+    return currentdate;
+})();
+setInterval(function() {
+    var EndTime = new Date('2019/06/13 00:00:00');
+    var NowTime = new Date();
+    var t = EndTime.getTime() - NowTime.getTime();
+    var d = 0;
+    var h = 0;
+    var m = 0;
+    var s = 0;
+    if (t &gt;= 0) {
+        d = Math.floor(t / 1000 / 60 / 60 / 24);
+        h = Math.floor(t / 1000 / 60 / 60 % 24);
+        m = Math.floor(t / 1000 / 60 % 60);
+        s = Math.floor(t / 1000 % 60);
+    }
+    document.getElementById(&quot;t_d&quot;).innerHTML = d + &quot;天&quot;;
+    document.getElementById(&quot;t_h&quot;).innerHTML = h + &quot;时&quot;;
+    document.getElementById(&quot;t_m&quot;).innerHTML = m + &quot;分&quot;;
+    document.getElementById(&quot;t_s&quot;).innerHTML = s + &quot;秒&quot;;
+}, 10);
+</code></pre></div><h2 id="当前时间">当前时间</h2><div class="language- extra-class"><pre class="language-text"><code>function getNowFormatDate() { 
+    var date = new Date();
+    var seperator1 = &quot;-&quot;;
+    var seperator2 = &quot;:&quot;;
+    var month = date.getMonth() + 1;
+    var strDate = date.getDate();
+    if (month &gt;= 1 &amp;&amp; month &lt;= 9) {
+    	month = &quot;0&quot; + month;
+    }
+    if (strDate &gt;= 0 &amp;&amp; strDate &lt;= 9) {
+    	strDate = &quot;0&quot; + strDate;
+    }
+    var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+    + &quot; &quot; + date.getHours() + seperator2 + date.getMinutes()
+    // + seperator2 + date.getSeconds();
+    return currentdate;
+}
+</code></pre></div><h2 id="脚本自动美化字体">脚本自动美化字体</h2><div class="language- extra-class"><pre class="language-text"><code>.halfStyle2 {
+    position:relative;
+    display:inline-block;
+    font-size:80px; 
+    color: transparent;
+    overflow:hidden;
+    white-space: pre;
+}
+.halfStyle2:before {
+    display:block;
+    z-index:1;
+    position:absolute;
+    top:0;
+    width: 50%;
+    content: attr(data-content);
+    overflow:hidden;
+    pointer-events: none;
+    color: #f00;
+    text-shadow: 2px -2px 0px #af0;
+}
+.halfStyle2:after {
+    display:block;
+    direction: rtl;
+    position:absolute;
+    z-index:2;
+    top:0;
+    left:50%;
+    width: 50%;
+    content: attr(data-content);
+    overflow:hidden;
+    pointer-events: none;
+    color: #000;
+    text-shadow: 2px 2px 0px #0af;
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;span class=&quot;textToHalfStyle lazy &quot;&gt;心有多大，江湖就有多大，且行且珍惜。&lt;/span&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>$(window).load(function(){
+    var text, chars, $el, i, output;
+    // 遍历所有字符
+    $('.textToHalfStyle').each(function(idx, el) {
+        $el = $(el);
+        text = $el.text();
+        chars = text.split('');
+        $el.html('&lt;span style=&quot;position: absolute !important;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);&quot;&gt;' + text + '&lt;/span&gt;');
+        output = '';
+        for (i = 0; i &lt; chars.length; i++) {
+            output += '&lt;span class=&quot;halfStyle2&quot; aria-hidden=&quot;true&quot; data-content=&quot;' + chars[i] +'&quot;&gt;'+ chars[i] + '&lt;/span&gt;';
+        } 
+        $el.append(output);
+    });
+})
+</code></pre></div><h2 id="倒计时代码（精确到毫秒）">倒计时代码（精确到毫秒）</h2><div class="language- extra-class"><pre class="language-text"><code>&lt;P style=&quot;font-size:.8em;line-height:2em;&quot;&gt;距活动结束还有：&lt;/P&gt;
+&lt;div id=&quot;fnTimeCountDown&quot; data-end=&quot;2019/07/08 18:45:13&quot;&gt;
+    &lt;span class=&quot;year&quot;&gt;00&lt;/span&gt;年
+    &lt;span class=&quot;month&quot;&gt;00&lt;/span&gt;月
+    &lt;span class=&quot;day&quot;&gt;00&lt;/span&gt;天
+    &lt;span class=&quot;hour&quot;&gt;00&lt;/span&gt;时
+    &lt;span class=&quot;mini&quot;&gt;00&lt;/span&gt;分
+    &lt;span class=&quot;sec&quot;&gt;00&lt;/span&gt;秒
+    &lt;span class=&quot;hm&quot;&gt;000&lt;/span&gt;
+&lt;/div&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+    $.extend($.fn,{
+        fnTimeCountDown:function(d){
+            this.each(function(){
+                var $this = $(this);
+                var o = {
+                    hm: $this.find(&quot;.hm&quot;),
+                    sec: $this.find(&quot;.sec&quot;),
+                    mini: $this.find(&quot;.mini&quot;),
+                    hour: $this.find(&quot;.hour&quot;),
+                    day: $this.find(&quot;.day&quot;),
+                    month:$this.find(&quot;.month&quot;),
+                    year: $this.find(&quot;.year&quot;)
+                };
+                var f = {
+                    haomiao: function(n){
+                        if(n &lt; 10)return &quot;00&quot; + n.toString();
+                        if(n &lt; 100)return &quot;0&quot; + n.toString();
+                        return n.toString();
+                    },
+                    zero: function(n){
+                        var _n = parseInt(n, 10);//解析字符串,返回整数
+                        if(_n &gt; 0){
+                            if(_n &lt;= 9){
+                                _n = &quot;0&quot; + _n
+                            }
+                            return String(_n);
+                        }else{
+                            return &quot;00&quot;;
+                        }
+                    },
+                    dv: function(){
+                        //d = d || Date.UTC(2050, 0, 1); //如果未定义时间，则我们设定倒计时日期是2050年1月1日
+                        var _d = $this.data(&quot;end&quot;) || d;
+                        var now = new Date(),
+                            endDate = new Date(_d);
+                        //现在将来秒差值
+                        //alert(future.getTimezoneOffset());
+                        var dur = (endDate - now.getTime()) / 1000 , mss = endDate - now.getTime() ,pms = {
+                            hm:&quot;000&quot;,
+                            sec: &quot;00&quot;,
+                            mini: &quot;00&quot;,
+                            hour: &quot;00&quot;,
+                            day: &quot;00&quot;,
+                            month: &quot;00&quot;,
+                            year: &quot;0&quot;
+                        };
+                        if(mss &gt; 0){
+                            pms.hm = f.haomiao(mss % 1000);
+                            pms.sec = f.zero(dur % 60);
+                            pms.mini = Math.floor((dur / 60)) &gt; 0? f.zero(Math.floor((dur / 60)) % 60) : &quot;00&quot;;
+                            pms.hour = Math.floor((dur / 3600)) &gt; 0? f.zero(Math.floor((dur / 3600)) % 24) : &quot;00&quot;;
+                            pms.day = Math.floor((dur / 86400)) &gt; 0? f.zero(Math.floor((dur / 86400)) % 30) : &quot;00&quot;;
+                            //月份，以实际平均每月秒数计算
+                            pms.month = Math.floor((dur / 2629744)) &gt; 0? f.zero(Math.floor((dur / 2629744)) % 12) : &quot;00&quot;;
+                            //年份，按按回归年365天5时48分46秒算
+                            pms.year = Math.floor((dur / 31556926)) &gt; 0? Math.floor((dur / 31556926)) : &quot;0&quot;;
+                        }else{
+                            pms.year=pms.month=pms.day=pms.hour=pms.mini=pms.sec=&quot;00&quot;;
+                            pms.hm = &quot;000&quot;;
+                            //alert('结束了');
+                            return;
+                        }
+                        return pms;
+                    },
+                    ui: function(){
+                        if(o.hm){
+                            o.hm.html(f.dv().hm);
+                        }
+                        if(o.sec){
+                            o.sec.html(f.dv().sec);
+                        }
+                        if(o.mini){
+                            o.mini.html(f.dv().mini);
+                        }
+                        if(o.hour){
+                            o.hour.html(f.dv().hour);
+                        }
+                        if(o.day){
+                            o.day.html(f.dv().day);
+                        }
+                        if(o.month){
+                            o.month.html(f.dv().month);
+                        }
+                        if(o.year){
+                            o.year.html(f.dv().year);
+                        }
+                        setTimeout(f.ui, 1);
+                    }
+                };
+                f.ui();
+            });
+        }
+    });
+&lt;/script&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+    $(&quot;#fnTimeCountDown&quot;).fnTimeCountDown(&quot;2018/07/08 18:45:13&quot;);
+&lt;/script&gt;
+</code></pre></div><h2 id="摇一摇">摇一摇</h2><div class="language- extra-class"><pre class="language-text"><code>if(window.DeviceMotionEvent) {
+	var speed =25;
+    var flag=true;
+	var x = y = z = lastX = lastY = lastZ = 0;
+	var handler = function(){
+		var acceleration =event.accelerationIncludingGravity;
+		x = acceleration.x;
+		y = acceleration.y;
+		if(Math.abs(x-lastX) &gt; speed || Math.abs(y-lastY) &gt; speed) {
+			if(flag){
+				flag=false;
+				alert(&quot;恭喜&quot;)
+			}
+		}
+		lastX = x;
+		lastY = y;
+	};
+	window.addEventListener('devicemotion',handler, false);
+}else{
+    alert(0)
+}
+</code></pre></div><h2 id="逐字输出">逐字输出</h2><div class="language- extra-class"><pre class="language-text"><code>var txtArr = ['欢迎来到AxelTao 的 博客，github地址：https://alextaoclub.github.io/Weblog/'],      
+    x = 1, 
+    y = 0, 
+    txt = txtArr[y], 
+    timer = null, 
+    timer1 = null, 
+    cue = $('.menutext');  
+function changTxt() { 
+    if (x == txt.length+1) { 
+        clearTimeout(timer1); 
+        timer1 = setInterval(function(){ 
+        y += 1;
+        if (y &gt; txtArr.length - 1) y = 0; 
+        cue.text(''); 
+        txt = txtArr[y]; 
+        x=0; 
+    },15000);                     
+} 
+cue.text(txt.substring(0,x)); 
+    x+=1; 
+        clearTimeout(timer); 
+        timer = setTimeout(function(){ 
+        changTxt(); 
+    },400); 
+} 
+changTxt();
+</code></pre></div><h2 id="随机不重复数组">随机不重复数组</h2><div class="language- extra-class"><pre class="language-text"><code>function num(n,min,max){
+    arr=[];
+    arr2=[];
+    for(i=0;i&lt;max-min+1;i++){
+    	arr[i]=i+min;
+    }
+    for(i=0;i&lt;n;i++){
+        var x=parseInt(Math.random()*arr.length);
+        arr2[i]=arr[x];
+        for(j=x;j&lt;arr.length;j++){
+            arr[j]=arr[j+1];
+        }
+        arr.length=arr.length-1;
+    }
+    return arr2;
+}
+num(5,0,4); 
+</code></pre></div><h2 id="滚动，-加载新内容">滚动， 加载新内容</h2><div class="language- extra-class"><pre class="language-text"><code>$(window).scroll(function(){
+    // 当滚动到最底部以上100像素时
+    if ($(document).height() - $(this).scrollTop() - $(this).height()&lt;100) {
+        $(&quot;.dropload-load&quot;).show();
+        $(&quot;.dropload-sel&quot;).hide(100);
+        ajax_load_data();
+    };
+});
+function ajax_load_data(){
+    setTimeout(function(){
+        $('.consultList').append($(&quot;.consultList&quot;).html());
+        $(&quot;.dropload-load&quot;).hide(100);
+        $(&quot;.dropload-sel&quot;).show();
+    },1000);
+}
+</code></pre></div><h2 id="检测-滚动条距顶端的距离">检测--滚动条距顶端的距离</h2><div class="language- extra-class"><pre class="language-text"><code>$(window).scroll(function() { 
+    var scrollPos=getScrollTop(); //滚动条距顶端的距离
+    var height =document.documentElement.clientHeight//浏览器可视化窗口的大小
+    console.log(scrollPos,height)
+})
+function getScrollTop() {  
+    var scrollPos;  
+    if (window.pageYOffset) {  
+    	scrollPos = window.pageYOffset; 
+    }else if (document.compatMode &amp;&amp; document.compatMode != 'BackCompat')  { 
+    	scrollPos = document.documentElement.scrollTop; 
+    }else if (document.body) { 
+    	scrollPos = document.body.scrollTop; 
+    }   
+    return scrollPos;   
+}
+</code></pre></div><h2 id="canvas-解决图片跨域">canvas 解决图片跨域</h2><div class="language- extra-class"><pre class="language-text"><code>var image = new Image();
+var canvas = document.createElement(&quot;canvas&quot;);
+var ctx = canvas.getContext(&quot;2d&quot;);
+image.setAttribute('crossorigin', 'anonymous');
+image.src = $(&quot;.user-img img&quot;).attr(&quot;src&quot;);
+image.onload = function() {
+    var imgW = image.width;
+    canvas.width = imgW;
+    canvas.height = imgW;
+    ctx.drawImage(image, 0, 0);
+    $(&quot;.user-img img&quot;).attr(&quot;src&quot;,canvas.toDataURL('image/png'));
+    console.log(canvas.toDataURL('image/png'))
+};
+</code></pre></div><h2 id="lrz压缩上传">lrz压缩上传</h2><div class="language- extra-class"><pre class="language-text"><code>document.querySelector('input').addEventListener('change', function () {
+		    var that = this;
+		    lrz(that.files[0]).then(function (rst) {
+				var submitData={
+				    image:rst.base64,
+				    name:rst.origin.name,
+				    fileLength:rst.base64.length
+		    	};
+		    	$(&quot;.fileImg img&quot;).attr(&quot;src&quot;,submitData.image);
+			    $.ajax({
+					type: &quot;POST&quot;,
+					url: &quot;http://localhost:8080/link/upload&quot;,
+					data: submitData,
+					dataType:&quot;json&quot;,
+					beforeSend: function(XMLHttpRequest){
+						//showLoader();
+						console.log(000)
+					},
+					success: function(data){
+					    if (&quot;1&quot; == data.error) {
+					    	alert(data.message);
+					    	return false;
+					    }else{
+					    	alert(data.thumbnail);
+					    	return false;
+					    }
+			        }, 
+				    complete :function(XMLHttpRequest, textStatus){
+				    	// hideLoader();
+				    	console.log(1)
+				    },
+				    error:function(XMLHttpRequest, textStatus, errorThrown){ //上传失败 
+					    //hideLoader();
+					    //alert('操作错误');
+					    console.log(2)
+				    }
+			    });
+			    return rst;
+		    });
+		});
+</code></pre></div><h2 id="文字数量不一样，对齐方式">文字数量不一样，对齐方式</h2><div class="language- extra-class"><pre class="language-text"><code>&lt;dl class=&quot;hotsearch&quot; style=&quot;width:300px;&quot;&gt;
+    &lt;dt&gt;热门搜索&lt;/dt&gt;
+    &lt;dd&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; ref=&quot;nav&quot; class=&quot;w3&quot;&gt;电视机&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; ref=&quot;nav&quot; class=&quot;w4&quot;&gt;性感漂亮&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; ref=&quot;nav&quot; class=&quot;w3&quot;&gt;高跟鞋&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; ref=&quot;nav&quot; class=&quot;w2&quot;&gt;手机&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; ref=&quot;nav&quot; class=&quot;w2&quot;&gt;对齐&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; ref=&quot;nav&quot; class=&quot;w3&quot;&gt;牛仔裤&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; ref=&quot;nav&quot; class=&quot;w4&quot;&gt;小家碧玉&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; ref=&quot;nav&quot; class=&quot;w2&quot;&gt;家居&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>.hotsearch dd{  float: left;  line-height: 24px;  margin-right: 30px;  overflow: hidden;  text-align: center;  width: 4em; /*这个值是看最长能显示几个文字，如x，则为x em*/  }  
+.hotsearch dd a{  display:block;  }  
+.w2{  letter-spacing:2em; /*如果需要y个字两端对齐，则为(x-y)/(y-1),这里是（4-2）/(2-1)=2em */  margin-right:-2em; /*同上*/  }  
+.w3{  letter-spacing:0.5em; /*如果需要y个字两端对齐，则为(x-y)/(y-1),这里是（4-3）/(3-1)=0.5em */  margin-right:-0.5em; /*同上*/  }  
+</code></pre></div><p><img src="F:/GitRepository/vuepressBlog/docs/images/a_08.png" alt></p><h2 id="history-go-和history-back-的用法与区别">history.go()和history.back()的用法与区别</h2><ul><li>history.go(-1):后退+刷新，原页面表单中的内容会丢失；</li><li>history.back():返回上一页，原页表表单中的内容会保留。</li></ul><p>之所以注意到这个区别，是因为不同的浏览器后退行为也是有区别的，而区别就跟javascript：history.go()和history.back()的区别类似。</p><p>Chrome 和 ff浏览器后退页面，会刷新后退的页面，若有数据请求也会提交数据申请。类似于history.go(-1); 而safari（包括桌面版和ipad版）的后退按钮则不会刷新页面，也不会提交数据申请。类似于javascript：history.back();</p><p>##预加载图像</p><div class="language- extra-class"><pre class="language-text"><code>$.preloadImages = function () {
+    for (var i = 0; i &lt; arguments.length; i++) {
+        $('&lt;img&gt;').attr('src',arguments[i]);
+    }
+};
+$.preloadImages(&quot;images/loadImg_1.png&quot;,&quot;images/loadImg_2.png&quot;);
+</code></pre></div><h2 id="检查图像是否加载">检查图像是否加载</h2><div class="language- extra-class"><pre class="language-text"><code>$(&quot;img&quot;).load(function(){
+    console.log(&quot;success&quot;)
+});
+</code></pre></div><h2 id="自动修复破坏的图像">自动修复破坏的图像</h2><div class="language- extra-class"><pre class="language-text"><code>$(&quot;img&quot;).on(&quot;error&quot;,function(){
+    if (!$(this).hasClass(&quot;broken-image&quot;)) {
+        $(this).attr(&quot;src&quot;,&quot;images/broken.png&quot;).addClass(&quot;broken-image&quot;)
+    }
+});
+</code></pre></div><h2 id="鼠标滚轮监听">鼠标滚轮监听</h2><div class="language- extra-class"><pre class="language-text"><code>$('.mousewhee').on(&quot;mousewheel DOMMouseScroll&quot;, function(event) {
+    // chrome &amp; ie || // firefox
+    var delta = (event.originalEvent.wheelDelta &amp;&amp; (event.originalEvent.wheelDelta &gt; 0 ? 1 : -1)) ||
+        (event.originalEvent.detail &amp;&amp; (event.originalEvent.detail &gt; 0 ? -1 : 1));
+
+    if (delta &gt; 0) {
+        // console.log('mousewheel top');
+        $(&quot;.mousewhee&quot;).text(&quot;鼠标滚轮---向上滚~~~&quot;)
+    } else if (delta &lt; 0) {
+        // console.log('mousewheel bottom');
+        $(&quot;.mousewhee&quot;).text(&quot;鼠标滚轮---向下滚~~~&quot;)
+    }
+});
+</code></pre></div><h2 id="阻止ios页面橡皮弹回效果">阻止ios页面橡皮弹回效果</h2><div class="language- extra-class"><pre class="language-text"><code>function resEvent(){
+    var startY,endY;
+    $('body').on('touchstart',function (e) {
+         startY = e.originalEvent.targetTouches[0].pageY;
+    });
+    $('body').on('touchmove',function (e) {
+         endY = e.originalEvent.targetTouches[0].pageY;
+         //手指下滑，页面到达顶端不能继续下滑
+         if(endY&gt;startY&amp;&amp; $(window).scrollTop()&lt;=0){
+             e.preventDefault();
+         }
+       //手指上滑，页面到达底部能继续上滑
+         if(endY&lt;startY&amp;&amp; $(window).scrollTop()+ 
+             $(window).height()&gt;=$('body')[0].scrollHeight){
+             e.preventDefault();
+         }
+    })
+}
+</code></pre></div><p>Now, let's try it 👉</p></div><div class="page-edit"><!----><!----></div><!----></div></div></div>
+    <script src="/Weblog/assets/js/app.bc17a3fe.js" defer></script><script src="/Weblog/assets/js/71.24d5a255.js" defer></script>
+  </body>
+</html>

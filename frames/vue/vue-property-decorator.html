@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue-property-decorator | AlexTao 的 博客</title>
+    <meta name="description" content="In doing we learn.">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/Weblog/assets/css/styles.bc17a3fe.css" as="style"><link rel="preload" href="/Weblog/assets/js/app.bc17a3fe.js" as="script"><link rel="preload" href="/Weblog/assets/js/56.389f0044.js" as="script"><link rel="prefetch" href="/Weblog/assets/css/16.styles.2339a627.css"><link rel="prefetch" href="/Weblog/assets/css/5.styles.c1152841.css"><link rel="prefetch" href="/Weblog/assets/css/7.styles.1f4a6057.css"><link rel="prefetch" href="/Weblog/assets/css/8.styles.5b6e1357.css"><link rel="prefetch" href="/Weblog/assets/js/0.a8dcd889.js"><link rel="prefetch" href="/Weblog/assets/js/10.bbae2931.js"><link rel="prefetch" href="/Weblog/assets/js/100.b8573d34.js"><link rel="prefetch" href="/Weblog/assets/js/101.abec8cfc.js"><link rel="prefetch" href="/Weblog/assets/js/102.79aa7798.js"><link rel="prefetch" href="/Weblog/assets/js/11.249c3d32.js"><link rel="prefetch" href="/Weblog/assets/js/12.6c4f9a9d.js"><link rel="prefetch" href="/Weblog/assets/js/13.9c3a7225.js"><link rel="prefetch" href="/Weblog/assets/js/14.8788763f.js"><link rel="prefetch" href="/Weblog/assets/js/15.c3d91b4b.js"><link rel="prefetch" href="/Weblog/assets/js/16.2339a627.js"><link rel="prefetch" href="/Weblog/assets/js/17.f68b5694.js"><link rel="prefetch" href="/Weblog/assets/js/18.1dc877c8.js"><link rel="prefetch" href="/Weblog/assets/js/19.8d3a8eb9.js"><link rel="prefetch" href="/Weblog/assets/js/2.adb0855b.js"><link rel="prefetch" href="/Weblog/assets/js/20.5b430c8f.js"><link rel="prefetch" href="/Weblog/assets/js/21.7570ba60.js"><link rel="prefetch" href="/Weblog/assets/js/22.c34e9396.js"><link rel="prefetch" href="/Weblog/assets/js/23.d89c70ce.js"><link rel="prefetch" href="/Weblog/assets/js/24.cc87bb5d.js"><link rel="prefetch" href="/Weblog/assets/js/25.024b7a56.js"><link rel="prefetch" href="/Weblog/assets/js/26.0d0e2118.js"><link rel="prefetch" href="/Weblog/assets/js/27.fd65c2c2.js"><link rel="prefetch" href="/Weblog/assets/js/28.e7e81b37.js"><link rel="prefetch" href="/Weblog/assets/js/29.d69a29c6.js"><link rel="prefetch" href="/Weblog/assets/js/3.9c9ae281.js"><link rel="prefetch" href="/Weblog/assets/js/30.e02a9f2a.js"><link rel="prefetch" href="/Weblog/assets/js/31.4d5d63f6.js"><link rel="prefetch" href="/Weblog/assets/js/32.2652c4b5.js"><link rel="prefetch" href="/Weblog/assets/js/33.f81118fb.js"><link rel="prefetch" href="/Weblog/assets/js/34.6539d2a9.js"><link rel="prefetch" href="/Weblog/assets/js/35.479b4b73.js"><link rel="prefetch" href="/Weblog/assets/js/36.24e9784f.js"><link rel="prefetch" href="/Weblog/assets/js/37.13a7e720.js"><link rel="prefetch" href="/Weblog/assets/js/38.57e7625b.js"><link rel="prefetch" href="/Weblog/assets/js/39.40ddc61b.js"><link rel="prefetch" href="/Weblog/assets/js/4.cb1adf5e.js"><link rel="prefetch" href="/Weblog/assets/js/40.4abade23.js"><link rel="prefetch" href="/Weblog/assets/js/41.03a22716.js"><link rel="prefetch" href="/Weblog/assets/js/42.4bf6acac.js"><link rel="prefetch" href="/Weblog/assets/js/43.7d75114c.js"><link rel="prefetch" href="/Weblog/assets/js/44.a74a0979.js"><link rel="prefetch" href="/Weblog/assets/js/45.224f0ae1.js"><link rel="prefetch" href="/Weblog/assets/js/46.716c0ee0.js"><link rel="prefetch" href="/Weblog/assets/js/47.a44c77ff.js"><link rel="prefetch" href="/Weblog/assets/js/48.c92bc6c3.js"><link rel="prefetch" href="/Weblog/assets/js/49.78d85a96.js"><link rel="prefetch" href="/Weblog/assets/js/5.c1152841.js"><link rel="prefetch" href="/Weblog/assets/js/50.65d4cc82.js"><link rel="prefetch" href="/Weblog/assets/js/51.dfe21a00.js"><link rel="prefetch" href="/Weblog/assets/js/52.a55d1d66.js"><link rel="prefetch" href="/Weblog/assets/js/53.24e5ba30.js"><link rel="prefetch" href="/Weblog/assets/js/54.3d44c9e1.js"><link rel="prefetch" href="/Weblog/assets/js/55.5509d3c1.js"><link rel="prefetch" href="/Weblog/assets/js/57.a6410cdf.js"><link rel="prefetch" href="/Weblog/assets/js/58.99de433a.js"><link rel="prefetch" href="/Weblog/assets/js/59.f362327e.js"><link rel="prefetch" href="/Weblog/assets/js/6.829d0e7e.js"><link rel="prefetch" href="/Weblog/assets/js/60.d8a731fd.js"><link rel="prefetch" href="/Weblog/assets/js/61.c32405a4.js"><link rel="prefetch" href="/Weblog/assets/js/62.2cf15697.js"><link rel="prefetch" href="/Weblog/assets/js/63.97976992.js"><link rel="prefetch" href="/Weblog/assets/js/64.df2f0acc.js"><link rel="prefetch" href="/Weblog/assets/js/65.0365fc24.js"><link rel="prefetch" href="/Weblog/assets/js/66.89f67105.js"><link rel="prefetch" href="/Weblog/assets/js/67.4d546178.js"><link rel="prefetch" href="/Weblog/assets/js/68.b3742591.js"><link rel="prefetch" href="/Weblog/assets/js/69.e2c032ec.js"><link rel="prefetch" href="/Weblog/assets/js/7.1f4a6057.js"><link rel="prefetch" href="/Weblog/assets/js/70.f262dfb0.js"><link rel="prefetch" href="/Weblog/assets/js/71.24d5a255.js"><link rel="prefetch" href="/Weblog/assets/js/72.c2fad7bd.js"><link rel="prefetch" href="/Weblog/assets/js/73.e3de86c7.js"><link rel="prefetch" href="/Weblog/assets/js/74.af039d36.js"><link rel="prefetch" href="/Weblog/assets/js/75.b5d26a4d.js"><link rel="prefetch" href="/Weblog/assets/js/76.5253b8d4.js"><link rel="prefetch" href="/Weblog/assets/js/77.13049fae.js"><link rel="prefetch" href="/Weblog/assets/js/78.732e7950.js"><link rel="prefetch" href="/Weblog/assets/js/79.91a95405.js"><link rel="prefetch" href="/Weblog/assets/js/8.5b6e1357.js"><link rel="prefetch" href="/Weblog/assets/js/80.60b08cac.js"><link rel="prefetch" href="/Weblog/assets/js/81.09852d19.js"><link rel="prefetch" href="/Weblog/assets/js/82.49b521d3.js"><link rel="prefetch" href="/Weblog/assets/js/83.681a706a.js"><link rel="prefetch" href="/Weblog/assets/js/84.ca93e702.js"><link rel="prefetch" href="/Weblog/assets/js/85.9813d878.js"><link rel="prefetch" href="/Weblog/assets/js/86.632f014f.js"><link rel="prefetch" href="/Weblog/assets/js/87.7737cd73.js"><link rel="prefetch" href="/Weblog/assets/js/88.1ec9c00d.js"><link rel="prefetch" href="/Weblog/assets/js/89.bbeb975f.js"><link rel="prefetch" href="/Weblog/assets/js/9.c685ce8f.js"><link rel="prefetch" href="/Weblog/assets/js/90.eda536dd.js"><link rel="prefetch" href="/Weblog/assets/js/91.391681fc.js"><link rel="prefetch" href="/Weblog/assets/js/92.dca04870.js"><link rel="prefetch" href="/Weblog/assets/js/93.01d44a2a.js"><link rel="prefetch" href="/Weblog/assets/js/94.f941a99a.js"><link rel="prefetch" href="/Weblog/assets/js/95.232bf755.js"><link rel="prefetch" href="/Weblog/assets/js/96.d381c6e0.js"><link rel="prefetch" href="/Weblog/assets/js/97.2a0ba8ba.js"><link rel="prefetch" href="/Weblog/assets/js/98.001e708c.js"><link rel="prefetch" href="/Weblog/assets/js/99.0ff7167d.js">
+    <link rel="stylesheet" href="/Weblog/assets/css/styles.bc17a3fe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Weblog/" class="home-link router-link-active"><!----><span class="site-name">
+      AlexTao 的 博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link router-link-active">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link router-link-active">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>Vue</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Weblog/frames/vue/" aria-current="page" class="sidebar-link">数据原理</a></li><li><a href="/Weblog/frames/vue/生命周期.html" class="sidebar-link">生命周期</a></li><li><a href="/Weblog/frames/vue/template.html" class="sidebar-link">template理解</a></li><li><a href="/Weblog/frames/vue/NextTick.html" class="sidebar-link">NextTick</a></li><li><a href="/Weblog/frames/vue/VueRouter.html" class="sidebar-link">VueRouter</a></li><li><a href="/Weblog/frames/vue/登录拦截逻辑.html" class="sidebar-link">登录拦截逻辑</a></li><li><a href="/Weblog/frames/vue/路由跳转传参.html" class="sidebar-link">路由跳转传参</a></li><li><a href="/Weblog/frames/vue/组件通信.html" class="sidebar-link">组件通信 </a></li><li><a href="/Weblog/frames/vue/父子组件数据双向绑定.html" class="sidebar-link">父子组件数据双向绑定</a></li><li><a href="/Weblog/frames/vue/VUEX.html" class="sidebar-link">VUEX</a></li><li><a href="/Weblog/frames/vue/vue-property-decorator.html" aria-current="page" class="active sidebar-link">vue-property-decorator</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Weblog/frames/vue/vue-property-decorator.html#component" class="sidebar-link">@Component</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/vue/vue-property-decorator.html#prop" class="sidebar-link">@Prop</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/vue/vue-property-decorator.html#propsync" class="sidebar-link">@PropSync</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/vue/vue-property-decorator.html#watch" class="sidebar-link">@Watch</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/vue/vue-property-decorator.html#model" class="sidebar-link">@Model</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/vue/vue-property-decorator.html#emit" class="sidebar-link">@Emit</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/vue/vue-property-decorator.html#provide-inject" class="sidebar-link">@Provide/@Inject</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/vue/vue-property-decorator.html#ref" class="sidebar-link">@Ref</a></li></ul></li><li><a href="/Weblog/frames/vue/TslintOfVue.html" class="sidebar-link">Tslint.json配置</a></li><li><a href="/Weblog/frames/vue/效率技巧.html" class="sidebar-link">效率技巧 </a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>React</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h1 id="vue-property-decorator">vue-property-decorator</h1><p>这个组件完全依赖于官方维护的 <a href="https://github.com/vuejs/vue-class-component" target="_blank" rel="noopener noreferrer">vue-class-component<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 装饰器.它具备以下几个属性:</p><ul><li>@Component (完全继承于<code>vue-class-component</code>)</li><li>@Prop</li><li>@PropSync</li><li>@Watch</li><li>@Model</li><li>@Emit</li><li>@Inject</li><li>@Provice</li><li>@ref</li><li>Mixins  (在<code>vue-class-component</code>中定义);</li></ul><h2 id="component">@Component</h2><h3 id="component-options-componentoptions">@Component(options:ComponentOptions = {})</h3><p><code>@Component</code> 装饰器可以接收一个对象作为参数，可以在对象中声明 <code>components ，filters，directives</code>等未提供装饰器的选项，也可以声明<code>computed，watch</code>等</p><div class="language- extra-class"><pre class="language-text"><code>  &lt;template&gt;
+    &lt;div&gt;
+      &lt;p&gt;{{dataInit}}&lt;/p&gt;
+      &lt;p&gt;{{syncUserDetail}}&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/template&gt;
+   ---------------------------
+ // 声明 data
+  public dataInit: string = &quot;dataInit&quot;
+  
+  // 属性计算（Vue中的计算属性,只需将该计算属性名定义为一个函数,并在函数前加上get关键字.）
+  get syncUserDetail() {
+    return this.$store.getters[GET_USER_DETAIL]
+  }
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;script lang=&quot;ts&quot;&gt;
+import router from '@/router'
+import { Component, Prop, Emit, Vue } from 'vue-property-decorator'
+
+Component.registerHooks([
+    'beforeRouteLeave',
+    'beforeRouteEnter',
+    'beforeRouteUpdate'
+]);
+const ComponentOption = {
+    created(){
+        console.log('ComponentOption install');
+    }
+}
+/**option 可以对组件进行加强处理 Mixins */
+@Component({...ComponentOption})
+export default class Login extends Vue {
+    beforeRouteLeave(to: any, from: any, next: any) {
+        next();
+    }
+
+    beforeRouteEnter(to: any, from: any, next: any) {
+        next();
+    } 
+}
+&lt;/script&gt;
+</code></pre></div><h2 id="prop">@Prop</h2><h3 id="prop-options-propoptions-constructor-constructor"><strong>@Prop(options: (PropOptions | Constructor[] | Constructor) = {})</strong></h3><p><code>@Prop</code>装饰器接收一个参数，这个参数可以有三种写法：</p><ul><li><code>Constructor</code>，例如<code>String，Number，Boolean</code>等，指定 <code>prop</code> 的类型；</li><li><code>Constructor[]</code>，指定 <code>prop</code> 的可选类型；</li><li><code>PropOptions</code>，可以使用以下选项：<code>type，default，required，validator</code>。</li></ul><div class="language- extra-class"><pre class="language-text"><code>  @Prop(Number) name!: number;
+  @Prop({default: 'default value'}) age!: string;
+  @Prop([String, Boolean]) code!: string | boolean;
+</code></pre></div><h2 id="propsync">@PropSync</h2><h3 id="propsync-propname-string-options-propoptions-constructor-constructor"><strong>@PropSync(propName: string, options: (PropOptions | Constructor[] | Constructor) = {})</strong></h3><p><code>@PropSync</code>装饰器与<code>@prop</code>用法类似，二者的区别在于：</p><ul><li><code>@PropSync</code> 装饰器接收两个参数：
+<code>propName: string</code> 表示父组件传递过来的属性名；
+<code>options: Constructor | Constructor[] | PropOptions</code> 与<code>@Prop</code>的第一个参数一致；</li><li><code>@PropSync</code> 会生成一个新的计算属性。</li></ul><p><strong>注意,使用PropSync的时候是要在父组件配合.sync使用的</strong></p><div class="language- extra-class"><pre class="language-text"><code>export default class HelloWorld extends Vue {
+    @PropSync('syncName', { type: String , default: 'syncName'}) syncedSyncName!: string; 
+    // synced 用来实现组件的双向绑定,子组件可以更改父组件传过来的值
+    synceNameEdit():void {        
+        this.syncName = 'syncName change ~'  // 双向绑定,更改父组件的 syncName
+    }
+}
+====&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+    props:{
+        syncName : {
+            type: Strign,
+            default: 'syncName'
+        }
+    },
+    computed:{
+        syncedSyncName: {
+            get(){
+                return this.syncName
+            },
+            set(){
+                this.$emit('update:syncName', vaule)
+            }
+        }
+    }
+
+</code></pre></div><h2 id="watch">@Watch</h2><h3 id="watch-path-string-options-watchoptions">@Watch(path: string, options: WatchOptions = {})</h3><p><code>@Watch</code> 装饰器接收两个参数：</p><ul><li><p><code>path: string</code> 被侦听的属性名；</p></li><li><div class="language- extra-class"><pre class="language-text"><code>options?: WatchOptions={} options
+</code></pre></div><p>可以包含两个属性 ：</p><p><code>immediate?:boolean</code> 侦听开始之后是否立即调用该回调函数；
+<code>deep?:boolean</code> 被侦听的对象的属性被改变时，是否调用该回调函数；</p></li></ul><div class="language- extra-class"><pre class="language-text"><code>    @Watch('syncName', { immediate: true , deep: true })
+    onSyncNameChanged(newValue:string,oldValue:string){
+        console.log(newValue, 'newValue');
+        console.log(oldValue, 'oldValue');
+    }
+</code></pre></div><h2 id="model">@Model</h2><h3 id="model-event-string-options-propoptions-constructor-constructor">@Model(event?: string, options: (PropOptions | Constructor[] | Constructor) = {})</h3><p><code>@Model</code>装饰器允许我们在一个组件上自定义<code>v-model</code>，接收两个参数：</p><ul><li><code>event: string</code> 事件名。</li><li><code>options: Constructor | Constructor[] | PropOptions</code> 与<code>@Prop</code>的第一个参数一致。</li></ul><div class="language- extra-class"><pre class="language-text"><code>父组件 =&gt; &lt;HelloWorld v-model=&quot;vuemodel&quot; syncName=&quot;Welcome to Your Vue.js App .&quot; /&gt;
+     data(){
+        return{
+            vuemodel: 'vuemodel'
+        }
+    },
+字组件 =&gt; &lt;input type=&quot;text&quot; :value=&quot;checked&quot; @input=&quot;handleInput($event)&quot; /&gt;
+	 @Model('change', { type: String, default: 'defaultModel' }) readonly checked!: string
+   public handleInput(that: any): void {
+     this.$emit('change', that.target.value); 
+   }
+</code></pre></div><h2 id="emit">@Emit</h2><h3 id="emit-event-string">@Emit(event?: string)</h3><ul><li><code>@Emit</code> 装饰器接收一个可选参数，该参数是<code>$Emit</code>的第一个参数，充当事件名。如果没有提供这个参数，<code>$Emit</code>会将回调函数名的<code>camelCase</code>转为<code>kebab-case</code>，并将其作为事件名；</li><li><code>@Emit</code>会将回调函数的返回值作为第二个参数，如果返回值是一个<code>Promise</code>对象，<code>$emit</code>会在<code>Promise</code>对象被标记为<code>resolved</code>之后触发；</li><li><code>@Emit</code>的回调函数的参数，会放在其返回值之后，一起被<code>$emit</code>当做参数使用。</li></ul><div class="language- extra-class"><pre class="language-text"><code>父组件 =&gt; &lt;HelloWorld v-model=&quot;vuemodel&quot; syncName=&quot;Welcome to Your Vue.js App .&quot; @get-person=&quot;getPerson&quot;/&gt;
+    methods:{
+        getPerson(data){
+            console.log('来自子组件的data', data);
+        }
+    }
+字组件 =&gt; &lt;button @click=&quot;getPerson&quot;&gt;emitParent - getPerson&lt;/button&gt;
+         &lt;button @click=&quot;emitParent&quot;&gt;emitParent - emitParent&lt;/button&gt;
+      // 相当于 this.emit('get-person',this.person)
+      // 无参数， 如果此处不设置别名字,则默认使用下面的函数命名
+      // 此处命名如果有大写字母则需要用横线隔开
+      // 如果没有return,则返回event
+      
+    @Emit()
+    getPerson(event:MouseEvent){
+        return this.person
+    }
+
+    @Emit('get-person')
+    emitParent(event:MouseEvent){
+        return this.person
+    }
+</code></pre></div><h2 id="provide-inject">@Provide/@Inject</h2><h3 id="provide-inject-providereactive-injectreactive">@Provide/@Inject  @ProvideReactive/@InjectReactive</h3><h4 id="provide-key-string-symbol-inject-options-from-injectkey-default-any-injectkey-decorator"><code>@Provide(key?: string | symbol)</code> / <code>@Inject(options?: { from?: InjectKey, default?: any } | InjectKey)</code> decorator</h4><h4 id="providereactive-key-string-symbol-injectreactive-options-from-injectkey-default-any-injectkey-decorator"><code>@ProvideReactive(key?: string | symbol)</code> / <code>@InjectReactive(options?: { from?: InjectKey, default?: any } | InjectKey)</code> decorator</h4><p>提供/注入装饰器,
+key可以为string或者<code>symbol类型,</code></p><p><code>相同点:Provide/ProvideReactive提供的数据,在内部组件使用Inject/InjectReactive都可取到不同点:</code>
+如果提供(<code>ProvideReactive</code>)的值被父组件修改，则子组件可以使用<code>InjectReactive</code>捕获此修改</p><div class="language- extra-class"><pre class="language-text"><code>父组件 =&gt; export default class App extends Vue{
+            @Provide() provideValue = 'provideValue';
+            @ProvideReactive() ProvideReactiveValue = 'ProvideReactiveValue';
+            @ProvideReactive('key') ProvideReactiveValueKey = 'ProvideReactiveValueKey';
+        }
+ 字组件 =&gt;  &lt;p&gt;
+              祖先组件里面的provideValue:{{provideValue}}&lt;br/&gt;
+              祖先组件里面的ProvideReactiveValue:{{ProvideReactiveValue}}&lt;br/&gt;
+              祖先组件里面的ProvideReactiveValueKey:{{ProvideReactiveValueKey}}
+          &lt;/p&gt;
+</code></pre></div><h2 id="ref">@Ref</h2><h3 id="ref-refkey-string">@Ref(refKey?: string)</h3><p><code>@Ref</code> 装饰器接收一个可选参数，用来指向元素或子组件的引用信息。如果没有提供这个参数，会使用装饰器后面的属性名充当参数</p><div class="language- extra-class"><pre class="language-text"><code>    &lt;div&gt;
+        &lt;button @click=&quot;getRef()&quot; ref=&quot;buttonRef&quot;&gt;获取ref&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;!-- 过配置路由的 meta 对象的 keepAlive 属性值来区分页面是否需要缓存 --&gt;
+    &lt;router-view v-if=&quot;!$route.meta.keepAlive&quot; ref=&quot;RefComponent&quot;&gt;&lt;/router-view&gt;
+    &lt;keep-alive&gt;
+      &lt;router-view v-if=&quot;$route.meta.keepAlive&quot; ref=&quot;RefComponent&quot;&gt;&lt;/router-view&gt;
+    &lt;/keep-alive&gt;
+    
+    
+    @Ref('buttonRef') readonly ref!: HTMLButtonElement;
+    @Ref('RefComponent') readonly RefComp!: RefComponent;
+
+    getRef(){
+        console.log(this.ref);
+        console.log(this.RefComp);
+    }
+</code></pre></div></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/Weblog/frames/vue/VUEX.html" class="prev">
+          VUEX
+        </a></span><span class="next"><a href="/Weblog/frames/vue/TslintOfVue.html">
+          Tslint.json配置
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/Weblog/assets/js/app.bc17a3fe.js" defer></script><script src="/Weblog/assets/js/56.389f0044.js" defer></script>
+  </body>
+</html>

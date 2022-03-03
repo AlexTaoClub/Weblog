@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React 应用 | AlexTao 的 博客</title>
+    <meta name="description" content="In doing we learn.">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/Weblog/assets/css/styles.bc17a3fe.css" as="style"><link rel="preload" href="/Weblog/assets/js/app.bc17a3fe.js" as="script"><link rel="preload" href="/Weblog/assets/js/49.78d85a96.js" as="script"><link rel="prefetch" href="/Weblog/assets/css/16.styles.2339a627.css"><link rel="prefetch" href="/Weblog/assets/css/5.styles.c1152841.css"><link rel="prefetch" href="/Weblog/assets/css/7.styles.1f4a6057.css"><link rel="prefetch" href="/Weblog/assets/css/8.styles.5b6e1357.css"><link rel="prefetch" href="/Weblog/assets/js/0.a8dcd889.js"><link rel="prefetch" href="/Weblog/assets/js/10.bbae2931.js"><link rel="prefetch" href="/Weblog/assets/js/100.b8573d34.js"><link rel="prefetch" href="/Weblog/assets/js/101.abec8cfc.js"><link rel="prefetch" href="/Weblog/assets/js/102.79aa7798.js"><link rel="prefetch" href="/Weblog/assets/js/11.249c3d32.js"><link rel="prefetch" href="/Weblog/assets/js/12.6c4f9a9d.js"><link rel="prefetch" href="/Weblog/assets/js/13.9c3a7225.js"><link rel="prefetch" href="/Weblog/assets/js/14.8788763f.js"><link rel="prefetch" href="/Weblog/assets/js/15.c3d91b4b.js"><link rel="prefetch" href="/Weblog/assets/js/16.2339a627.js"><link rel="prefetch" href="/Weblog/assets/js/17.f68b5694.js"><link rel="prefetch" href="/Weblog/assets/js/18.1dc877c8.js"><link rel="prefetch" href="/Weblog/assets/js/19.8d3a8eb9.js"><link rel="prefetch" href="/Weblog/assets/js/2.adb0855b.js"><link rel="prefetch" href="/Weblog/assets/js/20.5b430c8f.js"><link rel="prefetch" href="/Weblog/assets/js/21.7570ba60.js"><link rel="prefetch" href="/Weblog/assets/js/22.c34e9396.js"><link rel="prefetch" href="/Weblog/assets/js/23.d89c70ce.js"><link rel="prefetch" href="/Weblog/assets/js/24.cc87bb5d.js"><link rel="prefetch" href="/Weblog/assets/js/25.024b7a56.js"><link rel="prefetch" href="/Weblog/assets/js/26.0d0e2118.js"><link rel="prefetch" href="/Weblog/assets/js/27.fd65c2c2.js"><link rel="prefetch" href="/Weblog/assets/js/28.e7e81b37.js"><link rel="prefetch" href="/Weblog/assets/js/29.d69a29c6.js"><link rel="prefetch" href="/Weblog/assets/js/3.9c9ae281.js"><link rel="prefetch" href="/Weblog/assets/js/30.e02a9f2a.js"><link rel="prefetch" href="/Weblog/assets/js/31.4d5d63f6.js"><link rel="prefetch" href="/Weblog/assets/js/32.2652c4b5.js"><link rel="prefetch" href="/Weblog/assets/js/33.f81118fb.js"><link rel="prefetch" href="/Weblog/assets/js/34.6539d2a9.js"><link rel="prefetch" href="/Weblog/assets/js/35.479b4b73.js"><link rel="prefetch" href="/Weblog/assets/js/36.24e9784f.js"><link rel="prefetch" href="/Weblog/assets/js/37.13a7e720.js"><link rel="prefetch" href="/Weblog/assets/js/38.57e7625b.js"><link rel="prefetch" href="/Weblog/assets/js/39.40ddc61b.js"><link rel="prefetch" href="/Weblog/assets/js/4.cb1adf5e.js"><link rel="prefetch" href="/Weblog/assets/js/40.4abade23.js"><link rel="prefetch" href="/Weblog/assets/js/41.03a22716.js"><link rel="prefetch" href="/Weblog/assets/js/42.4bf6acac.js"><link rel="prefetch" href="/Weblog/assets/js/43.7d75114c.js"><link rel="prefetch" href="/Weblog/assets/js/44.a74a0979.js"><link rel="prefetch" href="/Weblog/assets/js/45.224f0ae1.js"><link rel="prefetch" href="/Weblog/assets/js/46.716c0ee0.js"><link rel="prefetch" href="/Weblog/assets/js/47.a44c77ff.js"><link rel="prefetch" href="/Weblog/assets/js/48.c92bc6c3.js"><link rel="prefetch" href="/Weblog/assets/js/5.c1152841.js"><link rel="prefetch" href="/Weblog/assets/js/50.65d4cc82.js"><link rel="prefetch" href="/Weblog/assets/js/51.dfe21a00.js"><link rel="prefetch" href="/Weblog/assets/js/52.a55d1d66.js"><link rel="prefetch" href="/Weblog/assets/js/53.24e5ba30.js"><link rel="prefetch" href="/Weblog/assets/js/54.3d44c9e1.js"><link rel="prefetch" href="/Weblog/assets/js/55.5509d3c1.js"><link rel="prefetch" href="/Weblog/assets/js/56.389f0044.js"><link rel="prefetch" href="/Weblog/assets/js/57.a6410cdf.js"><link rel="prefetch" href="/Weblog/assets/js/58.99de433a.js"><link rel="prefetch" href="/Weblog/assets/js/59.f362327e.js"><link rel="prefetch" href="/Weblog/assets/js/6.829d0e7e.js"><link rel="prefetch" href="/Weblog/assets/js/60.d8a731fd.js"><link rel="prefetch" href="/Weblog/assets/js/61.c32405a4.js"><link rel="prefetch" href="/Weblog/assets/js/62.2cf15697.js"><link rel="prefetch" href="/Weblog/assets/js/63.97976992.js"><link rel="prefetch" href="/Weblog/assets/js/64.df2f0acc.js"><link rel="prefetch" href="/Weblog/assets/js/65.0365fc24.js"><link rel="prefetch" href="/Weblog/assets/js/66.89f67105.js"><link rel="prefetch" href="/Weblog/assets/js/67.4d546178.js"><link rel="prefetch" href="/Weblog/assets/js/68.b3742591.js"><link rel="prefetch" href="/Weblog/assets/js/69.e2c032ec.js"><link rel="prefetch" href="/Weblog/assets/js/7.1f4a6057.js"><link rel="prefetch" href="/Weblog/assets/js/70.f262dfb0.js"><link rel="prefetch" href="/Weblog/assets/js/71.24d5a255.js"><link rel="prefetch" href="/Weblog/assets/js/72.c2fad7bd.js"><link rel="prefetch" href="/Weblog/assets/js/73.e3de86c7.js"><link rel="prefetch" href="/Weblog/assets/js/74.af039d36.js"><link rel="prefetch" href="/Weblog/assets/js/75.b5d26a4d.js"><link rel="prefetch" href="/Weblog/assets/js/76.5253b8d4.js"><link rel="prefetch" href="/Weblog/assets/js/77.13049fae.js"><link rel="prefetch" href="/Weblog/assets/js/78.732e7950.js"><link rel="prefetch" href="/Weblog/assets/js/79.91a95405.js"><link rel="prefetch" href="/Weblog/assets/js/8.5b6e1357.js"><link rel="prefetch" href="/Weblog/assets/js/80.60b08cac.js"><link rel="prefetch" href="/Weblog/assets/js/81.09852d19.js"><link rel="prefetch" href="/Weblog/assets/js/82.49b521d3.js"><link rel="prefetch" href="/Weblog/assets/js/83.681a706a.js"><link rel="prefetch" href="/Weblog/assets/js/84.ca93e702.js"><link rel="prefetch" href="/Weblog/assets/js/85.9813d878.js"><link rel="prefetch" href="/Weblog/assets/js/86.632f014f.js"><link rel="prefetch" href="/Weblog/assets/js/87.7737cd73.js"><link rel="prefetch" href="/Weblog/assets/js/88.1ec9c00d.js"><link rel="prefetch" href="/Weblog/assets/js/89.bbeb975f.js"><link rel="prefetch" href="/Weblog/assets/js/9.c685ce8f.js"><link rel="prefetch" href="/Weblog/assets/js/90.eda536dd.js"><link rel="prefetch" href="/Weblog/assets/js/91.391681fc.js"><link rel="prefetch" href="/Weblog/assets/js/92.dca04870.js"><link rel="prefetch" href="/Weblog/assets/js/93.01d44a2a.js"><link rel="prefetch" href="/Weblog/assets/js/94.f941a99a.js"><link rel="prefetch" href="/Weblog/assets/js/95.232bf755.js"><link rel="prefetch" href="/Weblog/assets/js/96.d381c6e0.js"><link rel="prefetch" href="/Weblog/assets/js/97.2a0ba8ba.js"><link rel="prefetch" href="/Weblog/assets/js/98.001e708c.js"><link rel="prefetch" href="/Weblog/assets/js/99.0ff7167d.js">
+    <link rel="stylesheet" href="/Weblog/assets/css/styles.bc17a3fe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Weblog/" class="home-link router-link-active"><!----><span class="site-name">
+      AlexTao 的 博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link router-link-active">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link router-link-active">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Vue</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>React</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Weblog/frames/react/" aria-current="page" class="active sidebar-link">React 应用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Weblog/frames/react/#代码规范" class="sidebar-link">代码规范</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/react/#vdom-diff算法" class="sidebar-link">VDOM  + Diff算法</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/react/#diff算法的核心内容" class="sidebar-link">diff算法的核心内容</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/react/#常用组件" class="sidebar-link">常用组件</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/react/#生命周期" class="sidebar-link">生命周期</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/react/#组件通讯" class="sidebar-link">组件通讯</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/react/#指针问题" class="sidebar-link">指针问题</a></li><li class="sidebar-sub-header"><a href="/Weblog/frames/react/#ref使用" class="sidebar-link">ref使用</a></li></ul></li><li><a href="/Weblog/frames/react/项目搭建.html" class="sidebar-link">Ts + React  项目搭建</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="react-应用">React 应用</h1><blockquote><p>React是一个专注于构建用户界面的 Javascript Library.</p></blockquote><h2 id="代码规范">代码规范</h2><p><a href="https://nefe.github.io/one-design-docs/#/docs-code-code" target="_blank" rel="noopener noreferrer">Q A<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p><p><strong>Redux + iron-redux + pont + kiwi</strong></p><h2 id="vdom-diff算法">VDOM  + Diff算法</h2><p><strong>虚拟DOM</strong></p><blockquote><p><code>virtual dom</code> 实际上是对实际Dom的一个抽象，是一个 js 对象，从而解决浏览器操作真实DOM的性能问题。react所有的表层操作实际上是在操作<code>Virtual dom</code>。</p><p>涉及到了两个核心要素：虚拟DOM、最小量更新。</p></blockquote><p><strong>最小更新量</strong></p><blockquote><p>Diff的用途就是在新老虚拟DOM之间找到最小更新的部分，从而将该部分对应的DOM进行更新。</p></blockquote><p>经过 Diff 算法会计算出 Virtual DOM 的差异，然后将这些差异进行实际的DOM操作更新页面。</p><h2 id="diff算法的核心内容">diff算法的核心内容</h2><h3 id="更新流程">更新流程</h3><blockquote><p>Diff算法整个流程如下图所示：</p></blockquote><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1186ba2ede5b44bfa728d6fa5b9b7133~tplv-k3u1fbpfcp-watermark.image" alt="Diff算法3.jpg"></p><p><strong>一、 首先比较一下新旧节点是不是同一个节点（可通过比较sel（选择器）和key（唯一标识）值是不是相同），不是同一个节点则进行暴力删除（注：先以旧节点为基准插入新节点，然后再删除旧节点）。</strong></p><p><strong>二、 若是同一个节点则需要进一步比较</strong></p><ol><li>完全相同，不做处理</li><li>新节点内容为文本，直接替换完事</li><li>新节点有子节点，这个时候就要仔细考虑一下了:若老节点没有子元素，则直接清空老节点，将新节点的子元素插入即可；若老节点有子元素则就需要按照上述的更新策略老搞定了</li></ol><h3 id="_3-1-patch函数">3.1 patch函数</h3><blockquote><p>Diff算法的入口函数，主要判断新旧节点是不是同一个节点，然后交由不同的逻辑进行处理。</p></blockquote><div class="language- extra-class"><pre class="language-text"><code>export default function patch(oldVnode, newVnode) {
+    // 判断传入的第一个参数，是DOM节点还是虚拟节点
+    if (oldVnode.sel === '' || oldVnode.sel === undefined) {
+        // 传入的第一个参数是DOM节点，此时要包装成虚拟节点
+        oldVnode = vnode(oldVnode.tagName.toLowerCase(), {}, [], undefined, oldVnode);
+    }
+
+    // 判断oldVnode和newVnode是不是同一个节点
+    if (oldVnode.key === newVnode.key &amp;&amp; oldVnode.sel === newVnode.sel) {
+        //是同一个节点，则进行精细化比较
+        patchVnode(oldVnode, newVnode);
+    }
+    else {
+        // 不是同一个节点，暴力插入新的，删除旧的
+        let newVnodeElm = createElement(newVnode);
+
+        // 将新节点插入到老节点之前
+        if (oldVnode.elm.parentNode &amp;&amp; newVnodeElm) {
+            oldVnode.elm.parentNode.insertBefore(newVnodeElm, oldVnode.elm);
+        }
+        // 删除老节点
+        oldVnode.elm.parentNode.removeChild(oldVnode.elm);
+    }
+}
+复制代码
+</code></pre></div><h3 id="_3-2-patchvnode函数">3.2 patchVnode函数</h3><blockquote><p>该函数主要负责精细化比较，通过按照上述流程图中的逻辑依次判断属于哪一个分支，从而采取不同的处理逻辑。（思路清晰，算法太牛了）</p></blockquote><div class="language- extra-class"><pre class="language-text"><code>export default function patchVnode(oldVnode, newVnode) {
+    // 判断新旧vnode是否是同一个对象
+    if (oldVnode === newVnode) {
+        return;
+    }
+    // 判断vnode有没有text属性
+    if (newVnode.text !== undefined &amp;&amp; (newVnode.children === undefined || newVnode.children.length === 0)) {
+        console.log('新vnode有text属性');
+        if (newVnode.text !== oldVnode.text) {
+            oldVnode.elm.innerText = newVnode.text;
+        }
+    }
+    else {
+        // 新vnode没有text属性，有children
+        console.log('新vnode没有text属性');
+        // 判断老的有没有children
+        if (oldVnode.children !== undefined &amp;&amp; oldVnode.children.length &gt; 0) {
+            // 老的有children，新的也有children
+            updateChildren(oldVnode.elm, oldVnode.children, newVnode.children);
+        }
+        else {
+            // 老的没有children，新的有children
+            // 清空老的节点的内容
+            oldVnode.elm.innerHTML = '';
+            // 遍历新的vnode的子节点，创建DOM，上树
+            for (let i = 0; i &lt; newVnode.children.length; i++) {
+                let dom = createElement(newVnode.children[i]);
+                oldVnode.elm.appendChild(dom);
+            }
+        }
+    }
+}
+复制代码
+</code></pre></div><h3 id="_3-3-updatechildren函数">3.3 updateChildren函数</h3><blockquote><p>核心函数，主要负责旧虚拟节点和新虚拟节点均存在子元素的情况，按照比较策略依次进行比较，最终找出子元素中变化的部分，实现最小更新。对于该部分，涉及到一些指针，如下所示：</p></blockquote><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/69699849ff164f5a94ab45ffcfdf33b6~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p><ol><li>旧前指的就是更新前虚拟DOM中的头部指针</li><li>旧后指的就是更新前虚拟DOM中的尾部指针</li><li>新前指的就是更新后虚拟DOM中的头部指针</li><li>新后指的就是更新后虚拟DOM中的尾部指针</li></ol><blockquote><p>按照上述的更新策略，上述旧虚拟DOM更新为新虚拟DOM的流程为：</p></blockquote><ol><li>命中“新后旧前”策略，然后将信后对应的DOM节点（也就是节点1）移动到旧后节点（节点3）后面，然后旧前节点指针下移，新后节点指针上移。</li><li>仍然命中“新后旧前”策略，做相同的操作，将节点2移动到旧后节点（节点3）后面，下移旧前节点，上移新后节点。</li><li>命中“新前旧前”策略，DOM节点不变，旧前和新前节点均下移。</li><li>跳出循环，移动结束。</li></ol><div class="language- extra-class"><pre class="language-text"><code>export default function updateChildren(parentElm, oldCh, newCh) {
+    // 旧前
+    let oldStartIdx = 0;
+    // 新前
+    let newStartIdx = 0;
+    // 旧后
+    let oldEndIdx = oldCh.length - 1;
+    // 新后
+    let newEndIdx = newCh.length - 1;
+    // 旧前节点
+    let oldStartVnode = oldCh[0];
+    // 旧后节点
+    let oldEndVnode = oldCh[oldEndIdx];
+    // 新前节点
+    let newStartVnode = newCh[0];
+    // 新后节点
+    let newEndVnode = newCh[newEndIdx];
+
+    let keyMap = null;
+
+    while (oldStartIdx &lt;= oldEndIdx &amp;&amp; newStartIdx &lt;= newEndIdx) {
+        // 略过已经加undefined标记的内容
+        if (oldStartVnode == null || oldCh[oldStartIdx] === undefined) {
+            oldStartVnode = oldCh[++oldStartIdx];
+        }
+        else if (oldEndVnode == null || oldCh[oldEndIdx] === undefined) {
+            oldEndVnode = oldCh[--oldEndIdx];
+        }
+        else if (newStartVnode == null || newCh[newStartIdx] === undefined) {
+            newStartVnode = newCh[++newStartIdx];
+        }
+        else if (newEndVnode == null || newCh[newEndIdx] === undefined) {
+            newEndVnode = newCh[--newEndIdx];
+        }
+        else if (checkSameVnode(oldStartVnode, newStartVnode)) {
+            // 新前与旧前
+            console.log('新前与旧前命中');
+            patchVnode(oldStartVnode, newStartVnode);
+            oldStartVnode = oldCh[++oldStartIdx];
+            newStartVnode = newCh[++newStartIdx];
+        }
+        else if (checkSameVnode(oldEndVnode, newEndVnode)) {
+            // 新后和旧后
+            console.log('新后和旧后命中');
+            patchVnode(oldEndVnode, newEndVnode);
+            oldEndVnode = oldCh[--oldEndIdx];
+            newEndVnode = newCh[--newEndVnode];
+        }
+        else if (checkSameVnode(oldStartVnode, newEndVnode)) {
+            console.log('新后和旧前命中');
+            patchVnode(oldStartVnode, newEndVnode);
+            // 当新后与旧前命中的时候，此时要移动节点，移动新后指向的这个节点到老节点旧后的后面
+            parentElm.insertBefore(oldStartVnode.elm, oldEndVnode.elm.nextSibling);
+            oldStartVnode = oldCh[++oldStartIdx];
+            newEndVnode = newCh[--newEndIdx];
+        }
+        else if (checkSameVnode(oldEndVnode, newStartVnode)) {
+            // 新前和旧后
+            console.log('新前和旧后命中');
+            patchVnode(oldEndVnode, newStartVnode);
+            // 当新前和旧后命中的时候，此时要移动节点，移动新前指向的这个节点到老节点旧前的前面
+            parentElm.insertBefore(oldEndVnode.elm, oldStartVnode.elm);
+            oldEndVnode = oldCh[--oldEndIdx];
+            newStartVnode = newCh[++newStartIdx];
+        }
+        else {
+            // 四种都没有命中
+            // 制作keyMap一个映射对象，这样就不用每次都遍历老对象了
+            if (!keyMap) {
+                keyMap = {};
+                for (let i = oldStartIdx; i &lt;= oldEndIdx; i++) {
+                    const key = oldCh[i].key;
+                    if (key !== undefined) {
+                        keyMap[key] = i;
+                    }
+                }
+            }
+            // 寻找当前这项（newStartIdx）在keyMap中的映射的位置序号
+            const idxInOld = keyMap[newStartVnode.key];
+            if (idxInOld === undefined) {
+                // 如果idxInOld是undefined表示踏实全新的项，此时会将该项创建为DOM节点并插入到旧前之前
+                parentElm.insertBefore(createElement(newStartVnode), oldStartVnode.elm);
+            }
+            else {
+                // 如果不是undefined，则不是全新的项，则需要移动
+                const elmToMove = oldCh[idxInOld];
+                patchVnode(elmToMove, newStartVnode);
+                // 把这项设置为undefined，表示已经处理完这项了
+                oldCh[idxInOld] = undefined;
+                // 移动
+                parentElm.insertBefore(elmToMove.elm, oldStartVnode.elm);
+            }
+            // 指针下移，只移动新的头
+            newStartVnode = newCh[++newStartIdx];
+        }
+    }
+
+    // 循环结束后，处理未处理的项
+    if (newStartIdx &lt;= newEndIdx) {
+        console.log('new还有剩余节点没有处理，要加项，把所有剩余的节点插入到oldStartIdx之前');
+        // 遍历新的newCh，添加到老的没有处理的之前
+        for (let i = newStartIdx; i &lt;= newEndIdx; i++) {
+            // insertBefore方法可以自动识别null，如果是null就会自动排到队尾去
+            // newCh[i]现在还没有真正的DOM，所以要调用createElement函数变为DOM
+            parentElm.insertBefore(createElement(newCh[i]), oldCh[oldStartIdx].elm);
+        }
+    }
+    else if (oldStartIdx &lt;= oldEndIdx) {
+        console.log('old还有剩余节点没有处理，要删除项');
+        // 批量删除oldStart和oldEnd指针之间的项
+        for (let i = oldStartIdx; i &lt;= oldEndIdx; i++) {
+            if (oldCh[i]) {
+                parentElm.removeChild(oldCh[i].elm);
+            }
+        }
+    }
+}
+</code></pre></div><h2 id="常用组件">常用组件</h2><ol><li><code>axios</code>(<code>http</code>请求模块)</li><li><code>echarts-for-react</code>(可视化图表)</li><li><code>recharts</code>(基于react封装的图表)</li><li><code>nprogress</code>(顶部加载条)</li><li><code>react-draft-wysiwyg(</code>别人基于react的富文本封装)</li><li><code>react-draggable</code>(拖拽模块)</li><li><code>screenfull</code>(全屏插件)</li><li><code>photoswipe</code>(图片弹层查看插件)</li><li><code>animate.css</code></li><li><code>redux Web</code> (应用是一个状态机，视图与状态是一一对应的.所有的状态，保存在一个对象里面)</li><li><code>redux-logger</code> 日志</li><li><code>Reselect</code> 记忆组件</li><li><code>redux-thunk</code>(解决异步action的问题)</li><li><code>redux-saga</code> (解决异步action的问题)</li><li><code>react-router-redux</code>(保持路由与应用状态(state)同步)</li><li><code>react-router-dom</code></li></ol><h2 id="生命周期">生命周期</h2><h3 id="_1-react的生命周期有哪些？">1. React的生命周期有哪些？</h3><p>React 通常将组件生命周期分为三个阶段：</p><ul><li>装载阶段（Mount），组件第一次在DOM树中被渲染的过程；</li><li>更新过程（Update），组件状态发生变化，重新更新渲染的过程；</li><li>卸载过程（Unmount），组件从DOM树中被移除的过程；</li></ul><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c6acaafdb0af45d78b4428ca25ca4160~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p><h4 id="_1）组件挂载阶段">1）组件挂载阶段</h4><p>挂载阶段组件被创建，然后组件实例插入到 DOM 中，完成组件的第一次渲染，该过程只会发生一次，在此阶段会依次调用以下这些方法：</p><ul><li>constructor</li><li>getDerivedStateFromProps</li><li>render</li><li>componentDidMount</li></ul><h5 id="（1）constructor">（1）constructor</h5><p>组件的构造函数，第一个被执行，若没有显式定义它，会有一个默认的构造函数，但是若显式定义了构造函数，我们必须在构造函数中执行 <code>super(props)</code>，否则无法在构造函数中拿到this。</p><p>如果不初始化 state 或不进行方法绑定，则不需要为 React 组件实现构造函数<strong>Constructor</strong>。</p><p>constructor中通常只做两件事：</p><ul><li>初始化组件的 state</li><li>给事件处理方法绑定 this</li></ul><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// 不要在构造函数中调用 setState，可以直接给 state 设置初始值</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span> counter<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>handleClick <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleClick</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h5 id="（2）getderivedstatefromprops">（2）getDerivedStateFromProps</h5><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">static</span> <span class="token function">getDerivedStateFromProps</span><span class="token punctuation">(</span>nextProps<span class="token punctuation">,</span> prevState<span class="token punctuation">)</span>
+</code></pre></div><p>这是个静态方法，所以不能在这个函数里使用 <code>this</code>，有两个参数 <code>props</code> 和 <code>state</code>，分别指接收到的新参数和当前组件的 <code>state</code> 对象，这个函数会返回一个对象用来更新当前的 <code>state</code> 对象，如果不需要更新必须返回 <code>null</code>。</p><p>该函数会在装载时，接收到新的 <code>props</code> 或者调用了 <code>setState</code> 和 <code>forceUpdate</code> 时被调用。如当接收到新的属性想修改 <code>state</code> ，就可以使用。</p><h5 id="（3）render">（3）render</h5><p>render是React 中最核心的方法，一个组件中必须要有这个方法，它会根据状态 <code>state</code> 和属性 <code>props</code> 渲染组件。这个函数只做一件事，就是返回需要渲染的内容，所以不要在这个函数内做其他业务逻辑，通常调用该方法会返回以下类型中一个：</p><ul><li><strong>React 元素</strong>：这里包括原生的 DOM 以及 React 组件；</li><li><strong>数组和 Fragment（片段）</strong>：可以返回多个元素；</li><li><strong>Portals（插槽）</strong>：可以将子元素渲染到不同的 DOM 子树种；</li><li><strong>字符串和数字</strong>：被渲染成 DOM 中的 text 节点；</li><li><strong>布尔值或 null</strong>：不渲染任何内容。</li></ul><h5 id="（4）componentdidmount">（4）componentDidMount()</h5><p>componentDidMount()会在组件挂载后（插入 DOM 树中）立即调。该阶段通常进行以下操作：</p><ul><li>执行依赖于DOM的操作；</li><li>发送网络请求；（官方建议）</li><li>添加订阅消息（会在componentWillUnmount取消订阅）；</li></ul><h4 id="_2）组件更新阶段">2）组件更新阶段</h4><p>当组件的 <code>props</code> 改变了，或组件内部调用了 <code>setState/forceUpdate</code>，会触发更新重新渲染，这个过程可能会发生多次。这个阶段会依次调用下面这些方法：</p><ul><li>getDerivedStateFromProps</li><li>shouldComponentUpdate</li><li>render</li><li>getSnapshotBeforeUpdate</li><li>componentDidUpdate</li></ul><h5 id="（1）shouldcomponentupdate">（1）shouldComponentUpdate</h5><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">shouldComponentUpdate</span><span class="token punctuation">(</span>nextProps<span class="token punctuation">,</span> nextState<span class="token punctuation">)</span>
+</code></pre></div><p>在说这个生命周期函数之前，来看两个问题：</p><ul><li><strong>setState 函数在任何情况下都会导致组件重新渲染吗？例如下面这种情况：</strong></li></ul><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>number<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>number<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><ul><li><strong>如果没有调用 setState，props 值也没有变化，是不是组件就不会重新渲染？</strong></li></ul><p>第一个问题答案是 <strong>会</strong> ，第二个问题如果是父组件重新渲染时，不管传入的 props 有没有变化，都会引起子组件的重新渲染。</p><p>那么有没有什么方法解决在这两个场景下不让组件重新渲染进而提升性能呢？这个时候 <code>shouldComponentUpdate</code> 登场了，这个生命周期函数是用来提升速度的，它是在重新渲染组件开始前触发的，默认返回 <code>true</code>，可以比较 <code>this.props</code> 和 <code>nextProps</code> ，<code>this.state</code> 和 <code>nextState</code> 值是否变化，来确认返回 true 或者 <code>false</code>。当返回 <code>false</code> 时，组件的更新过程停止，后续的 <code>render</code>、<code>componentDidUpdate</code> 也不会被调用。</p><p><strong>注意：</strong> 添加 <code>shouldComponentUpdate</code> 方法时，不建议使用深度相等检查（如使用 <code>JSON.stringify()</code>），因为深比较效率很低，可能会比重新渲染组件效率还低。而且该方法维护比较困难，建议使用该方法会产生明显的性能提升时使用。</p><h5 id="（2）getsnapshotbeforeupdate">（2）getSnapshotBeforeUpdate</h5><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">getSnapshotBeforeUpdate</span><span class="token punctuation">(</span>prevProps<span class="token punctuation">,</span> prevState<span class="token punctuation">)</span>
+</code></pre></div><p>这个方法在 <code>render</code> 之后，<code>componentDidUpdate</code> 之前调用，有两个参数 <code>prevProps</code> 和 <code>prevState</code>，表示更新之前的 <code>props</code> 和 <code>state</code>，这个函数必须要和 <code>componentDidUpdate</code> 一起使用，并且要有一个返回值，默认是 <code>null</code>，这个返回值作为第三个参数传给 <code>componentDidUpdate</code>。</p><h5 id="（3）componentdidupdate">（3）componentDidUpdate</h5><p>componentDidUpdate() 会在更新后会被立即调用，首次渲染不会执行此方法。 该阶段通常进行以下操作：</p><ul><li>当组件更新后，对 DOM 进行操作；</li><li>如果你对更新前后的 props 进行了比较，也可以选择在此处进行网络请求；（例如，当 props 未发生变化时，则不会执行网络请求）。</li></ul><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">componentDidUpdate</span><span class="token punctuation">(</span><span class="token parameter">prevProps<span class="token punctuation">,</span> prevState<span class="token punctuation">,</span> snapshot</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+复制代码
+</code></pre></div><p>该方法有三个参数：</p><ul><li>prevProps: 更新前的props</li><li>prevState: 更新前的state</li><li>snapshot: getSnapshotBeforeUpdate()生命周期的返回值</li></ul><h4 id="_3）组件卸载阶段">3）组件卸载阶段</h4><p>卸载阶段只有一个生命周期函数，componentWillUnmount() 会在组件卸载及销毁之前直接调用。在此方法中执行必要的清理操作：</p><ul><li>清除 timer，取消网络请求或清除</li><li>取消在 componentDidMount() 中创建的订阅等；</li></ul><p>这个生命周期在一个组件被卸载和销毁之前被调用，因此你不应该再这个方法中使用 <code>setState</code>，因为组件一旦被卸载，就不会再装载，也就不会重新渲染。</p><h4 id="_4）错误处理阶段">4）错误处理阶段</h4><p>componentDidCatch(error, info)，此生命周期在后代组件抛出错误后被调用。 它接收两个参数∶</p><ul><li>error：抛出的错误。</li><li>info：带有 componentStack key 的对象，其中包含有关组件引发错误的栈信息</li></ul><p>React常见的生命周期如下： <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ac5371efce0b4adca97e2573e1e18282~tplv-k3u1fbpfcp-zoom-1.image" alt="在这里插入图片描述"></p><p><strong>React常见生命周期的过程大致如下：</strong></p><ul><li>挂载阶段，首先执行constructor构造方法，来创建组件</li><li>创建完成之后，就会执行render方法，该方法会返回需要渲染的内容</li><li>随后，React会将需要渲染的内容挂载到DOM树上</li><li><strong>挂载完成之后就会执行componentDidMount生命周期函数</strong></li><li>如果我们给组件创建一个props（用于组件通信）、调用setState（更改state中的数据）、调用forceUpdate（强制更新组件）时，都会重新调用render函数</li><li>render函数重新执行之后，就会重新进行DOM树的挂载</li><li><strong>挂载完成之后就会执行componentDidUpdate生命周期函数</strong></li><li><strong>当移除组件时，就会执行componentWillUnmount生命周期函数</strong></li></ul><h3 id="_2-react-废弃了哪些生命周期？为什么？">2. React 废弃了哪些生命周期？为什么？</h3><p>被废弃的三个函数都是在render之前，因为fber的出现，很可能因为高优先级任务的出现而打断现有任务导致它们会被执行多次。另外的一个原因则是，React想约束使用者，好的框架能够让人不得已写出容易维护和扩展的代码，这一点又是从何谈起，可以从新增加以及即将废弃的生命周期分析入手</p><p><strong>1) componentWillMount</strong></p><p>首先这个函数的功能完全可以使用componentDidMount和 constructor来代替，异步获取的数据的情况上面已经说明了，而如果抛去异步获取数据，其余的即是初始化而已，这些功能都可以在constructor中执行，除此之外，如果在 willMount 中订阅事件，但在服务端这并不会执行 willUnMount事件，也就是说服务端会导致内存泄漏所以componentWilIMount完全可以不使用，但使用者有时候难免因为各 种各样的情况在 componentWilMount中做一些操作，那么React为了约束开发者，干脆就抛掉了这个API</p><p><strong>2) componentWillReceiveProps</strong></p><p>在老版本的 React 中，如果组件自身的某个 state 跟其 props 密切相关的话，一直都没有一种很优雅的处理方式去更新 state，而是需要在 componentWilReceiveProps 中判断前后两个 props 是否相同，如果不同再将新的 props更新到相应的 state 上去。这样做一来会破坏 state 数据的单一数据源，导致组件状态变得不可预测，另一方面也会增加组件的重绘次数。类似的业务需求也有很多，如一个可以横向滑动的列表，当前高亮的 Tab 显然隶属于列表自身的时，根据传入的某个值，直接定位到某个 Tab。为了解决这些问题，React引入了第一个新的生命周期：getDerivedStateFromProps。它有以下的优点∶</p><ul><li>getDSFP是静态方法，在这里不能使用this，也就是一个纯函数，开发者不能写出副作用的代码</li><li>开发者只能通过prevState而不是prevProps来做对比，保证了state和props之间的简单关系以及不需要处理第一次渲染时prevProps为空的情况</li><li>基于第一点，将状态变化（setState）和昂贵操作（tabChange）区分开，更加便于 render 和 commit 阶段操作或者说优化。</li></ul><p><strong>3) componentWillUpdate</strong></p><p>与 componentWillReceiveProps 类似，许多开发者也会在 componentWillUpdate 中根据 props 的变化去触发一些回调 。 但不论是 componentWilReceiveProps 还 是 componentWilUpdate，都有可能在一次更新中被调用多次，也就是说写在这里的回调函数也有可能会被调用多次，这显然是不可取的。与 componentDidMount 类 似， componentDidUpdate 也不存在这样的问题，一次更新中 componentDidUpdate 只会被调用一次，所以将原先写在 componentWillUpdate 中 的 回 调 迁 移 至 componentDidUpdate 就可以解决这个问题。</p><p>另外一种情况则是需要获取DOM元素状态，但是由于在fber中，render可打断，可能在wilMount中获取到的元素状态很可能与实际需要的不同，这个通常可以使用第二个新增的生命函数的解决 getSnapshotBeforeUpdate(prevProps, prevState)</p><p><strong>4) getSnapshotBeforeUpdate(prevProps, prevState)</strong></p><p>返回的值作为componentDidUpdate的第三个参数。与willMount不同的是，getSnapshotBeforeUpdate会在最终确定的render执行之前执行，也就是能保证其获取到的元素状态与didUpdate中获取到的元素状态相同。官方参考代码：</p><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">ScrollingList</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>listRef <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createRef</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getSnapshotBeforeUpdate</span><span class="token punctuation">(</span><span class="token parameter">prevProps<span class="token punctuation">,</span> prevState</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 我们是否在 list 中添加新的 items ？</span>
+    <span class="token comment">// 捕获滚动位置以便我们稍后调整滚动位置。</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>prevProps<span class="token punctuation">.</span>list<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>list<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>listRef<span class="token punctuation">.</span>current<span class="token punctuation">;</span>
+      <span class="token keyword">return</span> list<span class="token punctuation">.</span>scrollHeight <span class="token operator">-</span> list<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">componentDidUpdate</span><span class="token punctuation">(</span><span class="token parameter">prevProps<span class="token punctuation">,</span> prevState<span class="token punctuation">,</span> snapshot</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 如果我们 snapshot 有值，说明我们刚刚添加了新的 items，</span>
+    <span class="token comment">// 调整滚动位置使得这些新 items 不会将旧的 items 推出视图。</span>
+    <span class="token comment">//（这里的 snapshot 是 getSnapshotBeforeUpdate 的返回值）</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>snapshot <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>listRef<span class="token punctuation">.</span>current<span class="token punctuation">;</span>
+      list<span class="token punctuation">.</span>scrollTop <span class="token operator">=</span> list<span class="token punctuation">.</span>scrollHeight <span class="token operator">-</span> snapshot<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div ref<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>listRef<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token comment">/* ...contents... */</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="组件通讯">组件通讯</h2><ol><li><p><strong>父传子</strong></p><p>React数据流动是单向的;父组件通过props向子组件传递需要的信息</p></li><li><p><strong>子传父</strong></p><ul><li>利用回调函数</li><li>利用自定义事件机制</li></ul><div class="language- extra-class"><pre class="language-text"><code>// 一般改变state值的一种方式
+const { data } = this.state;
+this.setState({ data: {...data, key: 1 } });
+// 另外一种可以通过callback的方式改变state的值
+this.setState(({ data }) =&gt; ({ data: {...data, key: 1 } }));
+// 还可以
+this.setState((state, props) =&gt; {
+return { counter: state.counter + props.step };
+});
+</code></pre></div></li></ol><h2 id="指针问题">指针问题</h2><div class="language- extra-class"><pre class="language-text"><code>run(){
+	alert(&quot;第一种方法！&quot;)
+}
+
+&lt;button onClick={this.run.bind(this)}&gt;第一种&lt;/button&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>constructor(props) {
+    super(props);
+    this.state={
+    //定义数据
+    }
+    this.run = this.run.bind(this);
+}
+
+run(){
+	alert(&quot;第二种方法！&quot;)
+}
+
+&lt;button onClick={this.run}&gt;第二种&lt;/button&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>run=()=&gt; {
+	alert(&quot;第三种方法！&quot;)
+}
+
+&lt;button onClick={this.run}&gt;第三种&lt;/button&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>run(){
+	alert(&quot;第四种方法！&quot;)
+}
+
+&lt;button onClick={()=&gt;this.run()&gt;第四种&lt;/button&gt;
+</code></pre></div><h2 id="ref使用">ref使用</h2><h3 id="单个ref">单个ref</h3><div class="language- extra-class"><pre class="language-text"><code>const Children = (props: Iprops, ref: React.Ref&lt;unknown&gt;) =&gt; {
+  useImperativeHandle(ref, () =&gt; ({   // 父组件调用 子组件方法，需要 useImperativeHandle 里面定义
+    childFn: childFn,
+	}));
+	const childFn = ()=&gt;{ }
+  return (
+    &lt;div&gt;child&lt;/div&gt;
+  );
+};
+
+export default forwardRef(Children); // 函数组件使用ref，需要forwardRef包裹
+
+const Parent = () =&gt; {
+  const childrenRef: React.MutableRefObject&lt;any&gt; = useRef();
+  const handleSubmit = () =&gt; {
+    childrenRef?.current?.childFn();
+  };
+  return (
+    &lt;Children ref={childrenRef} /&gt;
+  );
+};
+
+export default Parent;
+</code></pre></div><h3 id="map-ref">map ref</h3><div class="language- extra-class"><pre class="language-text"><code>  const CreateOrderParent = (props) =&gt; {
+  	useImperativeHandle(props.refInstance, () =&gt; ({
+      handleSubmit: submit,
+    }));
+    const submit = () =&gt; {
+      const values = formRef?.current?.submit();
+      if (values) {
+        return values;
+      } else {
+        return false;
+      }
+    };
+  }
+  
+  const ConnentCreateOrderParent = connect(({ usersandparent, user }) =&gt; {
+    return {
+      user: user.currentUser,
+    };
+  })(CreateOrderParent);
+  export default forwardRef((props, ref) =&gt; (
+    &lt;ConnentCreateOrderParent {...props} refInstance={ref} /&gt;
+  ));
+
+  
+  const parentRefs = [];
+  const setParentRef = (ref) =&gt; {
+    parentRefs.push(ref);
+  };
+   
+   {parentList.map((item, index) =&gt; {
+   		return &lt;CreateOrderParent ref={setParentRef} /&gt;;
+   })}
+</code></pre></div><p>Now, let's try it 👉</p></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/Weblog/frames/vue/效率技巧.html" class="prev">
+          效率技巧 
+        </a></span><span class="next"><a href="/Weblog/frames/react/项目搭建.html">
+          Ts + React  项目搭建
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/Weblog/assets/js/app.bc17a3fe.js" defer></script><script src="/Weblog/assets/js/49.78d85a96.js" defer></script>
+  </body>
+</html>

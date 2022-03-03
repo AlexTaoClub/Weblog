@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>面向对象 | AlexTao 的 博客</title>
+    <meta name="description" content="In doing we learn.">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/Weblog/assets/css/styles.bc17a3fe.css" as="style"><link rel="preload" href="/Weblog/assets/js/app.bc17a3fe.js" as="script"><link rel="preload" href="/Weblog/assets/js/10.bbae2931.js" as="script"><link rel="prefetch" href="/Weblog/assets/css/16.styles.2339a627.css"><link rel="prefetch" href="/Weblog/assets/css/5.styles.c1152841.css"><link rel="prefetch" href="/Weblog/assets/css/7.styles.1f4a6057.css"><link rel="prefetch" href="/Weblog/assets/css/8.styles.5b6e1357.css"><link rel="prefetch" href="/Weblog/assets/js/0.a8dcd889.js"><link rel="prefetch" href="/Weblog/assets/js/100.b8573d34.js"><link rel="prefetch" href="/Weblog/assets/js/101.abec8cfc.js"><link rel="prefetch" href="/Weblog/assets/js/102.79aa7798.js"><link rel="prefetch" href="/Weblog/assets/js/11.249c3d32.js"><link rel="prefetch" href="/Weblog/assets/js/12.6c4f9a9d.js"><link rel="prefetch" href="/Weblog/assets/js/13.9c3a7225.js"><link rel="prefetch" href="/Weblog/assets/js/14.8788763f.js"><link rel="prefetch" href="/Weblog/assets/js/15.c3d91b4b.js"><link rel="prefetch" href="/Weblog/assets/js/16.2339a627.js"><link rel="prefetch" href="/Weblog/assets/js/17.f68b5694.js"><link rel="prefetch" href="/Weblog/assets/js/18.1dc877c8.js"><link rel="prefetch" href="/Weblog/assets/js/19.8d3a8eb9.js"><link rel="prefetch" href="/Weblog/assets/js/2.adb0855b.js"><link rel="prefetch" href="/Weblog/assets/js/20.5b430c8f.js"><link rel="prefetch" href="/Weblog/assets/js/21.7570ba60.js"><link rel="prefetch" href="/Weblog/assets/js/22.c34e9396.js"><link rel="prefetch" href="/Weblog/assets/js/23.d89c70ce.js"><link rel="prefetch" href="/Weblog/assets/js/24.cc87bb5d.js"><link rel="prefetch" href="/Weblog/assets/js/25.024b7a56.js"><link rel="prefetch" href="/Weblog/assets/js/26.0d0e2118.js"><link rel="prefetch" href="/Weblog/assets/js/27.fd65c2c2.js"><link rel="prefetch" href="/Weblog/assets/js/28.e7e81b37.js"><link rel="prefetch" href="/Weblog/assets/js/29.d69a29c6.js"><link rel="prefetch" href="/Weblog/assets/js/3.9c9ae281.js"><link rel="prefetch" href="/Weblog/assets/js/30.e02a9f2a.js"><link rel="prefetch" href="/Weblog/assets/js/31.4d5d63f6.js"><link rel="prefetch" href="/Weblog/assets/js/32.2652c4b5.js"><link rel="prefetch" href="/Weblog/assets/js/33.f81118fb.js"><link rel="prefetch" href="/Weblog/assets/js/34.6539d2a9.js"><link rel="prefetch" href="/Weblog/assets/js/35.479b4b73.js"><link rel="prefetch" href="/Weblog/assets/js/36.24e9784f.js"><link rel="prefetch" href="/Weblog/assets/js/37.13a7e720.js"><link rel="prefetch" href="/Weblog/assets/js/38.57e7625b.js"><link rel="prefetch" href="/Weblog/assets/js/39.40ddc61b.js"><link rel="prefetch" href="/Weblog/assets/js/4.cb1adf5e.js"><link rel="prefetch" href="/Weblog/assets/js/40.4abade23.js"><link rel="prefetch" href="/Weblog/assets/js/41.03a22716.js"><link rel="prefetch" href="/Weblog/assets/js/42.4bf6acac.js"><link rel="prefetch" href="/Weblog/assets/js/43.7d75114c.js"><link rel="prefetch" href="/Weblog/assets/js/44.a74a0979.js"><link rel="prefetch" href="/Weblog/assets/js/45.224f0ae1.js"><link rel="prefetch" href="/Weblog/assets/js/46.716c0ee0.js"><link rel="prefetch" href="/Weblog/assets/js/47.a44c77ff.js"><link rel="prefetch" href="/Weblog/assets/js/48.c92bc6c3.js"><link rel="prefetch" href="/Weblog/assets/js/49.78d85a96.js"><link rel="prefetch" href="/Weblog/assets/js/5.c1152841.js"><link rel="prefetch" href="/Weblog/assets/js/50.65d4cc82.js"><link rel="prefetch" href="/Weblog/assets/js/51.dfe21a00.js"><link rel="prefetch" href="/Weblog/assets/js/52.a55d1d66.js"><link rel="prefetch" href="/Weblog/assets/js/53.24e5ba30.js"><link rel="prefetch" href="/Weblog/assets/js/54.3d44c9e1.js"><link rel="prefetch" href="/Weblog/assets/js/55.5509d3c1.js"><link rel="prefetch" href="/Weblog/assets/js/56.389f0044.js"><link rel="prefetch" href="/Weblog/assets/js/57.a6410cdf.js"><link rel="prefetch" href="/Weblog/assets/js/58.99de433a.js"><link rel="prefetch" href="/Weblog/assets/js/59.f362327e.js"><link rel="prefetch" href="/Weblog/assets/js/6.829d0e7e.js"><link rel="prefetch" href="/Weblog/assets/js/60.d8a731fd.js"><link rel="prefetch" href="/Weblog/assets/js/61.c32405a4.js"><link rel="prefetch" href="/Weblog/assets/js/62.2cf15697.js"><link rel="prefetch" href="/Weblog/assets/js/63.97976992.js"><link rel="prefetch" href="/Weblog/assets/js/64.df2f0acc.js"><link rel="prefetch" href="/Weblog/assets/js/65.0365fc24.js"><link rel="prefetch" href="/Weblog/assets/js/66.89f67105.js"><link rel="prefetch" href="/Weblog/assets/js/67.4d546178.js"><link rel="prefetch" href="/Weblog/assets/js/68.b3742591.js"><link rel="prefetch" href="/Weblog/assets/js/69.e2c032ec.js"><link rel="prefetch" href="/Weblog/assets/js/7.1f4a6057.js"><link rel="prefetch" href="/Weblog/assets/js/70.f262dfb0.js"><link rel="prefetch" href="/Weblog/assets/js/71.24d5a255.js"><link rel="prefetch" href="/Weblog/assets/js/72.c2fad7bd.js"><link rel="prefetch" href="/Weblog/assets/js/73.e3de86c7.js"><link rel="prefetch" href="/Weblog/assets/js/74.af039d36.js"><link rel="prefetch" href="/Weblog/assets/js/75.b5d26a4d.js"><link rel="prefetch" href="/Weblog/assets/js/76.5253b8d4.js"><link rel="prefetch" href="/Weblog/assets/js/77.13049fae.js"><link rel="prefetch" href="/Weblog/assets/js/78.732e7950.js"><link rel="prefetch" href="/Weblog/assets/js/79.91a95405.js"><link rel="prefetch" href="/Weblog/assets/js/8.5b6e1357.js"><link rel="prefetch" href="/Weblog/assets/js/80.60b08cac.js"><link rel="prefetch" href="/Weblog/assets/js/81.09852d19.js"><link rel="prefetch" href="/Weblog/assets/js/82.49b521d3.js"><link rel="prefetch" href="/Weblog/assets/js/83.681a706a.js"><link rel="prefetch" href="/Weblog/assets/js/84.ca93e702.js"><link rel="prefetch" href="/Weblog/assets/js/85.9813d878.js"><link rel="prefetch" href="/Weblog/assets/js/86.632f014f.js"><link rel="prefetch" href="/Weblog/assets/js/87.7737cd73.js"><link rel="prefetch" href="/Weblog/assets/js/88.1ec9c00d.js"><link rel="prefetch" href="/Weblog/assets/js/89.bbeb975f.js"><link rel="prefetch" href="/Weblog/assets/js/9.c685ce8f.js"><link rel="prefetch" href="/Weblog/assets/js/90.eda536dd.js"><link rel="prefetch" href="/Weblog/assets/js/91.391681fc.js"><link rel="prefetch" href="/Weblog/assets/js/92.dca04870.js"><link rel="prefetch" href="/Weblog/assets/js/93.01d44a2a.js"><link rel="prefetch" href="/Weblog/assets/js/94.f941a99a.js"><link rel="prefetch" href="/Weblog/assets/js/95.232bf755.js"><link rel="prefetch" href="/Weblog/assets/js/96.d381c6e0.js"><link rel="prefetch" href="/Weblog/assets/js/97.2a0ba8ba.js"><link rel="prefetch" href="/Weblog/assets/js/98.001e708c.js"><link rel="prefetch" href="/Weblog/assets/js/99.0ff7167d.js">
+    <link rel="stylesheet" href="/Weblog/assets/css/styles.bc17a3fe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Weblog/" class="home-link router-link-active"><!----><span class="site-name">
+      AlexTao 的 博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link router-link-active">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link router-link-active">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>Javascript</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Weblog/javascript/" aria-current="page" class="sidebar-link">高效javascript</a></li><li><a href="/Weblog/javascript/33个概念.html" class="sidebar-link">JavaScript开发者应懂的33个概念</a></li><li><a href="/Weblog/javascript/js备忘录.html" class="sidebar-link">JS备忘录</a></li><li><a href="/Weblog/javascript/js概念.html" class="sidebar-link">JS 概念</a></li><li><a href="/Weblog/javascript/片段和trick.html" class="sidebar-link">片段和trick</a></li><li><a href="/Weblog/javascript/常用正则.html" class="sidebar-link">常用正则表达式</a></li><li><a href="/Weblog/javascript/处理异步的方法.html" class="sidebar-link">处理异步的方法</a></li><li><a href="/Weblog/javascript/字符串.html" class="sidebar-link">字符串</a></li><li><a href="/Weblog/javascript/数组.html" class="sidebar-link">数组</a></li><li><a href="/Weblog/javascript/typeof instanceof.html" class="sidebar-link">typeof  &amp;&amp; instanceof</a></li><li><a href="/Weblog/javascript/浅谈 JSON.html" class="sidebar-link">浅谈 JSON</a></li><li><a href="/Weblog/javascript/详解闭包.html" class="sidebar-link">详解闭包</a></li><li><a href="/Weblog/javascript/执行上下文.html" class="sidebar-link">执行上下文</a></li><li><a href="/Weblog/javascript/this.html" class="sidebar-link">this</a></li><li><a href="/Weblog/javascript/深浅拷贝.html" class="sidebar-link">深浅拷贝</a></li><li><a href="/Weblog/javascript/面向对象.html" class="active sidebar-link">面向对象</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Weblog/javascript/面向对象.html#创建对象" class="sidebar-link">创建对象</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/面向对象.html#原型-构造函数" class="sidebar-link">原型+构造函数</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/面向对象.html#原型链" class="sidebar-link">原型链</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/面向对象.html#原型对象" class="sidebar-link">原型对象</a></li><li class="sidebar-sub-header"><a href="/Weblog/javascript/面向对象.html#字面量法定义原型" class="sidebar-link">字面量法定义原型</a></li></ul></li><li><a href="/Weblog/javascript/继承方式.html" class="sidebar-link">继承方式</a></li><li><a href="/Weblog/javascript/节流防抖.html" class="sidebar-link">节流防抖</a></li><li><a href="/Weblog/javascript/Promise.html" class="sidebar-link">Promise</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="面向对象">面向对象</h1><p>面向对象编程是用抽象方式创建基于现实世界模型的一种编程模式。</p><p>它使用先前建立的范例，包括模块化，多态和封装几种技术。</p><p>面向对象程序设计的目的是在编程中促进更好的灵活性和可维护性。</p><h2 id="创建对象">创建对象</h2><ul><li><strong>普通方法------1</strong></li></ul><div class="language- extra-class"><pre class="language-text"><code>var obj = new Object();
+    obj.name = 'hello';
+    obj.sayHello = function() {
+    alert(obj.name);
+}
+obj.sayHello();
+</code></pre></div><p>​	<strong>缺点：</strong> 创建多个面向对象的时候，重复代码过多，需要封装，所以有了工厂方法。</p><ul><li><strong>工厂模式------2</strong></li></ul><div class="language- extra-class"><pre class="language-text"><code>function CreatePerson(name) {
+    var obj = new Object(); //原料
+    obj.name = name; //加工
+    obj.sayHello = function() {
+        alert(this.name);
+    }
+    return obj; //出厂
+}
+var p1 = CreatePerson('person-1');
+p1.sayHello();//person-1
+var p2 = CreatePerson('person-2');
+p2.sayHello();//person-2
+</code></pre></div><p>​	<strong>缺点：</strong> 无法识别创建的对象的类型。因为全部都是Object，没有区分度，不像Date、Array等，因此出				现了构造函数模式。</p><ul><li><strong>构造函数------3</strong></li></ul><div class="language- extra-class"><pre class="language-text"><code>function CreatePerson(name) {
+    this.name = name;
+    this.sayHello = function() {
+   		alert(this.name);
+    }
+}
+var p1 = new CreatePerson('person-1');
+p1.sayHello();
+var p2 = new CreatePerson('person-2');
+p2.sayHello();
+</code></pre></div><ul><li><p>构造函数</p><ul><li><p>改变方面</p><ul><li><p><strong>函数名首字母大写 。</strong> 只是为了区别于普通的函数，构造函数本身其实就是普通的函数，只是我们专门用它来实现了构造的功能，所以专门起了一个名字叫构造函数，任何函数都可以成为构造函数，这取决于你调用函数的方式，当使用了<u>New的方式</u>调用就成了构造函数。</p></li><li><p><strong>New 关键字调用 。</strong></p><ul><li>new 做了什么？</li></ul><div class="language- extra-class"><pre class="language-text"><code>function CreatePerson(name){ 
+   var obj = {}; //声明一个空对象obj 
+   obj._proto_= CreatePerson.prototype;
+   //把这个对象的_proto_属性指向构造函数的原型对象,这样obj就可以调用CreatePerson原型对象下的所有方法。
+    CreatePerson.apply(obj);   //用apply方法让this指向obj对象
+    this.name = name;   //执行构造函数中的代码（obj对象添加属性，方法）
+    this.sayHello = function(){ 
+       alert(this.name);
+    }; 
+    return obj;//返回这个对象
+}
+</code></pre></div></li></ul></li></ul><p><strong>缺点：</strong> 每次new一个实例化对象，系统都会传建一个内存，他们都有相同的功能但是并不公用。</p><div class="language- extra-class"><pre class="language-text"><code>alert(p1.sayHello==p2.sayHello);    //   false
+</code></pre></div></li><li><p><strong>原型 + 构造函数------4</strong></p></li></ul><h2 id="原型-构造函数">原型+构造函数</h2><p><strong>原型：<strong>每个函数都有一个</strong>prototype属性</strong>，它是一个<strong>对象</strong>，也称作<strong>原型对象</strong>， 而通过这个函数创建出来的实例对象，都能<strong>共享这个原型对象下的方法和属性</strong>。所以我们只需要把想要共享的东西放在函数的prototype下，不想共享的东西通过构造函数来创建就可以了。</p><div class="language- extra-class"><pre class="language-text"><code>function CreatePerson(name) {
+	this.name = name;
+}
+CreatePerson.prototype.sayHello = function() {
+	alert(this.name);
+}
+var p1 = new CreatePerson('person-1');
+p1.sayHello();
+var p2 = new CreatePerson('person-2');
+p2.sayHello();
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>alert(p1.sayHello == p2.sayHello);    //  true
+sayHello()方法是共享的，也就是说他们共用一个内存，更进一步的说它们存在引用关系，   
+也就是说你更改了p1的sayHello也会影响p2的sayHello。
+</code></pre></div><p>__ <strong>proto</strong> __ <strong>：</strong> 同一个函数造出来的实例对象能共享这个函数的prototype下的方法和属性 ,就是通过__proto__属性。</p><ul><li>[ ] 每个实例化对象都有_proto_属性，它是一个指针，指向函数的prototype，也就是保存了它的地址。（<strong>JS中任何对象的值都是保存在堆内存中，我们声明的变量只是一个指针，保存了这个对象的实际地址，所以有了地址就能找到对象</strong>）。</li><li>[ ] 每个实例化对象都有_proto_属性，保存了构造函数的原型对象的地址，通过这个属性就可以拥有原型对象下的所有属性和方法，<strong>_proto_属性实际就是实例化对象和原型对象之间的连接</strong> 。</li></ul><p><img src="/Weblog/assets/img/a_10.b1e1b39d.png" alt></p><h2 id="原型链">原型链</h2><ul><li>实现继承的主要方法。</li><li>每个函数都可以成为构造函数，每个函数都有原型对象，每个原型对象也可以是一个实例化对象.
+<ul><li>比如，你创建了一个函数fun,它是构造函数function的实例化对象，而function的原型对象，又是Object的实例对象。所以fun有个**<em>proto</em><strong>属性可以访问到function的原型对象,function原型对象也是个实例对象，也有个_proto_属性,可以访问到Object的原型对象，所以通过_proto_属性，就形成了一条</strong>原型链**。每个实例化对象都可以访问到链子上方的方法和属性，所以fun是可以访问Object原型对象下的方法和属性的。实际上所有对象都可以访问到Object的原型对象</li></ul></li><li>访问原则------当访问一个对象的属性或方法时，先在自身的下面寻找 ，然后会沿着__proto__指向的这条链路从下往上寻找，如果找到了，就返回值，没有找到，返回undefined。最终到头为null。</li><li>结构</li></ul><div class="language- extra-class"><pre class="language-text"><code>var Fn = function(){};
+var f1 = new Fn();
+console.log(Fn.prototype)  //Object {constructor: function}
+                            constructor:function Fn()
+                            __proto__: Object
+console.log(f1.__proto__); //A {}（即构造器function A 的原型对象）
+console.log(f1.__proto__.__proto__); //Object {}（即构造器function Object 的原型对象）
+console.log(f1.__proto__.__proto__.__proto__); //null
+</code></pre></div><p><img src="/Weblog/assets/img/a_11.fcebbaf4.jpg" alt></p><p><img src="/Weblog/assets/img/bd408de901c51b0985ace1702134319.64c6b956.jpg" alt></p><h2 id="原型对象">原型对象</h2><p>原型对象下可能有三种属性：</p><p>​	1 原型对象所带方法和属性</p><p>​	2 constructor</p><p>​	3_proto_属性</p><p>constructor:构造函数属性，每个函数的原型对象都有的默认属性，指向函数。</p><p>_每个实例化对象本身是没有constructor属性的，他们下面默认只有一个___proto___属性,用来连接原型对象，而和构造函数本身是没有直接的联系的。所以它的constructor是访问的原型对象上的。所以当原型对象的constructor变化了，实例化对象的constructor也会改变。但是如果这个对象本身既是原型对象，又是实例化对象，那就拥有了constructor属性，无需从原型对象上面访问。</p><div class="language- extra-class"><pre class="language-text"><code>function CreatePerson(name){ 
+   this.name = name;
+}
+CreatePerson.prototype.showName = function(){ 
+   console.log(this.name);
+ };
+var p1 =new CreatePerson('haha');
+p1.showName();
+console.log(p1.constructor); // CreatePerson 来自CreatePerson.prototype
+
+console.log(CreatePerson.prototype); 
+// {showName:{},constructor:CreatePerson,__proto__:Object.prototype}
+//可见，原型对象保存了
+      1 自身添加的方法，
+      2 构造函数constructor 
+      3 _proto_(和上一层构造函数原型对象的连接)
+
+console.log(CreatePerson.prototype.__proto__===Object.prototype);
+// true 这个原型对象本身又是object的实例化对象，所有_proto_指向Object的原型对象
+
+console.log(CreatePerson.prototype.__proto__===Object);
+// false 可见是和构造函数下原型对象的连接，不是构造函数
+
+console.log(CreatePerson.prototype.constructor);
+//CreatePerson CreatePerson.prototype是Object实例化对象,也是原型对象，所以自身拥有constructor属性
+
+console.log(Object.prototype.__proto__); 
+// null 原型链的终点是null
+
+console.log(CreatePerson.__proto__); //function.prototype
+// CreatePerson本身既是构造函数又是function的实例化对象，拥有_proto_属性，指向function的原型对象
+
+console.log(CreatePerson.constructor); 
+// function 继承自function.prototype
+
+console.log(CreatePerson.prototype instanceof CreatePerson ) 
+//验证是否在一条原型链上 false
+</code></pre></div><h2 id="字面量法定义原型">字面量法定义原型</h2><div class="language- extra-class"><pre class="language-text"><code>function Fn() {};
+Fn.prototype = {
+    say:function(){},
+    move:function(){}
+};
+var f1 = new Fn();
+console.log(Fn.prototype)
+//Object {say: function, move: function}
+//    move:function ()
+//    say:function ()
+//   __proto__:Object
+//发现constructor不见了，因为这种方式相当于重新赋值了Fn.prototype 
+console.log(Fn.prototype.constructor); 
+//Object 因为自身没有了constructor属性，就去上级原型对象找，找到了Object
+console.log(f1.constructor); 
+//Object 也变了，验证了它是访问的原型对象上的
+</code></pre></div><p>因此我们需要重新修正原型的指向</p><div class="language- extra-class"><pre class="language-text"><code>function Fn() {};
+Fn.prototype = {
+    constructor:Fn,
+    say:function(){},
+    move:function(){}
+};
+var f1 = new Fn();
+console.log(f1.constructor);   //Fn
+</code></pre></div><p>Now, let's try it 👉</p></div><div class="page-edit"><!----><!----></div><!----></div></div></div>
+    <script src="/Weblog/assets/js/app.bc17a3fe.js" defer></script><script src="/Weblog/assets/js/10.bbae2931.js" defer></script>
+  </body>
+</html>

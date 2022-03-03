@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端算法 | AlexTao 的 博客</title>
+    <meta name="description" content="In doing we learn.">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/Weblog/assets/css/styles.bc17a3fe.css" as="style"><link rel="preload" href="/Weblog/assets/js/app.bc17a3fe.js" as="script"><link rel="preload" href="/Weblog/assets/js/45.224f0ae1.js" as="script"><link rel="prefetch" href="/Weblog/assets/css/16.styles.2339a627.css"><link rel="prefetch" href="/Weblog/assets/css/5.styles.c1152841.css"><link rel="prefetch" href="/Weblog/assets/css/7.styles.1f4a6057.css"><link rel="prefetch" href="/Weblog/assets/css/8.styles.5b6e1357.css"><link rel="prefetch" href="/Weblog/assets/js/0.a8dcd889.js"><link rel="prefetch" href="/Weblog/assets/js/10.bbae2931.js"><link rel="prefetch" href="/Weblog/assets/js/100.b8573d34.js"><link rel="prefetch" href="/Weblog/assets/js/101.abec8cfc.js"><link rel="prefetch" href="/Weblog/assets/js/102.79aa7798.js"><link rel="prefetch" href="/Weblog/assets/js/11.249c3d32.js"><link rel="prefetch" href="/Weblog/assets/js/12.6c4f9a9d.js"><link rel="prefetch" href="/Weblog/assets/js/13.9c3a7225.js"><link rel="prefetch" href="/Weblog/assets/js/14.8788763f.js"><link rel="prefetch" href="/Weblog/assets/js/15.c3d91b4b.js"><link rel="prefetch" href="/Weblog/assets/js/16.2339a627.js"><link rel="prefetch" href="/Weblog/assets/js/17.f68b5694.js"><link rel="prefetch" href="/Weblog/assets/js/18.1dc877c8.js"><link rel="prefetch" href="/Weblog/assets/js/19.8d3a8eb9.js"><link rel="prefetch" href="/Weblog/assets/js/2.adb0855b.js"><link rel="prefetch" href="/Weblog/assets/js/20.5b430c8f.js"><link rel="prefetch" href="/Weblog/assets/js/21.7570ba60.js"><link rel="prefetch" href="/Weblog/assets/js/22.c34e9396.js"><link rel="prefetch" href="/Weblog/assets/js/23.d89c70ce.js"><link rel="prefetch" href="/Weblog/assets/js/24.cc87bb5d.js"><link rel="prefetch" href="/Weblog/assets/js/25.024b7a56.js"><link rel="prefetch" href="/Weblog/assets/js/26.0d0e2118.js"><link rel="prefetch" href="/Weblog/assets/js/27.fd65c2c2.js"><link rel="prefetch" href="/Weblog/assets/js/28.e7e81b37.js"><link rel="prefetch" href="/Weblog/assets/js/29.d69a29c6.js"><link rel="prefetch" href="/Weblog/assets/js/3.9c9ae281.js"><link rel="prefetch" href="/Weblog/assets/js/30.e02a9f2a.js"><link rel="prefetch" href="/Weblog/assets/js/31.4d5d63f6.js"><link rel="prefetch" href="/Weblog/assets/js/32.2652c4b5.js"><link rel="prefetch" href="/Weblog/assets/js/33.f81118fb.js"><link rel="prefetch" href="/Weblog/assets/js/34.6539d2a9.js"><link rel="prefetch" href="/Weblog/assets/js/35.479b4b73.js"><link rel="prefetch" href="/Weblog/assets/js/36.24e9784f.js"><link rel="prefetch" href="/Weblog/assets/js/37.13a7e720.js"><link rel="prefetch" href="/Weblog/assets/js/38.57e7625b.js"><link rel="prefetch" href="/Weblog/assets/js/39.40ddc61b.js"><link rel="prefetch" href="/Weblog/assets/js/4.cb1adf5e.js"><link rel="prefetch" href="/Weblog/assets/js/40.4abade23.js"><link rel="prefetch" href="/Weblog/assets/js/41.03a22716.js"><link rel="prefetch" href="/Weblog/assets/js/42.4bf6acac.js"><link rel="prefetch" href="/Weblog/assets/js/43.7d75114c.js"><link rel="prefetch" href="/Weblog/assets/js/44.a74a0979.js"><link rel="prefetch" href="/Weblog/assets/js/46.716c0ee0.js"><link rel="prefetch" href="/Weblog/assets/js/47.a44c77ff.js"><link rel="prefetch" href="/Weblog/assets/js/48.c92bc6c3.js"><link rel="prefetch" href="/Weblog/assets/js/49.78d85a96.js"><link rel="prefetch" href="/Weblog/assets/js/5.c1152841.js"><link rel="prefetch" href="/Weblog/assets/js/50.65d4cc82.js"><link rel="prefetch" href="/Weblog/assets/js/51.dfe21a00.js"><link rel="prefetch" href="/Weblog/assets/js/52.a55d1d66.js"><link rel="prefetch" href="/Weblog/assets/js/53.24e5ba30.js"><link rel="prefetch" href="/Weblog/assets/js/54.3d44c9e1.js"><link rel="prefetch" href="/Weblog/assets/js/55.5509d3c1.js"><link rel="prefetch" href="/Weblog/assets/js/56.389f0044.js"><link rel="prefetch" href="/Weblog/assets/js/57.a6410cdf.js"><link rel="prefetch" href="/Weblog/assets/js/58.99de433a.js"><link rel="prefetch" href="/Weblog/assets/js/59.f362327e.js"><link rel="prefetch" href="/Weblog/assets/js/6.829d0e7e.js"><link rel="prefetch" href="/Weblog/assets/js/60.d8a731fd.js"><link rel="prefetch" href="/Weblog/assets/js/61.c32405a4.js"><link rel="prefetch" href="/Weblog/assets/js/62.2cf15697.js"><link rel="prefetch" href="/Weblog/assets/js/63.97976992.js"><link rel="prefetch" href="/Weblog/assets/js/64.df2f0acc.js"><link rel="prefetch" href="/Weblog/assets/js/65.0365fc24.js"><link rel="prefetch" href="/Weblog/assets/js/66.89f67105.js"><link rel="prefetch" href="/Weblog/assets/js/67.4d546178.js"><link rel="prefetch" href="/Weblog/assets/js/68.b3742591.js"><link rel="prefetch" href="/Weblog/assets/js/69.e2c032ec.js"><link rel="prefetch" href="/Weblog/assets/js/7.1f4a6057.js"><link rel="prefetch" href="/Weblog/assets/js/70.f262dfb0.js"><link rel="prefetch" href="/Weblog/assets/js/71.24d5a255.js"><link rel="prefetch" href="/Weblog/assets/js/72.c2fad7bd.js"><link rel="prefetch" href="/Weblog/assets/js/73.e3de86c7.js"><link rel="prefetch" href="/Weblog/assets/js/74.af039d36.js"><link rel="prefetch" href="/Weblog/assets/js/75.b5d26a4d.js"><link rel="prefetch" href="/Weblog/assets/js/76.5253b8d4.js"><link rel="prefetch" href="/Weblog/assets/js/77.13049fae.js"><link rel="prefetch" href="/Weblog/assets/js/78.732e7950.js"><link rel="prefetch" href="/Weblog/assets/js/79.91a95405.js"><link rel="prefetch" href="/Weblog/assets/js/8.5b6e1357.js"><link rel="prefetch" href="/Weblog/assets/js/80.60b08cac.js"><link rel="prefetch" href="/Weblog/assets/js/81.09852d19.js"><link rel="prefetch" href="/Weblog/assets/js/82.49b521d3.js"><link rel="prefetch" href="/Weblog/assets/js/83.681a706a.js"><link rel="prefetch" href="/Weblog/assets/js/84.ca93e702.js"><link rel="prefetch" href="/Weblog/assets/js/85.9813d878.js"><link rel="prefetch" href="/Weblog/assets/js/86.632f014f.js"><link rel="prefetch" href="/Weblog/assets/js/87.7737cd73.js"><link rel="prefetch" href="/Weblog/assets/js/88.1ec9c00d.js"><link rel="prefetch" href="/Weblog/assets/js/89.bbeb975f.js"><link rel="prefetch" href="/Weblog/assets/js/9.c685ce8f.js"><link rel="prefetch" href="/Weblog/assets/js/90.eda536dd.js"><link rel="prefetch" href="/Weblog/assets/js/91.391681fc.js"><link rel="prefetch" href="/Weblog/assets/js/92.dca04870.js"><link rel="prefetch" href="/Weblog/assets/js/93.01d44a2a.js"><link rel="prefetch" href="/Weblog/assets/js/94.f941a99a.js"><link rel="prefetch" href="/Weblog/assets/js/95.232bf755.js"><link rel="prefetch" href="/Weblog/assets/js/96.d381c6e0.js"><link rel="prefetch" href="/Weblog/assets/js/97.2a0ba8ba.js"><link rel="prefetch" href="/Weblog/assets/js/98.001e708c.js"><link rel="prefetch" href="/Weblog/assets/js/99.0ff7167d.js">
+    <link rel="stylesheet" href="/Weblog/assets/css/styles.bc17a3fe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Weblog/" class="home-link router-link-active"><!----><span class="site-name">
+      AlexTao 的 博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link router-link-active">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link router-link-active">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>currency</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Weblog/currency/" aria-current="page" class="sidebar-link">计算机</a></li><li><a href="/Weblog/currency/前端开发规范.html" class="sidebar-link">编码规范</a></li><li><a href="/Weblog/currency/DevOps.html" class="sidebar-link">DevOps</a></li><li><a href="/Weblog/currency/项目自动化部署.html" class="sidebar-link">项目自动化部署</a></li><li><a href="/Weblog/currency/前端安全.html" class="sidebar-link">前端安全</a></li><li><a href="/Weblog/currency/前端算法.html" class="active sidebar-link">前端算法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#冒泡排序-（bubble-sort）" class="sidebar-link">冒泡排序 （Bubble Sort）</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#选择排序（selection-sort）" class="sidebar-link">选择排序（Selection Sort）</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#插入排序（insertion-sort）" class="sidebar-link">插入排序（Insertion Sort）</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#希尔排序（shell-sort）" class="sidebar-link">希尔排序（Shell Sort）</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#归并排序（merge-sort）" class="sidebar-link">归并排序（Merge Sort）</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#快速排序-（quick-sort）" class="sidebar-link">快速排序 （Quick Sort）</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#堆排序（heap-sort）" class="sidebar-link">堆排序（Heap Sort）</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#计数排序（counting-sort）" class="sidebar-link">计数排序（Counting Sort）</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#桶排序（bucket-sort）" class="sidebar-link">桶排序（Bucket Sort）</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#基数排序（radix-sort）" class="sidebar-link">基数排序（Radix Sort）</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#判断文本是否为回文" class="sidebar-link">判断文本是否为回文</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#斐波那契数列" class="sidebar-link">斐波那契数列</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#阶乘" class="sidebar-link">阶乘</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#随机生成长度为n字符串" class="sidebar-link">随机生成长度为n字符串</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#出现最多的字符及次数" class="sidebar-link">出现最多的字符及次数</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#扁平化数组" class="sidebar-link">扁平化数组</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#数组中最大差值" class="sidebar-link">数组中最大差值</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/前端算法.html#是否为质数（素数）" class="sidebar-link">是否为质数（素数）</a></li></ul></li><li><a href="/Weblog/currency/函数实现.html" class="sidebar-link">函数实现</a></li><li><a href="/Weblog/currency/通用函数.html" class="sidebar-link">通用函数</a></li><li><a href="/Weblog/currency/例题总结.html" class="sidebar-link">例题分析 </a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="前端算法">前端算法</h1><h2 id="冒泡排序-（bubble-sort）">冒泡排序 （Bubble Sort）</h2><p><strong>定义</strong></p><p>冒泡排序（Bubble Sort）,它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。</p><p>这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，所以叫“冒泡排序”。</p><p><strong>原理</strong></p><ol><li>比较相邻的元素。如果第一个比第二个大，就交换他们两个。</li><li>对每一对相邻元素做同样的工作，从开始第一对到结尾的最后一对。在这一点，最后的元素应该会是最大的数。</li><li>针对所有的元素重复以上的步骤，除了最后一个。</li><li>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</li></ol><div class="language- extra-class"><pre class="language-text"><code>function bubbleSort(arr){
+  var i = 0,
+      j = 0;
+  for(i=1; i&lt;arr.length; i++){
+    for(j=0; j&lt;=arr.length-i; j++){
+      var temp = 0;
+      // &quot;&gt;&quot; 从小到大排序
+      // &quot;&lt;&quot; 从大到小排序
+      if(arr[j] &gt; arr[j+1]){  //相邻元素两两对比
+        temp = arr[j];        //元素交换
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
+      }
+    }
+  }
+  return arr;
+}
+</code></pre></div><h2 id="选择排序（selection-sort）">选择排序（Selection Sort）</h2><p>选择排序是一个简单直观的排序方法，它的工作</p><p>**原理：**首先从未排序序列中找到最大的元素，放到已排序序列的末尾，重复上述步骤，直到所有元素排序完毕。</p><div class="language- extra-class"><pre class="language-text"><code>function selectionSort(arr) {
+    var len = arr.length;
+    var minIndex, temp;
+    for (var i = 0; i &lt; len - 1; i++) {
+        minIndex = i;
+        for (var j = i + 1; j &lt; len; j++) {
+            if (arr[j] &lt; arr[minIndex]) { //寻找最小的数
+            	minIndex = j; //将最小数的索引保存
+            }
+        }
+        temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
+    return arr;
+}
+</code></pre></div><h2 id="插入排序（insertion-sort）">插入排序（Insertion Sort）</h2><p>插入排序是简单排序中最快的排序算法</p><p><strong>原理</strong> 通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。插入排序在实现上，通常采用in-place排序（即只需用到O(1)的额外空间的排序），因而在从后向前扫描过程中，需要反复把已排序元素逐步向后挪位，为最新元素提供插入空间。</p><div class="language- extra-class"><pre class="language-text"><code>function insertionSort(arr) {
+    var len = arr.length;
+    var preIndex, current;
+    for (var i = 1; i &lt; len; i++) {
+        preIndex = i - 1;
+        current = arr[i];
+        while(preIndex &gt;= 0 &amp;&amp; arr[preIndex] &gt; current) {
+            arr[preIndex+1] = arr[preIndex];
+            preIndex--;
+        }
+        arr[preIndex+1] = current;
+    }
+    return arr;
+}
+</code></pre></div><h2 id="希尔排序（shell-sort）">希尔排序（Shell Sort）</h2><p>希尔排序是插入排序的一种更高效率的实现。它与插入排序的不同之处在于，它会优先比较距离较远的元素。希尔排序的核心在于间隔序列的设定。既可以提前设定好间隔序列，也可以动态的定义间隔序列。</p><div class="language- extra-class"><pre class="language-text"><code>function shellSort(arr) {
+    var N = arr.length;
+    var h = 1;
+    function swap(array, i, j) { //两个数调换
+        var temp = array[j];
+        array[j] = array[i];
+        array[i] = temp;
+    }
+    while (h &lt; N / 3) {
+        h = 3 * h + 1; //设置间隔
+    }
+    while (h &gt;= 1) {
+        for (var i = h; i &lt; N; i++) {
+            for (j = i; j &gt;= h &amp;&amp; arr[j] &lt; arr[j - h]; j -= h) {
+                swap(arr, j, j - h);
+            }
+        }
+        h = (h - 1) / 3;
+    }
+    return arr;
+};
+</code></pre></div><h2 id="归并排序（merge-sort）">归并排序（Merge Sort）</h2><p>其基本思想是分治策略，先进行划分，然后再进行合并。</p><ol><li>自上而下的递归（所有递归的方法都可以用迭代重写，所以就有了第2种方法）</li><li>自下而上的迭代</li></ol><div class="language- extra-class"><pre class="language-text"><code>function mergeSort(arr) { //采用自上而下的递归方法
+    var len = arr.length;
+    if (len &lt; 2) {
+        return arr;
+    }
+    var middle = Math.floor(len / 2),
+        left = arr.slice(0, middle),
+        right = arr.slice(middle);
+    return merge(mergeSort(left), mergeSort(right));
+}
+function merge(left, right) {
+    var result = [];
+    while (left.length &gt; 0 &amp;&amp; right.length &gt; 0) {
+        if (left[0] &lt;= right[0]) {
+            result.push(left.shift());
+        } else {
+            result.push(right.shift());
+        }
+    }
+    while (left.length)
+        result.push(left.shift());
+    while (right.length)
+        result.push(right.shift());
+    return result;
+}
+</code></pre></div><h2 id="快速排序-（quick-sort）">快速排序 （Quick Sort）</h2><p>本质上来看，快速排序应该算是在冒泡排序基础上的递归分治法。</p><p>处理大数据最快的排序算法之一了</p><p>大致分三步：</p><p>1、找基准（一般是以中间项为基准）</p><p>2、遍历数组，小于基准的放在left，大于基准的放在right</p><p>3、递归</p><div class="language- extra-class"><pre class="language-text"><code>function quickSort(arr, left, right) {
+    function partition(arr, left, right) { //分区操作
+        var pivot = left, //设定基准值（pivot）
+            index = pivot + 1;
+        for (var i = index; i &lt;= right; i++) {
+            if (arr[i] &lt; arr[pivot]) {
+                swap(arr, i, index);
+                index++;
+            }
+        }
+        swap(arr, pivot, index - 1);
+        return index - 1;
+    }
+
+    function swap(arr, i, j) {
+        var temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    var len = arr.length,
+        partitionIndex,
+        left = typeof left != 'number' ? 0 : left,
+        right = typeof right != 'number' ? len - 1 : right;
+
+    if (left &lt; right) {
+        partitionIndex = partition(arr, left, right);
+        quickSort(arr, left, partitionIndex - 1);
+        quickSort(arr, partitionIndex + 1, right);
+    }
+    return arr;
+};
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>
+</code></pre></div><h2 id="堆排序（heap-sort）">堆排序（Heap Sort）</h2><p>堆排序可以说是一种利用堆的概念来排序的选择排序。分为两种方法：</p><ol><li>大顶堆：每个节点的值都大于或等于其子节点的值，在堆排序算法中用于升序排列</li><li>小顶堆：每个节点的值都小于或等于其子节点的值，在堆排序算法中用于降序排列</li></ol><p>**简单来说：**就是假如将此序列看成一棵完全二叉树，要使这个无序列表变成堆，则小于等于n/2(最后一个非终端节点就是n/2)的某个节点i的左右子节点均大于此节点。</p><div class="language- extra-class"><pre class="language-text"><code>
+</code></pre></div><h2 id="计数排序（counting-sort）">计数排序（Counting Sort）</h2><p>计数排序（Counting sort）是一种稳定的线性时间排序算法。
+计数排序使用一个额外的数组C，其中第i个元素是待排序数组A中值等于i的元素的个数。然后根据数组C来将A中的元素排到正确的位置。</p><p><strong>思路</strong></p><ol><li>找出待排序的数组中最大和最小的元素。</li><li>统计数组中每个值为<code>i</code>的元素出现的次数，存入数组<code>C</code>的第<code>i</code>项。</li><li>对所有的计数累加（从<code>C</code>中的第一个元素开始，每一项和前一项相加）。</li><li>反向填充目标数组：将每个元素<code>i</code>放在新数组的第<code>C(i)</code>项，每放一个元素就将<code>C(i)</code>减去1。</li></ol><div class="language- extra-class"><pre class="language-text"><code>function countingSort(iArr, max) {
+    var n = iArr.length;
+    var oArr = [];
+    // 创建长度max的数组，填充0
+    var C = [];
+    for (var i = 0; i &lt;= max; i++) {
+        C[i] = 0;
+    }
+    // 遍历输入数组，填充C
+    for (var j = 0; j &lt; n; j++) {
+        C[iArr[j]]++;
+    }
+    // 遍历C，输出数组
+    for (var k = 0; k &lt;= max; k++) {
+        // 按顺序将值推入输出数组，并在比较后将对应标志位减1
+        while (C[k]-- &gt; 0) {
+            oArr.push(k);
+        }
+    }
+    return oArr;
+}
+</code></pre></div><h2 id="桶排序（bucket-sort）">桶排序（Bucket Sort）</h2><p>桶排序是计数排序的升级版。它利用了函数的映射关系，高效与否的关键就在于这个映射函数的确定。
+为了使桶排序更加高效，我们需要做到这两点：</p><ol><li>在额外空间充足的情况下，尽量增大桶的数量</li><li>使用的映射函数能够将输入的N个数据均匀的分配到K个桶中</li></ol><div class="language- extra-class"><pre class="language-text"><code>function bucketSort(arr, bucketSize) {
+    if (arr.length === 0) {
+        return arr;
+    }
+    var i;
+    var minValue = arr[0];
+    var maxValue = arr[0];
+    for (i = 1; i &lt; arr.length; i++) {
+        if (arr[i] &lt; minValue) {
+            minValue = arr[i]; //输入数据的最小值
+        } else if (arr[i] &gt; maxValue) {
+            maxValue = arr[i]; //输入数据的最大值
+        }
+    }
+    //桶的初始化
+    var DEFAULT_BUCKET_SIZE = 5; //设置桶的默认数量为5
+    bucketSize = bucketSize || DEFAULT_BUCKET_SIZE;
+    var bucketCount = Math.floor((maxValue - minValue) / bucketSize) + 1;
+    var buckets = new Array(bucketCount);
+    for (i = 0; i &lt; buckets.length; i++) {
+        buckets[i] = [];
+    }
+    //利用映射函数将数据分配到各个桶中
+    for (i = 0; i &lt; arr.length; i++) {
+        buckets[Math.floor((arr[i] - minValue) / bucketSize)].push(arr[i]);
+    }
+    arr.length = 0;
+    for (i = 0; i &lt; buckets.length; i++) {
+        insertionSort(buckets[i]); //对每个桶进行排序，这里使用了插入排序
+        for (var j = 0; j &lt; buckets[i].length; j++) {
+            arr.push(buckets[i][j]);
+        }
+    }
+    return arr;
+}
+function insertionSort(arr) {
+    var len = arr.length;
+    var preIndex, current;
+    for (var i = 1; i &lt; len; i++) {
+        preIndex = i - 1;
+        current = arr[i];
+        while (preIndex &gt;= 0 &amp;&amp; arr[preIndex] &gt; current) {
+            arr[preIndex + 1] = arr[preIndex];
+            preIndex--;
+        }
+        arr[preIndex + 1] = current;
+    }
+    return arr;
+}
+</code></pre></div><h2 id="基数排序（radix-sort）">基数排序（Radix Sort）</h2><p>基数排序有两种方法：</p><ol><li>MSD 从高位开始进行排序</li><li>LSD 从低位开始进行排序</li></ol><p><strong>基数排序 vs 计数排序 vs 桶排序</strong></p><p>这三种排序算法都利用了桶的概念，但对桶的使用方法上有明显差异：
+基数排序：根据键值的每位数字来分配桶
+计数排序：每个桶只存储单一键值
+桶排序：每个桶存储一定范围的数值</p><div class="language- extra-class"><pre class="language-text"><code>function radixSort(arr, maxDigit) {
+    var counter = [];
+    var mod = 10;
+    var dev = 1;
+    for (var i = 0; i &lt; maxDigit; i++, dev *= 10, mod *= 10) {
+        for(var j = 0; j &lt; arr.length; j++) {
+            var bucket = parseInt((arr[j] % mod) / dev);
+            if(counter[bucket]==null) {
+                counter[bucket] = [];
+            }
+            counter[bucket].push(arr[j]);
+        }
+        var pos = 0;
+        for(var j = 0; j &lt; counter.length; j++) {
+            var value = null;
+            if(counter[j]!=null) {
+                while ((value = counter[j].shift()) != null) {
+                      arr[pos++] = value;
+                }
+          }
+        }
+    }
+    return arr;
+};
+</code></pre></div><h2 id="判断文本是否为回文">判断文本是否为回文</h2><p>定义：如果将一个文本翻转过来，能和原文本完全相等，那么就可以称之为“回文”。</p><div class="language- extra-class"><pre class="language-text"><code>/**
+* @param {string|number} [value] [需要判断的文字]
+* @return {boolean} [布尔值]
+*/
+
+function isPalindrome(value) {
+    var value = value.toString();
+    var _value = value.split(&quot;&quot;).reverse().join(&quot;&quot;);
+    return value === _value;
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>/**
+* @param {string|number} [value] [需要判断的文字]
+* @return {boolean} [布尔值]
+*/
+function isPalindrome(val) {
+    var val = val.toString();
+    // 这 i &lt; j ,中间只有一个字符，不需要比较
+    for (let i = 0, j = val.length - 1; i &lt; j; i++, j--) {
+        if (val.charAt(i) !== val.charAt(j)) {
+            return false;
+        }
+    }
+    return true;
+}
+</code></pre></div><h2 id="斐波那契数列">斐波那契数列</h2><p>定义：指的是这样一个数列 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233，377，610，987，1597，2584，4181，6765，10946，17711，28657，46368........</p><p>数列从第3项开始，每一项都等于前两项之和。</p><div class="language- extra-class"><pre class="language-text"><code>function fib(n){
+	if(n === 1 || n === 2){
+		return 1;
+	}
+	return fib(n - 1) + fib(n - 2);
+}
+//PS：时间复杂度为O(2^n)，空间复杂度为O(n)
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>function fib(n){
+	let tem = [1, 1];
+	if(n === 1 || n === 2){
+		return 1;
+	}
+	// 数组索引从0开始，数列索引从1开始
+	for(let i = 2; i &lt; n; i++){
+		tem[i] = tem[i-1] + tem[i-2];
+	}
+	return tem[n-1];
+}
+//PS：时间复杂度为O(n)，空间复杂度为O(n)
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>function fib(n){
+	let prev = 1, 
+		next = 1,
+		res;
+	for(let i = 2; i &lt; n; i++){
+		res = prev + next;  
+		prev = next; 
+		next = res;
+	}	
+	return res;
+}
+//PS：时间复杂度为O(n)，空间复杂度为O(1)
+</code></pre></div><h2 id="阶乘">阶乘</h2><p>定义：一个正整数的阶乘（factorial）是所有小于及等于该数的正整数的积，并且0的阶乘为1。自然数n的阶乘写作n!。</p><p>任何大于等于1 的自然数n 阶乘表示方法：n！=n*(n-1)!  或  n！=1X2X3X...(n-1)n</p><p>0! = 1;</p><ol><li><p>递归</p><p>计算n的阶乘，最多需要保存n个调用记录，复杂度 O(n) 。</p><p>递归非常耗费内存，因为需要同时保存成千上百个调用帧，很容易发生“栈溢出”错误（stack overflow）。</p><div class="language- extra-class"><pre class="language-text"><code>function factorialize(num) {
+    if (typeof n !== 'number') throw new Error('参数必须为整数')
+    if (n === 1) return 1;
+    return num * factorialize(num - 1)
+}
+</code></pre></div></li><li><p>ES6尾调用（递归优化版）</p><p>只存在一个调用帧，不会发生“栈溢出”错误。</p><p>尾调用（Tail Call）是函数式编程的一个重要概念，就是指某个函数的最后一步是调用另一个函数。</p><div class="language- extra-class"><pre class="language-text"><code>function factorialize(n, total = 1) {
+    if (typeof n !== 'number' || typeof total !== 'number') throw new Error('参数必须为整整')
+    if (n === 1) return total;
+    console.log(n, total, n * total)
+    return factorialize(n - 1, n * total)
+}
+</code></pre></div></li><li><p>循环计算</p><div class="language- extra-class"><pre class="language-text"><code>function factorialize(n) {
+    if (typeof n !== 'number') throw new Error('参数必须为整数')
+    if (n === 1) return 1;
+    let total = 1;
+    while (n &gt; 1) {
+        total = n * total;
+        n--;
+    }
+    return total;
+}
+</code></pre></div></li></ol><h2 id="随机生成长度为n字符串">随机生成长度为n字符串</h2><div class="language- extra-class"><pre class="language-text"><code>/**
+ * @param  {number} num    需要生成字符串个数
+ * @return {string} res    生成的字符串返回值
+ */
+function randomString(num){
+	let str = 'abcdefghijklmnopqrstuvwxyz0123456789';
+	let res = '',
+		i = 0;
+	// Math.random 函数产生值的范围[0,1)
+	while(i&lt;num){
+		res += str.charAt(Math.floor(Math.random() * str.length))
+		i++;
+	}
+	
+	return res;
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>PS:ASCII
+/**
+ * @param  {number} num    需要生成字符串个数
+ * @return {string} res    生成的字符串返回值
+ */
+function randomString(num) {
+    let res = '';
+    function randomChar() {
+        let l = Math.floor(Math.random() * 62);
+        if (l &lt; 10) return l; // 数字部分 0-9
+        if (l &lt; 36) return String.fromCharCode(l + 55); // 大写字母
+        return String.fromCharCode(l + 61); // 小写字母
+    }
+    while (res.length &lt; num) res += randomChar();
+    return res;
+}
+console.log(randomString(8))
+</code></pre></div><h2 id="出现最多的字符及次数">出现最多的字符及次数</h2><div class="language- extra-class"><pre class="language-text"><code>/**
+ * 利用json数据个数“键”唯一的特性
+ * @param  {string} str    需要查找的字符串
+ * @return {object} {}     返回的出现最多的字符串及次数
+ */
+function maxN(str) {
+	if(typeof(str) !== 'string') str = str.toString();
+    //json对象用于保存str的每一项以及出现次数。
+    var json = {};
+    for (var i = 0; i &lt; str.length; i++) {
+        if (!json[str.charAt(i)]) {
+            json[str.charAt(i)] = 1;
+        } else {
+            json[str.charAt(i)]++;
+        }
+    }
+    //存储出现次数最多的值和次数
+    var number = '';
+    var num = 0;
+    console.log(json)
+    //遍历json  使用打擂算法统计需要的值
+    for (var j in json) {
+        if (json[j] &gt; num) {
+            num = json[j];
+            number = j;
+        }
+    }
+    return {
+        number: number,
+        num: num
+    }
+}
+</code></pre></div><h2 id="扁平化数组">扁平化数组</h2><div class="language- extra-class"><pre class="language-text"><code>/**
+ * 递归调用
+ * @param {array} [arr] [扁平化数组]
+ * @return {array} [res]
+ */
+function flatten(arr) {
+    let res = [],
+        i = 0,
+        len = arr.length;
+    while (i &lt; len) {
+        if (Array.isArray(arr[i])) {
+            // 递归进行上面步骤
+            // [].concat(...arr)，它的参数可以为数组或值，作用为将数组或值连接成新数组。
+            res = res.concat(flatten(arr[i]))
+        } else {
+            res.push(arr[i]);
+        }
+        i++;
+    }
+    return res;
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>/**
+ * reduce+concat
+ * @param {array} [arr] [扁平化数组]
+ */
+function flatten(arr) {
+    return arr.reduce((pre, cut) =&gt; {
+        return pre.concat(Array.isArray(cut) ? flatten(cut) : cut)
+    }, [])
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>/**
+ * 转换成字符串
+ * @param {array} [arr] [扁平化数组]
+ */
+
+function flatten(arr) {
+    return arr.toString().split(',')
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>/**
+ * 只能处理2维数组。
+ * 转换成字符串
+ * @param {array} [arr] [扁平化数组]
+ */
+function flatten(arr) {
+    let _arr = [];
+    arr.forEach(item =&gt; {
+        if (Array.isArray(item)) {
+            _arr = _arr.concat(...item)
+        } else {
+            _arr = _arr.concat(item)
+        }
+    })
+    return _arr;
+}
+</code></pre></div><h2 id="数组中最大差值">数组中最大差值</h2><div class="language- extra-class"><pre class="language-text"><code>function getMaxProfit(arr){
+	return Math.max.apply(null, arr) - Math.min.apply(null, arr);
+}
+</code></pre></div><h2 id="是否为质数（素数）">是否为质数（素数）</h2><p>质数：只能被1和自己整除且大于1的数。
+合数：数大于1且因数多余2个（大于1的数质数的补集）。</p><div class="language- extra-class"><pre class="language-text"><code>function isPrimeNumber(n) {
+    if (n &lt; 2) return false;
+    if (n === 2) return true; // 最小的质数
+    for (let i = 2; i &lt; n; i++) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>function isPrimeNumber1(n){
+  return n&lt;2?false:!/^(11+?)\1+$/.test(Array(n+1).join('1'))
+}
+</code></pre></div><p>Now, let's try it 👉</p></div><div class="page-edit"><!----><!----></div><!----></div></div></div>
+    <script src="/Weblog/assets/js/app.bc17a3fe.js" defer></script><script src="/Weblog/assets/js/45.224f0ae1.js" defer></script>
+  </body>
+</html>

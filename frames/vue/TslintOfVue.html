@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tslint.json配置 | AlexTao 的 博客</title>
+    <meta name="description" content="In doing we learn.">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/Weblog/assets/css/styles.bc17a3fe.css" as="style"><link rel="preload" href="/Weblog/assets/js/app.bc17a3fe.js" as="script"><link rel="preload" href="/Weblog/assets/js/53.24e5ba30.js" as="script"><link rel="prefetch" href="/Weblog/assets/css/16.styles.2339a627.css"><link rel="prefetch" href="/Weblog/assets/css/5.styles.c1152841.css"><link rel="prefetch" href="/Weblog/assets/css/7.styles.1f4a6057.css"><link rel="prefetch" href="/Weblog/assets/css/8.styles.5b6e1357.css"><link rel="prefetch" href="/Weblog/assets/js/0.a8dcd889.js"><link rel="prefetch" href="/Weblog/assets/js/10.bbae2931.js"><link rel="prefetch" href="/Weblog/assets/js/100.b8573d34.js"><link rel="prefetch" href="/Weblog/assets/js/101.abec8cfc.js"><link rel="prefetch" href="/Weblog/assets/js/102.79aa7798.js"><link rel="prefetch" href="/Weblog/assets/js/11.249c3d32.js"><link rel="prefetch" href="/Weblog/assets/js/12.6c4f9a9d.js"><link rel="prefetch" href="/Weblog/assets/js/13.9c3a7225.js"><link rel="prefetch" href="/Weblog/assets/js/14.8788763f.js"><link rel="prefetch" href="/Weblog/assets/js/15.c3d91b4b.js"><link rel="prefetch" href="/Weblog/assets/js/16.2339a627.js"><link rel="prefetch" href="/Weblog/assets/js/17.f68b5694.js"><link rel="prefetch" href="/Weblog/assets/js/18.1dc877c8.js"><link rel="prefetch" href="/Weblog/assets/js/19.8d3a8eb9.js"><link rel="prefetch" href="/Weblog/assets/js/2.adb0855b.js"><link rel="prefetch" href="/Weblog/assets/js/20.5b430c8f.js"><link rel="prefetch" href="/Weblog/assets/js/21.7570ba60.js"><link rel="prefetch" href="/Weblog/assets/js/22.c34e9396.js"><link rel="prefetch" href="/Weblog/assets/js/23.d89c70ce.js"><link rel="prefetch" href="/Weblog/assets/js/24.cc87bb5d.js"><link rel="prefetch" href="/Weblog/assets/js/25.024b7a56.js"><link rel="prefetch" href="/Weblog/assets/js/26.0d0e2118.js"><link rel="prefetch" href="/Weblog/assets/js/27.fd65c2c2.js"><link rel="prefetch" href="/Weblog/assets/js/28.e7e81b37.js"><link rel="prefetch" href="/Weblog/assets/js/29.d69a29c6.js"><link rel="prefetch" href="/Weblog/assets/js/3.9c9ae281.js"><link rel="prefetch" href="/Weblog/assets/js/30.e02a9f2a.js"><link rel="prefetch" href="/Weblog/assets/js/31.4d5d63f6.js"><link rel="prefetch" href="/Weblog/assets/js/32.2652c4b5.js"><link rel="prefetch" href="/Weblog/assets/js/33.f81118fb.js"><link rel="prefetch" href="/Weblog/assets/js/34.6539d2a9.js"><link rel="prefetch" href="/Weblog/assets/js/35.479b4b73.js"><link rel="prefetch" href="/Weblog/assets/js/36.24e9784f.js"><link rel="prefetch" href="/Weblog/assets/js/37.13a7e720.js"><link rel="prefetch" href="/Weblog/assets/js/38.57e7625b.js"><link rel="prefetch" href="/Weblog/assets/js/39.40ddc61b.js"><link rel="prefetch" href="/Weblog/assets/js/4.cb1adf5e.js"><link rel="prefetch" href="/Weblog/assets/js/40.4abade23.js"><link rel="prefetch" href="/Weblog/assets/js/41.03a22716.js"><link rel="prefetch" href="/Weblog/assets/js/42.4bf6acac.js"><link rel="prefetch" href="/Weblog/assets/js/43.7d75114c.js"><link rel="prefetch" href="/Weblog/assets/js/44.a74a0979.js"><link rel="prefetch" href="/Weblog/assets/js/45.224f0ae1.js"><link rel="prefetch" href="/Weblog/assets/js/46.716c0ee0.js"><link rel="prefetch" href="/Weblog/assets/js/47.a44c77ff.js"><link rel="prefetch" href="/Weblog/assets/js/48.c92bc6c3.js"><link rel="prefetch" href="/Weblog/assets/js/49.78d85a96.js"><link rel="prefetch" href="/Weblog/assets/js/5.c1152841.js"><link rel="prefetch" href="/Weblog/assets/js/50.65d4cc82.js"><link rel="prefetch" href="/Weblog/assets/js/51.dfe21a00.js"><link rel="prefetch" href="/Weblog/assets/js/52.a55d1d66.js"><link rel="prefetch" href="/Weblog/assets/js/54.3d44c9e1.js"><link rel="prefetch" href="/Weblog/assets/js/55.5509d3c1.js"><link rel="prefetch" href="/Weblog/assets/js/56.389f0044.js"><link rel="prefetch" href="/Weblog/assets/js/57.a6410cdf.js"><link rel="prefetch" href="/Weblog/assets/js/58.99de433a.js"><link rel="prefetch" href="/Weblog/assets/js/59.f362327e.js"><link rel="prefetch" href="/Weblog/assets/js/6.829d0e7e.js"><link rel="prefetch" href="/Weblog/assets/js/60.d8a731fd.js"><link rel="prefetch" href="/Weblog/assets/js/61.c32405a4.js"><link rel="prefetch" href="/Weblog/assets/js/62.2cf15697.js"><link rel="prefetch" href="/Weblog/assets/js/63.97976992.js"><link rel="prefetch" href="/Weblog/assets/js/64.df2f0acc.js"><link rel="prefetch" href="/Weblog/assets/js/65.0365fc24.js"><link rel="prefetch" href="/Weblog/assets/js/66.89f67105.js"><link rel="prefetch" href="/Weblog/assets/js/67.4d546178.js"><link rel="prefetch" href="/Weblog/assets/js/68.b3742591.js"><link rel="prefetch" href="/Weblog/assets/js/69.e2c032ec.js"><link rel="prefetch" href="/Weblog/assets/js/7.1f4a6057.js"><link rel="prefetch" href="/Weblog/assets/js/70.f262dfb0.js"><link rel="prefetch" href="/Weblog/assets/js/71.24d5a255.js"><link rel="prefetch" href="/Weblog/assets/js/72.c2fad7bd.js"><link rel="prefetch" href="/Weblog/assets/js/73.e3de86c7.js"><link rel="prefetch" href="/Weblog/assets/js/74.af039d36.js"><link rel="prefetch" href="/Weblog/assets/js/75.b5d26a4d.js"><link rel="prefetch" href="/Weblog/assets/js/76.5253b8d4.js"><link rel="prefetch" href="/Weblog/assets/js/77.13049fae.js"><link rel="prefetch" href="/Weblog/assets/js/78.732e7950.js"><link rel="prefetch" href="/Weblog/assets/js/79.91a95405.js"><link rel="prefetch" href="/Weblog/assets/js/8.5b6e1357.js"><link rel="prefetch" href="/Weblog/assets/js/80.60b08cac.js"><link rel="prefetch" href="/Weblog/assets/js/81.09852d19.js"><link rel="prefetch" href="/Weblog/assets/js/82.49b521d3.js"><link rel="prefetch" href="/Weblog/assets/js/83.681a706a.js"><link rel="prefetch" href="/Weblog/assets/js/84.ca93e702.js"><link rel="prefetch" href="/Weblog/assets/js/85.9813d878.js"><link rel="prefetch" href="/Weblog/assets/js/86.632f014f.js"><link rel="prefetch" href="/Weblog/assets/js/87.7737cd73.js"><link rel="prefetch" href="/Weblog/assets/js/88.1ec9c00d.js"><link rel="prefetch" href="/Weblog/assets/js/89.bbeb975f.js"><link rel="prefetch" href="/Weblog/assets/js/9.c685ce8f.js"><link rel="prefetch" href="/Weblog/assets/js/90.eda536dd.js"><link rel="prefetch" href="/Weblog/assets/js/91.391681fc.js"><link rel="prefetch" href="/Weblog/assets/js/92.dca04870.js"><link rel="prefetch" href="/Weblog/assets/js/93.01d44a2a.js"><link rel="prefetch" href="/Weblog/assets/js/94.f941a99a.js"><link rel="prefetch" href="/Weblog/assets/js/95.232bf755.js"><link rel="prefetch" href="/Weblog/assets/js/96.d381c6e0.js"><link rel="prefetch" href="/Weblog/assets/js/97.2a0ba8ba.js"><link rel="prefetch" href="/Weblog/assets/js/98.001e708c.js"><link rel="prefetch" href="/Weblog/assets/js/99.0ff7167d.js">
+    <link rel="stylesheet" href="/Weblog/assets/css/styles.bc17a3fe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Weblog/" class="home-link router-link-active"><!----><span class="site-name">
+      AlexTao 的 博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link router-link-active">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link router-link-active">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>Vue</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Weblog/frames/vue/" aria-current="page" class="sidebar-link">数据原理</a></li><li><a href="/Weblog/frames/vue/生命周期.html" class="sidebar-link">生命周期</a></li><li><a href="/Weblog/frames/vue/template.html" class="sidebar-link">template理解</a></li><li><a href="/Weblog/frames/vue/NextTick.html" class="sidebar-link">NextTick</a></li><li><a href="/Weblog/frames/vue/VueRouter.html" class="sidebar-link">VueRouter</a></li><li><a href="/Weblog/frames/vue/登录拦截逻辑.html" class="sidebar-link">登录拦截逻辑</a></li><li><a href="/Weblog/frames/vue/路由跳转传参.html" class="sidebar-link">路由跳转传参</a></li><li><a href="/Weblog/frames/vue/组件通信.html" class="sidebar-link">组件通信 </a></li><li><a href="/Weblog/frames/vue/父子组件数据双向绑定.html" class="sidebar-link">父子组件数据双向绑定</a></li><li><a href="/Weblog/frames/vue/VUEX.html" class="sidebar-link">VUEX</a></li><li><a href="/Weblog/frames/vue/vue-property-decorator.html" class="sidebar-link">vue-property-decorator</a></li><li><a href="/Weblog/frames/vue/TslintOfVue.html" aria-current="page" class="active sidebar-link">Tslint.json配置</a></li><li><a href="/Weblog/frames/vue/效率技巧.html" class="sidebar-link">效率技巧 </a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>React</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h1 id="tslint-json配置">Tslint.json配置</h1><div class="language- extra-class"><pre class="language-text"><code>{
+　// 禁止自动检测末尾行必须使用逗号，always总是检测，never从不检测，ignore忽略检测
+　　&quot;trailing-comma&quot;: [true, {
+　　　　&quot;singleline&quot;: &quot;never&quot;,
+　　　　&quot;multiline&quot;: {
+　　　　　　&quot;objects&quot;: &quot;ignore&quot;,
+　　　　　　&quot;arrays&quot;: &quot;always&quot;,
+　　　　　　&quot;functions&quot;: &quot;never&quot;,
+　　　　　　&quot;typeLiterals&quot;: &quot;ignore&quot;
+　　　　}
+　　}],
+
+  // 禁止给类的构造函数的参数添加修饰符
+  &quot;no-parameter-properties&quot;: false,
+  // 禁止使用 debugger
+  &quot;no-debugger&quot;: false,
+  // 禁止行尾有空格
+  &quot;no-trailing-whitespace&quot;: false,
+  // 禁止无用的表达式
+  &quot;no-unused-expression&quot;: true,
+  // 定义过的变量必须使用
+  &quot;no-unused-variable&quot;: true,
+  // 变量必须先定义后使用
+  &quot;no-use-before-declare&quot;: true,
+  // 禁止使用 var
+  &quot;no-var-keyword&quot;: true,
+  // 必须使用 === 或 !==，禁止使用 == 或 !=，与 null 比较时除外
+  &quot;triple-equals&quot;: true,
+  // 指定类成员的排序规则
+  &quot;member-ordering&quot;: false,
+  // 禁止将 this 赋值给其他变量，除非是解构赋值
+  &quot;no-this-assignment&quot;: [
+    false,
+    {
+      &quot;allowed-names&quot;: [
+        &quot;^self$&quot;,
+        &quot;^that$&quot;
+      ],
+      &quot;allow-destructuring&quot;: true
+    }
+  ],
+  // 必须使用箭头函数，除非是单独的函数声明或是命名函数
+  &quot;only-arrow-functions&quot;: [
+    true,
+    &quot;allow-declarations&quot;,
+    &quot;allow-named-functions&quot;
+  ],
+  // 禁止出现空代码块，允许 catch 是空代码块
+  &quot;no-empty&quot;: [
+    true,
+    &quot;allow-empty-catch&quot;
+  ],
+  // 禁止无用的类型断言
+  &quot;no-unnecessary-type-assertion&quot;: true,
+  // 使用 return; 而不是 return undefined;
+  &quot;return-undefined&quot;: true,
+  // 禁止对 array 使用 for in 循环
+  &quot;no-for-in-array&quot;: true,
+  &quot;comment-format&quot;: [
+    true,
+    &quot;check-space&quot;
+  ],
+  // 单行注释格式化规则
+  // 定义函数时如果用到了覆写，则必须将覆写的函数写到一起
+  &quot;adjacent-overload-signatures&quot;: true,
+  // 禁止对函数的参数重新赋值
+  &quot;no-parameter-reassignment&quot;: true,
+  // if 后面必须有 {，除非是单行 if
+  &quot;curly&quot;: [
+    true,
+    &quot;ignore-same-line&quot;
+  ],
+  // for in 内部必须有 hasOwnProperty
+  &quot;forin&quot;: true,
+  // 禁止在分支条件判断中有赋值操作
+  &quot;no-conditional-assignment&quot;: true,
+  // 禁止使用 new 来生成 String, Number 或 Boolean
+  &quot;no-construct&quot;: true,
+  // 禁止 super 在一个构造函数中出现两次
+  &quot;no-duplicate-super&quot;: true,
+  // 禁止在 switch 语句中出现重复测试表达式的 case
+  &quot;no-duplicate-switch-case&quot;: true,
+  // 禁止出现重复的变量定义或函数参数名
+  &quot;no-duplicate-variable&quot;: [
+    true,
+    &quot;check-parameters&quot;
+  ],
+  // 禁止使用 eval
+  &quot;no-eval&quot;: true,
+  // 禁止对对象字面量进行类型断言（断言成 any 是允许的）
+  &quot;no-object-literal-type-assertion&quot;: true,
+  // 禁止没必要的 return await
+  &quot;no-return-await&quot;: true,
+  // 禁止在数组中出现连续的逗号，如 let foo = [,,]
+  &quot;no-sparse-arrays&quot;: true,
+  // 禁止 throw 字符串，必须 throw 一个 Error 对象
+  &quot;no-string-throw&quot;: true,
+  // switch 的 case 必须 return 或 break
+  &quot;no-switch-case-fall-through&quot;: true,
+  // 使用实例的方法时，必须 bind 到实例上
+  &quot;no-unbound-method&quot;: [
+    true,
+    &quot;ignore-static&quot;
+  ],
+  // 使用 { ...foo, bar: 1 } 代替 Object.assign({}, foo, { bar: 1 })
+  // 前者的类型检查更完善
+  &quot;prefer-object-spread&quot;: true,
+  // parseInt 必须传入第二个参数
+  &quot;radix&quot;: true,
+  // 必须使用 isNaN(foo) 而不是 foo === NaN
+  &quot;use-isnan&quot;: true,
+  //
+  //
+  // 可维护性
+  // 这些规则可以增加代码的可维护性
+  //
+  // 禁止函数的循环复杂度超过 20，https://en.wikipedia.org/wiki/Cyclomatic_complexity
+  &quot;cyclomatic-complexity&quot;: [
+    true,
+    20
+  ],
+  // 禁止使用废弃（被标识了 @deprecated）的 API
+  &quot;deprecation&quot;: true,
+  // 一个缩进必须用四个空格替代
+  &quot;indent&quot;: [
+    true,
+    &quot;spaces&quot;,
+    4
+  ],
+  // 禁止出现重复的 import
+  &quot;no-duplicate-imports&quot;: true,
+  // 禁止一个文件中出现多个相同的 namespace
+  &quot;no-mergeable-namespace&quot;: true,
+  // 文件类型必须时 utf-8
+  &quot;encoding&quot;: true,
+  // import 语句中，关键字之间的间距必须是一个空格
+  &quot;import-spacing&quot;: true,
+  // 接口可以 implement extend 和 merge
+  &quot;interface-over-type-literal&quot;: true,
+  // new 后面只必须有一个空格
+  &quot;new-parens&quot;: true,
+  // 类型断言必须使用 as Type，禁止使用 &lt;Type&gt;
+  // &lt;Type&gt; 容易被理解为 jsx
+  &quot;no-angle-bracket-type-assertion&quot;: true,
+  // 禁止连续超过三行空行
+  &quot;no-consecutive-blank-lines&quot;: [
+    true,
+    3
+  ],
+  // 禁止使用特殊空白符（比如全角空格）
+  &quot;no-irregular-whitespace&quot;: true,
+  // 禁止使用 JSDoc，因为 TypeScirpt 已经包含了大部分功能
+  &quot;no-redundant-jsdoc&quot;: true,
+  // 禁止使用三斜杠引入类型定义文件
+  &quot;no-reference-import&quot;: true,
+  // 禁止变量定义时赋值为 undefined
+  &quot;no-unnecessary-initializer&quot;: true,
+  // 小数必须以 0. 开头，禁止以 . 开头，并且不能以 0 结尾
+  &quot;number-literal-format&quot;: true,
+  // 必须使用 a = {b} 而不是 a = {b: b}
+  &quot;object-literal-shorthand&quot;: true,
+  // 变量申明必须每行一个，for 循环的初始条件中除外
+  &quot;one-variable-per-declaration&quot;: [
+    true,
+    &quot;ignore-for-loop&quot;
+  ],
+  // if 后的 { 禁止换行
+  &quot;one-line&quot;: true,
+  // 必须使用单引号，jsx 中必须使用双引号
+  &quot;quotemark&quot;: [
+    true,
+    &quot;single&quot;,
+    &quot;jsx-double&quot;,
+    &quot;avoid-template&quot;,
+    &quot;avoid-escape&quot;
+  ],
+  // 行尾必须有分号
+  &quot;semicolon&quot;: [
+    true,
+    &quot;always&quot;,
+    &quot;ignore-interfaces&quot;
+  ],
+  // 函数名前必须有空格
+  &quot;space-before-function-paren&quot;: [
+    true,
+    &quot;asyncArrow&quot;
+  ],
+  // 括号内首尾禁止有空格
+  &quot;space-within-parens&quot;: [
+    true,
+    0
+  ],
+  // 禁止 finally 内出现 return, continue, break, throw 等
+  // finally 会比 catch 先执行
+  &quot;no-unsafe-finally&quot;: true
+}
+</code></pre></div></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/Weblog/frames/vue/vue-property-decorator.html" class="prev">
+          vue-property-decorator
+        </a></span><span class="next"><a href="/Weblog/frames/vue/效率技巧.html">
+          效率技巧 
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/Weblog/assets/js/app.bc17a3fe.js" defer></script><script src="/Weblog/assets/js/53.24e5ba30.js" defer></script>
+  </body>
+</html>

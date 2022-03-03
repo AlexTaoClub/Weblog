@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DevOps | AlexTao 的 博客</title>
+    <meta name="description" content="In doing we learn.">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/Weblog/assets/css/styles.bc17a3fe.css" as="style"><link rel="preload" href="/Weblog/assets/js/app.bc17a3fe.js" as="script"><link rel="preload" href="/Weblog/assets/js/20.5b430c8f.js" as="script"><link rel="prefetch" href="/Weblog/assets/css/16.styles.2339a627.css"><link rel="prefetch" href="/Weblog/assets/css/5.styles.c1152841.css"><link rel="prefetch" href="/Weblog/assets/css/7.styles.1f4a6057.css"><link rel="prefetch" href="/Weblog/assets/css/8.styles.5b6e1357.css"><link rel="prefetch" href="/Weblog/assets/js/0.a8dcd889.js"><link rel="prefetch" href="/Weblog/assets/js/10.bbae2931.js"><link rel="prefetch" href="/Weblog/assets/js/100.b8573d34.js"><link rel="prefetch" href="/Weblog/assets/js/101.abec8cfc.js"><link rel="prefetch" href="/Weblog/assets/js/102.79aa7798.js"><link rel="prefetch" href="/Weblog/assets/js/11.249c3d32.js"><link rel="prefetch" href="/Weblog/assets/js/12.6c4f9a9d.js"><link rel="prefetch" href="/Weblog/assets/js/13.9c3a7225.js"><link rel="prefetch" href="/Weblog/assets/js/14.8788763f.js"><link rel="prefetch" href="/Weblog/assets/js/15.c3d91b4b.js"><link rel="prefetch" href="/Weblog/assets/js/16.2339a627.js"><link rel="prefetch" href="/Weblog/assets/js/17.f68b5694.js"><link rel="prefetch" href="/Weblog/assets/js/18.1dc877c8.js"><link rel="prefetch" href="/Weblog/assets/js/19.8d3a8eb9.js"><link rel="prefetch" href="/Weblog/assets/js/2.adb0855b.js"><link rel="prefetch" href="/Weblog/assets/js/21.7570ba60.js"><link rel="prefetch" href="/Weblog/assets/js/22.c34e9396.js"><link rel="prefetch" href="/Weblog/assets/js/23.d89c70ce.js"><link rel="prefetch" href="/Weblog/assets/js/24.cc87bb5d.js"><link rel="prefetch" href="/Weblog/assets/js/25.024b7a56.js"><link rel="prefetch" href="/Weblog/assets/js/26.0d0e2118.js"><link rel="prefetch" href="/Weblog/assets/js/27.fd65c2c2.js"><link rel="prefetch" href="/Weblog/assets/js/28.e7e81b37.js"><link rel="prefetch" href="/Weblog/assets/js/29.d69a29c6.js"><link rel="prefetch" href="/Weblog/assets/js/3.9c9ae281.js"><link rel="prefetch" href="/Weblog/assets/js/30.e02a9f2a.js"><link rel="prefetch" href="/Weblog/assets/js/31.4d5d63f6.js"><link rel="prefetch" href="/Weblog/assets/js/32.2652c4b5.js"><link rel="prefetch" href="/Weblog/assets/js/33.f81118fb.js"><link rel="prefetch" href="/Weblog/assets/js/34.6539d2a9.js"><link rel="prefetch" href="/Weblog/assets/js/35.479b4b73.js"><link rel="prefetch" href="/Weblog/assets/js/36.24e9784f.js"><link rel="prefetch" href="/Weblog/assets/js/37.13a7e720.js"><link rel="prefetch" href="/Weblog/assets/js/38.57e7625b.js"><link rel="prefetch" href="/Weblog/assets/js/39.40ddc61b.js"><link rel="prefetch" href="/Weblog/assets/js/4.cb1adf5e.js"><link rel="prefetch" href="/Weblog/assets/js/40.4abade23.js"><link rel="prefetch" href="/Weblog/assets/js/41.03a22716.js"><link rel="prefetch" href="/Weblog/assets/js/42.4bf6acac.js"><link rel="prefetch" href="/Weblog/assets/js/43.7d75114c.js"><link rel="prefetch" href="/Weblog/assets/js/44.a74a0979.js"><link rel="prefetch" href="/Weblog/assets/js/45.224f0ae1.js"><link rel="prefetch" href="/Weblog/assets/js/46.716c0ee0.js"><link rel="prefetch" href="/Weblog/assets/js/47.a44c77ff.js"><link rel="prefetch" href="/Weblog/assets/js/48.c92bc6c3.js"><link rel="prefetch" href="/Weblog/assets/js/49.78d85a96.js"><link rel="prefetch" href="/Weblog/assets/js/5.c1152841.js"><link rel="prefetch" href="/Weblog/assets/js/50.65d4cc82.js"><link rel="prefetch" href="/Weblog/assets/js/51.dfe21a00.js"><link rel="prefetch" href="/Weblog/assets/js/52.a55d1d66.js"><link rel="prefetch" href="/Weblog/assets/js/53.24e5ba30.js"><link rel="prefetch" href="/Weblog/assets/js/54.3d44c9e1.js"><link rel="prefetch" href="/Weblog/assets/js/55.5509d3c1.js"><link rel="prefetch" href="/Weblog/assets/js/56.389f0044.js"><link rel="prefetch" href="/Weblog/assets/js/57.a6410cdf.js"><link rel="prefetch" href="/Weblog/assets/js/58.99de433a.js"><link rel="prefetch" href="/Weblog/assets/js/59.f362327e.js"><link rel="prefetch" href="/Weblog/assets/js/6.829d0e7e.js"><link rel="prefetch" href="/Weblog/assets/js/60.d8a731fd.js"><link rel="prefetch" href="/Weblog/assets/js/61.c32405a4.js"><link rel="prefetch" href="/Weblog/assets/js/62.2cf15697.js"><link rel="prefetch" href="/Weblog/assets/js/63.97976992.js"><link rel="prefetch" href="/Weblog/assets/js/64.df2f0acc.js"><link rel="prefetch" href="/Weblog/assets/js/65.0365fc24.js"><link rel="prefetch" href="/Weblog/assets/js/66.89f67105.js"><link rel="prefetch" href="/Weblog/assets/js/67.4d546178.js"><link rel="prefetch" href="/Weblog/assets/js/68.b3742591.js"><link rel="prefetch" href="/Weblog/assets/js/69.e2c032ec.js"><link rel="prefetch" href="/Weblog/assets/js/7.1f4a6057.js"><link rel="prefetch" href="/Weblog/assets/js/70.f262dfb0.js"><link rel="prefetch" href="/Weblog/assets/js/71.24d5a255.js"><link rel="prefetch" href="/Weblog/assets/js/72.c2fad7bd.js"><link rel="prefetch" href="/Weblog/assets/js/73.e3de86c7.js"><link rel="prefetch" href="/Weblog/assets/js/74.af039d36.js"><link rel="prefetch" href="/Weblog/assets/js/75.b5d26a4d.js"><link rel="prefetch" href="/Weblog/assets/js/76.5253b8d4.js"><link rel="prefetch" href="/Weblog/assets/js/77.13049fae.js"><link rel="prefetch" href="/Weblog/assets/js/78.732e7950.js"><link rel="prefetch" href="/Weblog/assets/js/79.91a95405.js"><link rel="prefetch" href="/Weblog/assets/js/8.5b6e1357.js"><link rel="prefetch" href="/Weblog/assets/js/80.60b08cac.js"><link rel="prefetch" href="/Weblog/assets/js/81.09852d19.js"><link rel="prefetch" href="/Weblog/assets/js/82.49b521d3.js"><link rel="prefetch" href="/Weblog/assets/js/83.681a706a.js"><link rel="prefetch" href="/Weblog/assets/js/84.ca93e702.js"><link rel="prefetch" href="/Weblog/assets/js/85.9813d878.js"><link rel="prefetch" href="/Weblog/assets/js/86.632f014f.js"><link rel="prefetch" href="/Weblog/assets/js/87.7737cd73.js"><link rel="prefetch" href="/Weblog/assets/js/88.1ec9c00d.js"><link rel="prefetch" href="/Weblog/assets/js/89.bbeb975f.js"><link rel="prefetch" href="/Weblog/assets/js/9.c685ce8f.js"><link rel="prefetch" href="/Weblog/assets/js/90.eda536dd.js"><link rel="prefetch" href="/Weblog/assets/js/91.391681fc.js"><link rel="prefetch" href="/Weblog/assets/js/92.dca04870.js"><link rel="prefetch" href="/Weblog/assets/js/93.01d44a2a.js"><link rel="prefetch" href="/Weblog/assets/js/94.f941a99a.js"><link rel="prefetch" href="/Weblog/assets/js/95.232bf755.js"><link rel="prefetch" href="/Weblog/assets/js/96.d381c6e0.js"><link rel="prefetch" href="/Weblog/assets/js/97.2a0ba8ba.js"><link rel="prefetch" href="/Weblog/assets/js/98.001e708c.js"><link rel="prefetch" href="/Weblog/assets/js/99.0ff7167d.js">
+    <link rel="stylesheet" href="/Weblog/assets/css/styles.bc17a3fe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Weblog/" class="home-link router-link-active"><!----><span class="site-name">
+      AlexTao 的 博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link router-link-active">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Weblog/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Classify</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/Weblog/html_css/" class="nav-link">HTML/CSS</a></li><li class="dropdown-item"><!----><a href="/Weblog/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----><a href="/Weblog/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----><a href="/Weblog/frames/" class="nav-link">Frames</a></li><li class="dropdown-item"><!----><a href="/Weblog/tool/" class="nav-link">Tool</a></li><li class="dropdown-item"><!----><a href="/Weblog/currency/" class="nav-link router-link-active">Currency</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/AlexTaoClub" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>currency</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Weblog/currency/" aria-current="page" class="sidebar-link">计算机</a></li><li><a href="/Weblog/currency/前端开发规范.html" class="sidebar-link">编码规范</a></li><li><a href="/Weblog/currency/DevOps.html" aria-current="page" class="active sidebar-link">DevOps</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Weblog/currency/DevOps.html#linux基础" class="sidebar-link">Linux基础</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/DevOps.html#nginx基础" class="sidebar-link">Nginx基础</a></li><li class="sidebar-sub-header"><a href="/Weblog/currency/DevOps.html#pm2基础" class="sidebar-link">PM2基础</a></li></ul></li><li><a href="/Weblog/currency/项目自动化部署.html" class="sidebar-link">项目自动化部署</a></li><li><a href="/Weblog/currency/前端安全.html" class="sidebar-link">前端安全</a></li><li><a href="/Weblog/currency/前端算法.html" class="sidebar-link">前端算法</a></li><li><a href="/Weblog/currency/函数实现.html" class="sidebar-link">函数实现</a></li><li><a href="/Weblog/currency/通用函数.html" class="sidebar-link">通用函数</a></li><li><a href="/Weblog/currency/例题总结.html" class="sidebar-link">例题分析 </a></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="devops">DevOps</h1><h2 id="linux基础">Linux基础</h2><h3 id="公匙信任">公匙信任</h3><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 生成公钥</span>
+ssh-keygen -t rsa -P <span class="token string">''</span>
+
+xubin@xubindeMBP:~$ ssh-keygen
+Generating public/private rsa key pair.
+Enter <span class="token function">file</span> <span class="token keyword">in</span> <span class="token function">which</span> to save the key <span class="token punctuation">(</span>/Users/xubin/.ssh/id_rsa<span class="token punctuation">)</span>:
+/Users/xubin/.ssh/id_rsa already exists.
+Overwrite <span class="token punctuation">(</span>y/n<span class="token punctuation">)</span>? <span class="token function">yes</span>
+Enter passphrase <span class="token punctuation">(</span>empty <span class="token keyword">for</span> no passphrase<span class="token punctuation">)</span>:
+Enter same passphrase again:
+Your identification has been saved <span class="token keyword">in</span> /Users/xubin/.ssh/id_rsa.
+Your public key has been saved <span class="token keyword">in</span> /Users/xubin/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:IeFPfrcQ3hhP64SRTAFzGIHl2ROcopl5HotRi2XNOGk xubin@xubindeMBP
+The key's randomart image is:
++---<span class="token punctuation">[</span>RSA <span class="token number">2048</span><span class="token punctuation">]</span>----+
+<span class="token operator">|</span>      .o*@<span class="token operator">=</span>o     <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token punctuation">..</span>oEB<span class="token operator">=</span>o     <span class="token operator">|</span>
+<span class="token operator">|</span>      o@<span class="token operator">=</span>+O <span class="token builtin class-name">.</span>    <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token assign-left variable">B</span><span class="token operator">=</span>+o @ <span class="token builtin class-name">.</span>   <span class="token operator">|</span>
+<span class="token operator">|</span>       <span class="token operator">=</span>So* *    <span class="token operator">|</span>
+<span class="token operator">|</span>      <span class="token builtin class-name">.</span> o. <span class="token operator">=</span> <span class="token builtin class-name">.</span>   <span class="token operator">|</span>
+<span class="token operator">|</span>            o    <span class="token operator">|</span>
+<span class="token operator">|</span>                 <span class="token operator">|</span>
+<span class="token operator">|</span>                 <span class="token operator">|</span>
++----<span class="token punctuation">[</span>SHA256<span class="token punctuation">]</span>-----+
+
+<span class="token comment"># 查看公钥</span>
+<span class="token function">cat</span> .ssh/id_rsa.pub 
+
+<span class="token comment"># 将公钥拷贝到服务器</span>
+<span class="token function">scp</span> ~/.ssh/id_rsa.pub root@47.98.252.XXX:/root
+
+<span class="token comment"># 将公钥加入信任列表</span>
+<span class="token function">cat</span> id_dsa.pub <span class="token operator">&gt;&gt;</span> ~/.ssh/authorized_keys
+</code></pre></div><h3 id="ssh登录">SSH登录</h3><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># root 为用户名</span>
+<span class="token comment"># ip地址</span>
+<span class="token function">ssh</span> root@47.98.252.XXX
+</code></pre></div><h3 id="目录操作">目录操作</h3><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看目录</span>
+<span class="token builtin class-name">pwd</span>
+
+<span class="token comment"># 改变当前目录</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">[</span>directory_name<span class="token punctuation">]</span>
+
+<span class="token comment"># 列出当前目录的文件和子目录</span>
+<span class="token function">ls</span>
+
+<span class="token function">ls</span> -a     列出所有目录、子目录、文件和隐藏文件
+
+<span class="token function">ls</span> -R     列出从当前目录开始的所有的子目录、文件并且一层层往下显示
+
+<span class="token function">ls</span> -F     列出文件、目录名并显示出文件类型
+
+<span class="token function">ls</span> -t     以修改时间为时间倒序来列出文件、子目录
+
+<span class="token function">ls</span> -l     以长列表格式显示文件、目录的详细信息
+</code></pre></div><h3 id="文本操作">文本操作</h3><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看操作</span>
+<span class="token function">cat</span> xxx
+
+<span class="token comment"># 动态查看信息</span>
+<span class="token function">tail</span> -f xxx.log
+</code></pre></div><h3 id="系统信息查看">系统信息查看</h3><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 磁盘容量</span>
+<span class="token function">df</span> -h
+
+<span class="token comment"># 系统配置</span>
+<span class="token function">cat</span> /proc/cpuinfo 
+
+<span class="token comment"># 发行版本</span>
+lsb_release -a
+</code></pre></div><h3 id="系统进程">系统进程</h3><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 列出系统中当前运行的那些进程</span>
+<span class="token function">ps</span>
+-a 显示同一终端下的所有程序
+-A 显示所有进程
+c  显示进程的真实名称
+-N 反向选择
+-e 等于“-A”
+e  显示环境变量
+f  显示程序间的关系
+-H 显示树状结构
+r  显示当前终端的进程
+T  显示当前终端的所有程序
+u  指定用户的所有进程
+-au 显示较详细的资讯
+-aux 显示所有包含其他使用者的行程 
+
+<span class="token comment"># 动态查看进程变化，监控linux的系统状况</span>
+<span class="token function">top</span> 
+<span class="token comment"># top 运行中可以通过 top 的内部命令对进程的显示方式进行控制。内部命令如下：</span>
+s – 改变画面更新频率
+l – 关闭或开启第一部分第一行 <span class="token function">top</span> 信息的表示
+t – 关闭或开启第一部分第二行 Tasks 和第三行 Cpus 信息的表示
+m – 关闭或开启第一部分第四行 Mem 和 第五行 Swap 信息的表示
+N – 以 PID 的大小的顺序排列表示进程列表
+P – 以 CPU 占用率大小的顺序排列进程列表
+M – 以内存占用率大小的顺序排列进程列表
+h – 显示帮助
+n – 设置在进程列表所显示进程的数量
+q – 退出 <span class="token function">top</span>
+s – 改变画面更新周期
+
+<span class="token comment"># 杀死进程</span>
+<span class="token function">kill</span>
+-l  信号，若果不加信号的编号参数，则使用“-l”参数会列出全部的信号名称
+-a  当处理当前进程时，不限制命令名和进程号的对应关系
+-p  指定kill 命令只打印相关进程的进程号，而不发送任何信号
+-s  指定发送信号
+-u  指定用户 
+
+<span class="token comment"># 先用ps查找进程，然后用kill杀掉</span>
+<span class="token function">ps</span> -ef<span class="token operator">|</span><span class="token function">grep</span> <span class="token function">vim</span> 
+</code></pre></div><h3 id="网络状况">网络状况</h3><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 监控TCP/IP网络</span>
+<span class="token function">netstat</span>
+<span class="token comment"># 列出所有端口情况</span>
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -a      # 列出所有端口</span>
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -at     # 列出所有TCP端口</span>
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -au     # 列出所有UDP端口</span>
+
+<span class="token comment"># 列出所有处于监听状态的Sockets</span>
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -l   # 只显示监听端口</span>
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -lt  # 显示监听TCP端口</span>
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -lu  # 显示监听UDP端口</span>
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -lx  # 显示监听UNIX端口</span>
+
+<span class="token comment"># 显示 PID 和进程名称</span>
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -p</span>
+
+<span class="token comment"># 显示核心路由信息</span>
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -r</span>
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+default         gateway         <span class="token number">0.0</span>.0.0         UG        <span class="token number">0</span> <span class="token number">0</span>          <span class="token number">0</span> eth0
+<span class="token number">192.168</span>.130.0   <span class="token number">0.0</span>.0.0         <span class="token number">255.255</span>.255.0   U         <span class="token number">0</span> <span class="token number">0</span>          <span class="token number">0</span> eth0
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -rn   # 显示数字格式，不查询主机名称</span>
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+<span class="token number">0.0</span>.0.0         <span class="token number">192.168</span>.130.1   <span class="token number">0.0</span>.0.0         UG        <span class="token number">0</span> <span class="token number">0</span>          <span class="token number">0</span> eth0
+<span class="token number">192.168</span>.130.0   <span class="token number">0.0</span>.0.0         <span class="token number">255.255</span>.255.0   U         <span class="token number">0</span> <span class="token number">0</span>          <span class="token number">0</span> eth0
+
+<span class="token comment"># 查看端口和服务</span>
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -antp | grep ssh</span>
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">0.0</span>.0.0:22              <span class="token number">0.0</span>.0.0:*               LISTEN      <span class="token number">734</span>/sshd            
+tcp        <span class="token number">0</span>     <span class="token number">52</span> <span class="token number">192.168</span>.130.20:22       <span class="token number">119.129</span>.118.189:58737   ESTABLISHED <span class="token number">1846</span>/sshd: root@pts 
+tcp6       <span class="token number">0</span>      <span class="token number">0</span> :::22                   :::*                    LISTEN      <span class="token number">734</span>/sshd            
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment"># netstat -antp | grep 22</span>
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">0.0</span>.0.0:22              <span class="token number">0.0</span>.0.0:*               LISTEN      <span class="token number">734</span>/sshd            
+tcp        <span class="token number">0</span>     <span class="token number">52</span> <span class="token number">192.168</span>.130.20:22       <span class="token number">119.129</span>.118.189:58737   ESTABLISHED <span class="token number">1846</span>/sshd: root@pts 
+tcp6       <span class="token number">0</span>      <span class="token number">0</span> :::22                   :::*                    LISTEN      <span class="token number">734</span>/sshd            
+<span class="token punctuation">[</span>root@xiesshavip002 ~<span class="token punctuation">]</span><span class="token comment">#</span>
+
+<span class="token comment"># 网络抓包工具</span>
+tcpdump -nn -i eth0 icmp
+</code></pre></div><h3 id="系统服务管理器">系统服务管理器</h3><div class="language-bash extra-class"><pre class="language-bash"><code>systemctl
+
+<span class="token comment"># 显示 系统状态:</span>
+systemctl status
+</code></pre></div><h2 id="nginx基础">Nginx基础</h2><p><a href="https://mp.weixin.qq.com/s/wecUdGnuHdZOs3t7zc16jw" target="_blank" rel="noopener noreferrer">nginx技术分析<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p><h3 id="安装">安装</h3><ul><li><p>window nginx.exe</p></li><li><p>通过包管理安装
+<code>shell</code></p><p><code>sudo apt-get install nginx #ubuntu</code></p><p><code>sudo yum install nginx #centos</code></p><p><code>sudo brew install nginx #mac</code></p></li><li><p>官网下载源码，安装依赖，编译后安装</p></li><li><p>docker安装 dockerhub</p></li></ul><h3 id="常用命令">常用命令</h3><div class="language- extra-class"><pre class="language-text"><code>nginx -v / -V 查看版本 / 查看版本和配置信息（依赖库的本信息）
+nginx -t 检查配置文件语法状态,配置文件位置
+		# nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+		# nginx: configuration file /etc/nginx/nginx.conf test is successful
+nginx -s quite 关闭服务（优雅关闭，等待当前已建立的连接完成后关闭服务）
+nginx -s stop 直接停止服务
+nginx -s reload 热重载，不停止服务的情况下重新加载配置文件，完成服务重启
+nginx -s reopen 重新开始日志文件
+service nginx restart 重启
+</code></pre></div><h3 id="静态资源">静态资源</h3><div class="language- extra-class"><pre class="language-text"><code>http {
+    gzip  on;
+    gzip_vary on;
+    gzip_proxied any;
+    gzip_min_length  5k;
+    gzip_buffers  4 16k;
+    gzip_http_version 1.1;
+    gzip_comp_level 4;
+    gzip_types  application/javascript text/plain application/x-javascript text/css application/xml application/json text/javascript;
+    gzip_disable &quot;MSIE [1-6]\.(?!.*SV1)&quot;;
+
+    server {
+        server_name Alex.com www.Alex.com;
+        listen 80;
+        root /home/baixx2/project;
+        location / {
+            index index.htm index.html;
+        }
+        # vue-router history模式
+        location / {
+            try_files $uri $uri/ /index.html;
+        }
+        # 资源设置缓存
+        location ~ \.(css|js|woff2|png) {
+           #expires 10d;
+           add_header Cache-Control max-age=4800;
+        }
+    }
+} 
+</code></pre></div><h3 id="反向代理">反向代理</h3><div class="language-bash extra-class"><pre class="language-bash"><code>http <span class="token punctuation">{</span>
+    <span class="token comment">#  /node_proxy</span>
+    upstream node_proxy<span class="token punctuation">{</span>   <span class="token comment">#这里ubuntu可以为其他自定义字符串，下方需要填写对应字符串</span>
+        server <span class="token number">127.0</span>.0.1:3000<span class="token punctuation">;</span>  <span class="token comment">#3000为需要转发的端口号</span>
+    <span class="token punctuation">}</span>
+    server<span class="token punctuation">{</span>
+        listen <span class="token number">80</span><span class="token punctuation">;</span>  <span class="token comment">#90为转发到的端口号</span>
+        location / <span class="token punctuation">{</span>
+            proxy_set_header X-Real-IP <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
+            proxy_set_header X-Forward-For <span class="token variable">$proxy_add_x_forwarded_for</span><span class="token punctuation">;</span>
+            proxy_set_header Host <span class="token variable">$http_host</span><span class="token punctuation">;</span>
+            proxy_set_header X-Nginx-Proxy <span class="token boolean">true</span><span class="token punctuation">;</span>
+            proxy_pass http://node_proxy<span class="token punctuation">;</span>  <span class="token comment">#与上方对应</span>
+            proxy_redirect off<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="websocket-io支持">Websocket.io支持</h3><div class="language-bash extra-class"><pre class="language-bash"><code>location ~* <span class="token punctuation">\</span>.io <span class="token punctuation">{</span>
+	proxy_set_header X-Real-IP <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
+	proxy_set_header X-Forwarded-For <span class="token variable">$proxy_add_x_forwarded_for</span><span class="token punctuation">;</span>
+	proxy_set_header Host <span class="token variable">$http_host</span><span class="token punctuation">;</span>
+	proxy_set_header X-NginX-Proxy <span class="token boolean">true</span><span class="token punctuation">;</span>
+ 
+	proxy_pass http://localhost:3000<span class="token punctuation">;</span>
+	proxy_redirect off<span class="token punctuation">;</span>
+ 
+	proxy_http_version <span class="token number">1.1</span><span class="token punctuation">;</span>
+	proxy_set_header Upgrade <span class="token variable">$http_upgrade</span><span class="token punctuation">;</span>
+	proxy_set_header Connection <span class="token string">&quot;upgrade&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="https支持">HTTPS支持</h3><blockquote><p>安全通讯的传输协议</p><ul><li>网站服务器的身份认证</li><li>保护交换数据的的隐私和完整性</li><li>防止人为攻击</li><li>运营商劫持</li><li>新特性 WebRTC 、Service Worker的前台要素</li></ul></blockquote><h3 id="nginx-conf-详解">nginx.conf 详解</h3><p><strong>定义Nginx运行的用户和用户组</strong></p><p><code>user www www</code></p><p><strong>nginx进程数，建议设置为等于CPU总核心数</strong></p><p><code>worker_processes 8</code></p><p><strong>全局错误日志定义类型，[ debug | info | notice | warn | error | crit ]</strong></p><p><code>error_log /**var**/log/nginx/error.log info</code></p><p><strong>进程文件</strong></p><p><code>pid /**var**/run/nginx.pid;</code></p><p><strong>一个nginx进程打开的最多文件描述符数目，理论值应该是最多打开文件数（系统的值ulimit -n）与nginx进程数相除，但是nginx分配请求并不均匀，所以建议与ulimit -n的值保持一致。</strong></p><p><code>worker_rlimit_nofile 65535;</code></p><p><strong>工作模式与连接数上限</strong></p><div class="language- extra-class"><pre class="language-text"><code>events{
+    #参考事件模型，
+    use [ kqueue | rtsig | epoll | /dev/poll | select | poll ]; 
+    #epoll模型是Linux 2.6以上版本内核中的高性能网络I/O模型，如果跑在FreeBSD上面，就用kqueue模型。
+    use epoll;
+    #单个进程最大连接数（最大连接数=连接数*进程数）
+    worker_connections 65535;
+}
+</code></pre></div><p><strong>设定http服务器</strong></p><div class="language- extra-class"><pre class="language-text"><code>http{
+    include mime.types; #文件扩展名与文件类型映射表
+    default_type application/octet-stream; #默认文件类型
+    #charset utf-8; #默认编码
+    server_names_hash_bucket_size 128; #服务器名字的hash表大小
+    client_header_buffer_size 32k; #上传文件大小限制
+    large_client_header_buffers 4 64k; #设定请求缓
+    client_max_body_size 8m; #设定请求缓
+    sendfile on; #开启高效文件传输模式，sendfile指令指定nginx是否调用sendfile函数来输出文件，对于普通应用设为 on，如果用来进行下载等应用磁盘IO重负载应用，可设置为off，以平衡磁盘与网络I/O处理速度，降低系统的负载。注意：如果图片显示不正常把这个改成off。
+    autoindex on; #开启目录列表访问，合适下载服务器，默认关闭。
+    tcp_nopush on; #防止网络阻塞
+    tcp_nodelay on; #防止网络阻塞
+    keepalive_timeout 120; #长连接超时时间，单位是秒
+
+    #FastCGI相关参数是为了改善网站的性能：减少资源占用，提高访问速度。下面参数看字面意思都能理解。
+    fastcgi_connect_timeout 300;
+    fastcgi_send_timeout 300;
+    fastcgi_read_timeout 300;
+    fastcgi_buffer_size 64k;
+    fastcgi_buffers 4 64k;
+    fastcgi_busy_buffers_size 128k;
+    fastcgi_temp_file_write_size 128k;
+
+    #gzip模块设置
+    gzip on; #开启gzip压缩输出
+    gzip_min_length 1k; #最小压缩文件大小
+    gzip_buffers 4 16k; #压缩缓冲区
+    gzip_http_version 1.0; #压缩版本（默认1.1，前端如果是squid2.5请使用1.0）
+    gzip_comp_level 2; #压缩等级
+    gzip_types text/plain application/x-javascript text/css application/xml;
+    #压缩类型，默认就已经包含text/html，所以下面就不用再写了，写上去也不会有问题，但是会有一个warn。
+    gzip_vary on;
+    #limit_zone crawler $binary_remote_addr 10m; #开启限制IP连接数的时候需要使用
+
+    upstream blog.ha97.com {
+        #upstream的负载均衡，weight是权重，可以根据机器配置定义权重。weigth参数表示权值，权值越高被分配到的几率越大。
+        server 192.168.80.121:80 weight=3;
+        server 192.168.80.122:80 weight=2;
+        server 192.168.80.123:80 weight=3;
+    }
+ 
+    #虚拟主机的配置
+    server{
+        #监听端口
+        listen 80;
+
+        #域名可以有多个，用空格隔开
+        server_name www.ha97.com ha97.com;
+        index index.html index.htm index.php;
+        root /data/www/ha97;
+        location ~ .*\.(php|php5)?${
+            fastcgi_pass 127.0.0.1:9000;
+            fastcgi_index index.php;
+            include fastcgi.conf;
+        }
+
+        #图片缓存时间设置
+        location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)${
+            expires 10d;
+        }
+
+        #JS和CSS缓存时间设置
+        location ~ .*\.(js|css)?${
+            expires 1h;
+        }
+
+        #日志格式设定
+        log_format access '$remote_addr - $remote_user [$time_local] &quot;$request&quot; '
+        '$status $body_bytes_sent &quot;$http_referer&quot; '
+        '&quot;$http_user_agent&quot; $http_x_forwarded_for';
+
+        #定义本虚拟主机的访问日志
+        access_log /var/log/nginx/ha97access.log access;
+
+        #对 &quot;/&quot; 启用反向代理
+        location / {
+            proxy_pass http://127.0.0.1:88;
+            proxy_redirect off;
+            proxy_set_header X-Real-IP $remote_addr;
+
+            #后端的Web服务器可以通过X-Forwarded-For获取用户真实IP
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+            #以下是一些反向代理的配置，可选。
+            proxy_set_header Host $host;
+            client_max_body_size 10m; #允许客户端请求的最大单文件字节数
+            client_body_buffer_size 128k; #缓冲区代理缓冲用户端请求的最大字节数，
+            proxy_connect_timeout 90; #nginx跟后端服务器连接超时时间(代理连接超时)
+            proxy_send_timeout 90; #后端服务器数据回传时间(代理发送超时)
+            proxy_read_timeout 90; #连接成功后，后端服务器响应时间(代理接收超时)
+            proxy_buffer_size 4k; #设置代理服务器（nginx）保存用户头信息的缓冲区大小
+            proxy_buffers 4 32k; #proxy_buffers缓冲区，网页平均在32k以下的设置
+            proxy_busy_buffers_size 64k; #高负荷下缓冲大小（proxy_buffers*2）
+            proxy_temp_file_write_size 64k;
+            #设定缓存文件夹大小，大于这个值，将从upstream服务器传
+        }
+
+        #设定查看Nginx状态的地址
+        location /NginxStatus {
+            stub_status on;
+            access_log on;
+            auth_basic &quot;NginxStatus&quot;;
+            auth_basic_user_file conf/htpasswd;
+            #htpasswd文件的内容可以用apache提供的htpasswd工具来产生。
+        }
+
+        #本地动静分离反向代理配置
+        #所有jsp的页面均交由tomcat或resin处理
+        location ~ .(jsp|jspx|do)?$ {
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_pass http://127.0.0.1:8080;
+        }
+        #所有静态文件由nginx直接读取不经过tomcat或resin
+        location ~ .*.(htm|html|gif|jpg|jpeg|png|bmp|swf|ioc|rar|zip|txt|flv|mid|doc|ppt|pdf|xls|mp3|wma)${
+            expires 15d; 
+        }
+        location ~ .*.(js|css)?${ 
+            expires 1h; 
+        }
+    }
+}
+</code></pre></div><h2 id="pm2基础">PM2基础</h2><h3 id="安装使用">安装使用</h3><div class="language- extra-class"><pre class="language-text"><code>npm install -g pm2
+
+pm2 start app.js 或者 pm2 start bin/www  启动node项目
+
+pm2 stop bin/www  停止pm2服务
+pm2 stop all 停止所有进程
+pm2 stop 0 停止指定的进程
+
+pm2 restart 0 重启指定的进程
+pm2 restart all 重启所有进程
+pm2 reload all 0秒停机重载进程 (用于 NETWORKED 进程)
+
+pm2 delete 0 杀死指定的进程
+pm2 delete all 杀死全部进程
+
+pm2 list 列出由pm2管理的所有进程信息，还会显示一个进程会被启动多少次，因为没处理的异常。
+pm2 monit 监视每个node进程的CPU和内存的使用情况
+pm2 logs 显示所有进程日志
+pm2 startup 产生 init 脚本 保持进程活着
+pm2 web 运行健壮的 computer API endpoint (http://localhost:9615)
+</code></pre></div><h3 id="运行进程的不同方式：">运行进程的不同方式：</h3><div class="language- extra-class"><pre class="language-text"><code>pm2 start app.js -i max 根据有效CPU数目启动最大进程数目
+pm2 start app.js -i 3 启动3个进程
+pm2 start app.js -x 用fork模式启动 app.js 而不是使用 cluster
+pm2 start app.js -x -- -a 23 用fork模式启动 app.js 并且传递参数 (-a 23)
+pm2 start app.js --name serverone 启动一个进程并把它命名为 serverone
+pm2 stop serverone 停止 serverone 进程
+pm2 start app.json 启动进程, 在 app.json里设置选项
+pm2 start app.js -i max -- -a 23 在--之后给 app.js 传递参数
+pm2 start app.js -i max -e err.log -o out.log 启动 并 生成一个配置文件
+</code></pre></div><h3 id="启动文件">启动文件</h3><div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;apps&quot;: {                            //apps可以是一个数组，每一个数组成员就是对应一个pm2中运行的应用
+        &quot;name&quot;: &quot;express_project&quot;,       // 项目名          
+        &quot;script&quot;: &quot;app.js&quot;,              // 执行文件
+        &quot;cwd&quot;: &quot;./&quot;,                     // 根目录
+        &quot;args&quot;: &quot;&quot;,                      // 传递给脚本的参数
+        &quot;interpreter&quot;: &quot;&quot;,               // 指定的脚本解释器
+        &quot;interpreter_args&quot;: &quot;&quot;,          // 传递给解释器的参数
+        &quot;watch&quot;: true,                   // 是否监听文件变动然后重启
+        &quot;ignore_watch&quot;: [                // 不用监听的文件
+            &quot;node_modules&quot;,
+            &quot;public&quot;
+        ],
+        &quot;max_memory_restart&quot;: &quot;300M&quot;,    // 服务占用的内存超过300M，会自动进行重启
+        &quot;exec_mode&quot;: &quot;cluster_mode&quot;,     // 应用启动模式，支持 fork 和 cluster 模式
+        &quot;instances&quot;: &quot;max&quot;,              // 应用启动实例个数，仅在 cluster 模式有效 默认为 fork
+        &quot;error_file&quot;: &quot;./logs/app-err.log&quot;,         // 错误日志文件
+        &quot;out_file&quot;: &quot;./logs/app-out.log&quot;,           // 正常日志文件
+        &quot;merge_logs&quot;: true,                         // 设置追加日志而不是新建日志
+        &quot;log_date_format&quot;: &quot;YYYY-MM-DD HH:mm:ss&quot;,   // 指定日志文件的时间格式
+        &quot;min_uptime&quot;: &quot;60s&quot;,                        // 应用运行少于时间被认为是异常启动
+        &quot;max_restarts&quot;: 30,                         // 最大异常重启次数
+        &quot;autorestart&quot;: true,                        // 默认为 true, 发生异常的情况下自动重启
+        &quot;restart_delay&quot;: &quot;60&quot;                       // 异常重启情况下，延时重启时间
+        &quot;env&quot;: {
+           &quot;NODE_ENV&quot;: &quot;production&quot;,                // 环境参数，当前指定为生产环境
+           &quot;REMOTE_ADDR&quot;: &quot;&quot;               
+        },
+        &quot;env_dev&quot;: {
+            &quot;NODE_ENV&quot;: &quot;development&quot;,              // 环境参数，当前指定为开发环境
+            &quot;REMOTE_ADDR&quot;: &quot;&quot;
+        },
+        &quot;env_test&quot;: {                               // 环境参数，当前指定为测试环境
+            &quot;NODE_ENV&quot;: &quot;test&quot;,
+            &quot;REMOTE_ADDR&quot;: &quot;&quot;
+        }
+    }
+}
+</code></pre></div><p>Now, let's try it 👉</p></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/Weblog/currency/前端开发规范.html" class="prev">
+          编码规范
+        </a></span><span class="next"><a href="/Weblog/currency/项目自动化部署.html">
+          项目自动化部署
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/Weblog/assets/js/app.bc17a3fe.js" defer></script><script src="/Weblog/assets/js/20.5b430c8f.js" defer></script>
+  </body>
+</html>
